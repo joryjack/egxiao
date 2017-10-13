@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+		<style>
+			h5 {
+				color: #6c6c6c;
+				font-size: 0.95em;
+				padding-bottom: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">编辑基本信息</h1>
+		</header>
+		<div class="mui-content" style=" padding-top: 85px;">
+
+			<div class="mui-content-padded ">
+
+				<h5>机构简称</h5>
+				<div class="mui-input-row">
+					<input id="shortname" type="text" class="mui-input " maxlength="8" placeholder="请填写">
+
+				</div>
+				<h5>所属分类</h5>
+				<div class="mui-input-row ">
+					<input id="orgType" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="请选择">
+				</div>
+				<h5>学员规模</h5>
+				<div class="mui-input-row ">
+					<input id="orgSize" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="请选择">
+				</div> 
+				
+			</div>
+			<div class="mui-content-padded ">
+				<p >*请如实填写 ，如有虚假，一经查实，将封停使用直招功能。</p>
+			</div>
+			<div class="mui-content-padded ">
+				<button id='saveOrgBaseInfo' class="mui-btn mui-btn-block mui-btn-ronschool ">保存</button>
+			</div>
+			<div id="showOrgTypePopover" class="mui-popover popover-auto">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a data-orgtype='3c1e1ab210db4055817249d27eebf39c'>文化课</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgtype='e4575338c1584f07963b320e58246c59'>艺术</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgtype='9835dac4c50041c7a6271b2ca702047c'>兴趣</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgtype='e9971a66147a4f239c2591059a6ee47c'>语言</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgtype='19b3d60c8228495ba9ee95abae635140'>体育</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgtype='a3006ad044054ffeb2bea9b477fe7615'>综合</a>
+					</li>
+				</ul>
+			</div>
+			<div id="showOrgSizePopover" class="mui-popover popover-auto">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a data-orgsize='f5491ec02e5f440eafa6d695212e9fa3'>0-50学员</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgsize='b87a6dd8568746fbb88eb97ff65e7cea' >50-150学员</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a data-orgsize='33f025ced47a4f0dacb9563402011338'>150-300学员</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a  data-orgsize='1d40ba212252462b9cff5a2675fc12d4'>300-500学员</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a  data-orgsize='83f19dbfec164328a5b5c227e3bc7d9b'>500-800学员</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a  data-orgsize='6404bffe11954bbb91292300d034aebc'>800以上</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script type="text/javascript" src="../../js/mui.jsonp.js" ></script>
+		<script type="text/javascript" src="../../js/app.js" ></script>
+		<script type="text/javascript" src="../../js/work/weizs/modify_orgbaseinfo.js" ></script>
+
+	</body>
+
+</html>

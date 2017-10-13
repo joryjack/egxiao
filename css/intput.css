@@ -1,0 +1,76 @@
+.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:after {
+				background-color: #fff;
+			}
+			
+			.mui-input-group {
+				margin-top: 10px;
+			}
+			
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			
+			.mui-input-group label {
+				width: 12%;
+				padding: 12px 15px;
+			}
+			
+			.mui-input-group label i {
+				color: #A9A9A9;
+				vertical-align: middle;
+				font-style: normal;
+			}
+			
+			.mui-input-group .mui-input-row {
+				height: 50px;
+				margin-right: 15px;
+			}
+			
+			.mui-input-row input,
+			.mui-input-row div {
+				height: 50px;
+				margin-bottom: 10px;
+			}
+			
+			.mui-input-row .mui-input-clear~.mui-icon-clear,
+			.mui-input-row .mui-input-password~.mui-icon-eye,
+			.mui-input-row .mui-input-speech~.mui-icon-speech {
+				top: 14px;
+			}
+			
+			.mui-content-padded {
+				margin-top: 15px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			#popover {
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				#popover {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}

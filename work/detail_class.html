@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #fff;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">班级档案卡</h1>
+			<a id="editClassBar" class=" mui-btn mui-btn-blue mui-btn-link  mui-pull-right">编辑</a>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-header-default">
+					<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+					<span>班级信息</span>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p><label>班级:</label><span></span></p>
+						<p><label>课程:</label><span></span></p>
+						<p><label>类型:</label><span></span></p>
+						<p><label>说明:</label><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-header-success"><i class="mui-icon iconfont icon-huakuai card-header-icon"></i><span>班内学员<i class="card-header-num">0个</i></span><span id="rightBar" class=" mui-icon  iconfont icon-jia" style="font-size: 1.2em;"></span></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner" style="padding-left: 0px;">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/detail_class.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/iconfont.css" />
+
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.title {
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>-->
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-chevron" id="infocenter">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="/account/infocenter.html">
+						<img class="mui-media-object mui-pull-left head-img mui-icon mui-icon-person" id="head-img" src="../images/50x50t.png">
+						<span class="mui-hidden">个人资料</span>
+						<div class="mui-media-body">
+							<span id="name">子虚</span>
+							<p class='mui-ellipsis'>账号:<span id="phone">18888888888</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;" id="appliction">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate" href="/account/contact.html">
+						<span class="mui-icon iconfont icon-phone" style="color: #55BD9A; padding-right: 10px;"></span><span>通讯录</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="share" href="" class="mui-navigate">
+						<span class=" mui-icon iconfont icon-fenxiang" style="color: #57A5F2; font-size: 1.8em; "></span>
+						<span style=" position: absolute;top:18px">分享给朋友</span>
+					</a>
+				</li>
+
+				<li class="mui-table-view-cell">
+					<a href="/account/modify_password.html" class="mui-navigate">
+						<span class="mui-icon  iconfont  icon-locked" style="color: #FFBE4D;padding-right: 8px;"></span> <span>账号与安全</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;" id="setting">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate" href="/account/setting-needtem.html">
+						<span class="mui-icon  iconfont icon-gear" style="color: #F27474;padding-right: 10px;"></span><span>设置</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript" src="../js/barItem/barAccount.js"></script>
+	
+	<script>
+		//分享操作
+		var shares = {};
+		
+		mui.plusReady(function() {
+			plus.share.getServices(function(s) {
+				if (s && s.length > 0) {
+					for (var i = 0; i < s.length; i++) {
+						var t = s[i];
+						shares[t.id] = t;
+					}
+				}
+			}, function() {
+				console.log("获取分享服务列表失败");
+			});
+		});
+		
+		
+		//分享链接点击事件
+		document.getElementById("share").addEventListener('tap', function() {
+			var ids = [{
+					id: "weixin",
+					ex: "WXSceneSession"
+				}, {
+					id: "weixin",
+					ex: "WXSceneTimeline"
+				}],
+				bts = [{
+					title: "发送给微信好友"
+				}, {
+					title: "分享到微信朋友圈"
+				}];
+			plus.nativeUI.actionSheet({
+				cancel: "取消",
+				buttons: bts
+			}, function(e) {
+				var i = e.index;
+				if (i > 0) {
+					var s_id = ids[i - 1].id;
+					var share = shares[s_id];
+					if (share) {
+						if (share.authenticated) {
+							shareMessage(share, ids[i - 1].ex);
+						} else {
+							share.authorize(function() {
+								shareMessage(share, ids[i - 1].ex);
+							}, function(e) {
+								console.log("认证授权失败：" + e.code + " - " + e.message);
+							});
+						}
+					} else {
+						mui.toast("无法获取分享服务，请检查manifest.json中分享插件参数配置，并重新打包")
+					}
+				}
+			});
+		});
+
+		function shareMessage(share, ex) {
+			var msg = {
+				extra: {
+					scene: ex
+				}
+			};
+			msg.href = "http://t.cn/Rfmsyam";
+			msg.title = "易管校-智能高效的SaaS移动校务工具";
+			msg.content = "我正在使用易管校，可以把学校装进手机，随时随地便捷校务工作，果然很方便。";
+			
+			msg.thumbs = ["_www/images/logo.png"];
+			share.send(msg, function() {
+				console.log("分享到\"" + share.description + "\"成功！ ");
+			}, function(e) {
+				console.log("分享到\"" + share.description + "\"失败: " + e.code + " - " + e.message);
+			});
+		}
+	</script>
+
+</html>

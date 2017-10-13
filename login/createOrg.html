@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>创建机构</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<style>
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group {
+				margin-top: 10px;
+			}
+			
+			
+			.mui-input-group:first-child {
+				margin-top: 40px;
+			}
+			
+			.mui-input-group label {
+				width: 12%;
+				padding: 12px 15px;
+			}
+			
+			.mui-input-group label i {
+				color: #A9A9A9;
+				vertical-align: middle;
+				font-style: normal;
+			}
+			
+			.mui-input-group .mui-input-row {
+				height: 50px;
+			}
+			
+			.mui-input-row label~input {
+				width: 88%;
+				height: 50px;
+				margin-bottom: 10px;
+			}
+			.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{
+				top: 14px;
+			}
+			.mui-content-padded {
+				margin-top: 15px;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: gray;"></a>
+			<h1 class="mui-title">创建新机构</h1>
+		</header>
+		<div class="mui-content">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label><i class="mui-icon iconfont icon-org-line"></i> </label>
+					<input id='org' type="text" class="mui-input-clear mui-input" maxlength="15" placeholder="输入机构名称">
+				</div>
+				<div class="mui-input-row">
+					<label><i class="mui-icon iconfont icon-my-line"></i> </label>
+					<input id='username' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="输入真实姓名">
+				</div>
+				<div class="mui-input-row">
+					<label><i class="mui-icon iconfont icon-lock-line"></i></label>
+					<input id="password" type="password" class=" mui-input  mui-input-password" placeholder="输入密码"  maxlength="16">
+
+				</div>    
+
+			</form>
+			<div class="mui-content-padded ">
+				<p style="color:#E66B14 ;">*密码为6-16位的字母和数字组合</p>
+			</div>
+			<div class="mui-content-padded ">
+				<button id='orgsubmit' class="mui-btn mui-btn-block mui-btn-grey mui-disabled ">提  交</button>
+			</div>
+
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/app.js" ></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js" ></script>
+		<script type="text/javascript" src="../js/tool/base64.js" ></script>
+		<script type="text/javascript" src="../js/login/createorg.js" ></script>
+	</body>
+
+</html>

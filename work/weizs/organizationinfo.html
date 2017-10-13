@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+		<style>
+			.mui-card {
+				font-size: 14px;
+				position: relative;
+				overflow: hidden;
+				margin: 10px 0px;
+				border-radius: 0px;
+				background-color: #fff;
+				background-clip: padding-box;
+				box-shadow: 0 0px 0px rgba(0, 0, 0, .3);
+			}
+			
+			.mui-card-footer:before,
+			.mui-card-header:after {
+				margin: 0px 15px;
+			}
+			
+			.mui-card-header {
+				color: #00b2c2;
+			}
+			
+			.mui-card-content p {
+				margin-bottom: 0px;
+			}
+			
+			.mui-card-footer:before,
+			.mui-card-header:after {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">机构主页</h1>
+		</header>
+		<div id="muicontent" class="mui-content" style=" padding-top: 65px;">
+			<ul class="mui-table-view mui-table-view-chevron" id="infocenter">
+				<li class="mui-table-view-cell">
+					<a id="modify_orgbaseinfo" class="mui-navigate-right mui-active">
+						<span class="mui-pull-left">基本信息</span>
+					</a>
+				</li>
+			</ul>
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span>机构简介</span> <span id="modify_abstract" class="mui-icon mui-icon-compose"></span>
+				</div>
+				<div id="orgAbstract" class="mui-card-content" style="border-top: 1px dashed #c8c7cc; margin: 0 15px; min-height: 40px; ">
+
+				</div>
+				<!--<div class="mui-card-footer">
+				</div>-->
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/mui.jsonp.js" ></script>
+		<script type="text/javascript" src="../../js/app.js" ></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+
+				$.plusReady(function() {
+
+					var modify_orgbaseinfo = doc.getElementById("modify_orgbaseinfo");
+					var modify_abstract = doc.getElementById("modify_abstract");
+					var orgAbstractHTML = doc.getElementById("orgAbstract");
+					puahData();
+					modify_orgbaseinfo.addEventListener('tap', function(event) {
+						var modifyorgbaseinfo = $.preload({
+							"id": 'modify_orgbaseinfo.html',
+							"url": 'modify_orgbaseinfo.html'
+						});
+						modifyorgbaseinfo.show("pop-in");
+					});
+
+					modify_abstract.addEventListener('tap', function(event) {
+						var modifyorgabstract = $.preload({
+							"id": 'modify_orgabstract.html',
+							"url": 'modify_orgabstract.html'
+						});
+						modifyorgabstract.show("pop-in");
+					});
+
+					window.addEventListener("reload", function(e) {
+						puahData();
+					});
+
+					function puahData() {
+						var weiZSInfodata = app.getWeiZSInfodata();
+						if(weiZSInfodata.weiZSPerResponse.organization.description != null) {
+							var description = weiZSInfodata.weiZSPerResponse.organization.description;
+							orgAbstractHTML.innerHTML = "<pre>" + description + "</pre>";
+						} else {
+							orgAbstractHTML.innerHTML = "<pre>暂无简介</pre>";
+						}
+					}
+				});
+
+			})(mui, document)
+		</script>
+	</body>
+
+</html>

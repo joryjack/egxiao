@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>record_filter</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/filter.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+	</head>
+
+	<body>
+		<div class="mui-content" style=" padding-top: 20px;">
+			<form>
+				<!--<div class="title">寄语</div>
+				<div class="content">
+					每天围着讲台和小儿，在方寸之间打转，它亦美亦善，亦高亦尚。</div>
+				<div class="title">筛选</div>-->
+
+				<div class="mui-row">
+					<div class="mui-col-xs-6">
+						<div class="title">学员</div>
+						<div class="mui-clearfix ">
+							<div class=" mui-input-group  mui-input-row">
+								<input id='student_name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+							</div>
+						</div>
+					</div>
+					<div class="mui-col-xs-6">
+						<div class="title">老师</div>
+						<div class="mui-clearfix ">
+							<div class=" mui-input-group  mui-input-row">
+								<input id='teacher_name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="mui-row">
+					<div class="mui-col-xs-6">
+						<div class="title">课程</div>
+						<div class="mui-clearfix ">
+							<div class=" mui-input-group  mui-input-row">
+								<input id='lesson_name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+							</div>
+						</div>
+					</div>
+					<div class="mui-col-xs-6">
+						<div class="title">科目</div>
+						<div class="mui-clearfix ">
+							<div class=" mui-input-group  mui-input-row">
+								<input id='subject_name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="title">状态</div>
+				<div class="mui-clearfix state" style="padding-left: 15px; ">
+					<span data-code="noleState0001" class="label label-default  mui-pull-left" style=" margin-right: 10px; margin-top: 10px">上课</span>
+					<span data-code="noleState0002" class="label label-default mui-pull-left" style=" margin-right: 10px; margin-top: 10px">旷课</span>
+					<span data-code="noleState0003" class="label label-default mui-pull-left" style=" margin-right: 10px; margin-top: 10px">补课</span>
+					<span data-code="noleState0004" class="label label-default mui-pull-left" style=" margin-right: 10px; margin-top: 10px">请假不扣课</span>
+					<span data-code="noleState0005" class="label label-default mui-pull-left" style=" margin-right: 10px; margin-top: 10px">请假扣课</span>
+				</div>
+				<div class="title">时间</div>
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id="start" data-options='{"type":"date"}' type="text" placeholder="开始" />
+					</div>
+				</div>
+
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id="end" data-options='{"type":"date"}' type="text" placeholder="结束" />
+					</div>
+				</div>
+				<div class="title">上课方式</div>
+				<div class="mui-clearfix style" style="padding-left: 15px; ">
+					<span data-code="1" class="label label-default  mui-pull-left" style=" margin-right: 10px; margin-top: 10px">正式</span>
+					<span data-code="2" class="label label-default mui-pull-left" style=" margin-right: 10px; margin-top: 10px">体验</span>
+				</div>
+				<div id="dataRange" class="mui-hidden">
+					<div class="title">数据范围</div>
+					<div class="mui-clearfix">
+						<div class=" mui-input-group  mui-input-row">
+							<input id='campus_name' type="text" class="mui-input" onfocus="this.blur();" maxlength="8" placeholder="请输入" value="全部校区">
+						</div>
+					</div>
+				</div>
+				</from>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="reset" class="mui-tab-item " href="#">
+				重置
+			</a>
+			<a id="search" class="mui-tab-item" href="#">
+				确定
+			</a>
+		</nav>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/filter/notelesson_filter.js"></script>
+	</body>
+
+</html>

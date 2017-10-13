@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+			.popover-auto {
+				position: fixed;
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				.popover-auto {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+			<a id="rightBar" class="mui-icon  iconfont icon-refresh mui-pull-right" style=" font-size: 1.1em; padding-top: 14px;"></a>
+		</header>
+		<div class="mui-content">
+		</div>
+		<div id="showPhonePopover" class="mui-popover popover-auto ">
+			<ul class="mui-table-view">
+			</ul>
+		</div>
+		<script src="../js/mui.min.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/report/recordtodo_list.js"></script>
+	</body>
+
+</html>

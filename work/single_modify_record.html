@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<style>
+			textarea {
+				border-top-color: #fff;
+				border-bottom-color: #fff;
+			}
+			
+			.correlation {
+				background-color: #fafafa;
+				height: 2.5em;
+				line-height: 2.5em;
+				padding-left: 10px;
+				margin-top: 10px;
+				margin-bottom: 0px;
+			}
+			
+			.correlation i {
+				font-size: 1.2em;
+				padding-right: 10px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			.popover-auto {
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				.popover-auto {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新建跟进记录</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">保存</a>
+			<!--		<a id="rightBarSearch" class="mui-icon   mui-icon  mui-icon-search mui-pull-right"></a>-->
+		</header>
+		<div class="mui-content">
+			<textarea id="recordContent" rows="5" placeholder="请填写跟进记录"></textarea>
+			<p class="correlation">
+				<a id="selectStudent" class="mui-h5  mui-pull-left " style=" width: 100%;"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">跟进学员:</span><span>请选择</span></a>
+			</p>
+			<p class="correlation">
+				<a id="showSalePicker" class="mui-h5  mui-pull-left" style=" width: 50%;">
+					<i class=" mui-icon iconfont icon-sale"></i><span id="showSaleResult" style=" padding-right: 10px;">跟进状态</span>
+				</a>
+				<a id="showStylePicker" class="mui-h5  mui-pull-right mui-text-right" style=" width: 50%;">
+					<i class=" mui-icon iconfont icon-guidepost"></i><span id="showStyleResult" style=" padding-right: 10px;">跟进方式</span></a>
+			</p>
+			<p class="correlation">
+				<a id="showNextTime" class="mui-h5  mui-pull-left" style=" width: 100%;">
+					<i class="mui-icon iconfont icon-time"></i><span style="padding-right: 10px;">下次跟进:</span><span>请选择</span>
+				</a>
+			</p>
+
+		</div>
+
+		<div id="showSalePopover" class="mui-popover popover-auto">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a>跟进中</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>无意向</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div id="showStylePopover" class="mui-popover popover-auto  ">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a>打电话</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>到访</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>发短信</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>微信</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js"></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/single_modify_record.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>日志</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="coding">
+			<p class="coding-title">即将上线</p>
+			<p class="coding-content">小易的攻城狮和射鸡狮们及产品锦鲤正在日夜不停的为您加班,〒▽〒..., </p>
+			<p class="coding-content" >但您的支持会让小易们的动力满满，感动满满吆，即使不眠不休...ヾ(o◕∀◕)ﾉヾ↖(^ω^)↗</p>
+			blur
+		</div>-->
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">记上课</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  iconfont icon-jia mui-pull-right"></a>
+			<a id="rightBarSearch" class="mui-icon   mui-icon  mui-icon-search mui-pull-right"></a>
+		</header>
+		<div class="mui-content  ">
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<h6 class="mui-h6 mui-pull-right">330￥/课时</h6>
+					<div class="mui-media-body">
+						<span>陈刚</span>
+						<p> 2016-09-27 15:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-xiangmu"></i><span style=" padding-right: 10px;">课程:</span><span>高二英语</span> </p>
+						<div class="mui-row" style="padding-top: 10px;">
+							<div class="mui-col-xs-4">
+								<p>消耗</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #47957B;">660</em>￥</p>
+
+							</div>
+							<div class=" mui-col-xs-4">
+								<p>课时</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #FF8C5C; ">2</em> 个</p>
+							</div>
+							<div class=" mui-col-xs-4">
+								<p>科目</p>
+								<p><em style="font-size: 1.2em; font-style: normal; color: #a386f2; ">英语</em> </p>
+							</div>
+						</div>
+						<p>说明:</p>
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">教师:</span><span>欣欣老师</span></p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><span class="label label-success"> 上课</span> </a>
+					<a class=" mui-h6 more"  ><i class=" mui-icon iconfont icon-more " style=" vertical-align: middle;"></i>更多</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<span class="mui-h6 mui-pull-right">3300￥/学期</span>
+					<div class="mui-media-body">
+						<span>金生国</span>
+						<p> 2016-09-25 14:30 </p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-xiangmu"></i><span style=" padding-right: 10px;">课程:</span><span>重庆人教版高二英语秋季班</span></p>
+						<div class="mui-row" style="padding-top: 10px;">
+							<div class="mui-col-xs-6">
+								<p>距结课</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #47957B;">29</em>天</p>
+							</div>
+							<div class=" mui-col-xs-6">
+								<p>科目</p>
+								<p><em style="font-size: 1.2em; font-style: normal; color: #a386f2; ">英语</em> </p>
+							</div>
+						</div>
+						<p>说明:</p>
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">教师:</span><span>阳阳老师</span></p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><span class="label label-danger">旷课</span></a>
+					<a class=" mui-h6"><i class=" mui-icon mui-icon-trash more" style=" font-size: 1.5em;"></i>删除</a>
+				</div>
+			</div>
+
+			<div id="moreaction" class="mui-popover mui-popover-action mui-popover-bottom">
+			
+				<ul class="mui-table-view">
+				
+					<li class="mui-table-view-cell">
+						<a href="#">按班续上课</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">续上课</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">删除</a>
+					</li>
+				</ul>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#forward"><b>取消</b></a>
+					</li>
+				</ul>
+			</div>
+			<!--<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<h6 class="mui-h6 mui-pull-right">350￥/课时</h6>
+					<div class="mui-media-body">
+						<span>马炜</span>
+						<p> 2016-09-27 15:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-xiangmu"></i><span style=" padding-right: 10px;">课程:</span><span>高三数学</span> <span class=" mui-h5 mui-pull-right"></span></p>
+						<div class="mui-row" style="padding-top: 10px;">
+							<div class="mui-col-xs-4">
+								<p>消耗</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #47957B;">700</em>￥</p>
+
+							</div>
+							<div class=" mui-col-xs-4">
+								<p>课时</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #FF8C5C; ">2</em> 个</p>
+							</div>
+							<div class=" mui-col-xs-4">
+								<p>科目</p>
+								<p><em style="font-size: 1.2em; font-style: normal; color: #a386f2; ">数学</em> </p>
+							</div>
+						</div>
+						<p>说明:</p>
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">教师:</span><span>乐乐老师</span></p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><span class="label label-primary"> 补课</span> </a>
+					<a class=" mui-h6"><i class=" mui-icon mui-icon-trash" style=" font-size: 1.5em;"></i>删除</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<h6 class="mui-h6 mui-pull-right">550￥/课时</h6>
+					<div class="mui-media-body">
+						<span>老潘</span>
+						<p> 2016-09-26 15:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-xiangmu"></i><span style=" padding-right: 10px;">课程:</span><span>高三英语</span> <span class=" mui-h5 mui-pull-right"></span></p>
+						<div class="mui-row" style="padding-top: 10px;">
+							<div class="mui-col-xs-4">
+								<p>消耗</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #47957B;">0</em>￥</p>
+
+							</div>
+							<div class=" mui-col-xs-4">
+								<p>课时</p>
+								<p><em style="font-size: 2em; font-style: normal; color: #FF8C5C; ">0</em> 个</p>
+							</div>
+							<div class=" mui-col-xs-4">
+								<p>科目</p>
+								<p><em style="font-size: 1.2em; font-style: normal; color: #a386f2; ">英语</em> </p>
+							</div>
+						</div>
+						<p>说明:</p>
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">教师:</span><span>欢欢老师</span></p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><span class="label label-warning">请假</span> </a>
+					<a class=" mui-h6"><i class=" mui-icon mui-icon-trash" style=" font-size: 1.5em;"></i>删除</a>
+				</div>
+			</div>
+		</div>-->
+			<script src="../js/mui.min.js" charset="UTF-8"></script>
+			<script src="../js/app.js" charset="UTF-8"></script>
+			<script type="text/javascript" charset="UTF-8">
+				(function($, $window, doc) {
+					$.init({
+						swipeBack: true
+					});
+
+					mui('.more').on('tap', function() {
+							mui('#forward').popover('toggle');
+						})
+						//接收rightbar事件
+					$window.addEventListener('navRightPress', function() {
+						showModifyStudent();
+					}, false);
+
+					mui.plusReady(function() {
+
+					});
+
+					function showModifyStudent() {
+						//					pushWebView({
+						//						webType: 'newWebview_Second',
+						//						id: 'work/modify-record-needtem',
+						//						href: 'work/modify-record-needtem.html',
+						//						aniShow: getaniShow(),
+						//						title: "写跟进记录",
+						//						isBars: false,
+						//						barsIcon: '',
+						//						extendOptions: {
+						//							barText: '发送'
+						//						}
+						//					})
+					}
+				})(mui, window, document)
+			</script>
+	</body>
+
+</html>

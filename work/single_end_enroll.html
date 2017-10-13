@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>学员课时结算</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+			
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group {
+				padding-top: 10px;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:after {
+				background-color: #fff;
+			}
+			
+			.mui-input-group .mui-input-row {
+				margin-right: 15px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			h5 {
+				margin: 10px 15px 0px 15px;
+				color: #000000;
+				/*color: #007aff;*/
+			}
+			
+			input {
+				color: #8f8f94;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<header  id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">学员退课</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">提交</a>
+		</header>
+		<div class="mui-content">
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px; ">课程信息</p>
+			<div class="mui-input-group">
+				<h5>课程</h5>
+				<div class="mui-input-row">
+					<p id="lessonName" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">课程名称</p>
+				</div>
+				<div class="mui-row">
+					<div class="mui-col-xs-6">
+						<h5>剩余课时</h5>
+						<div class="mui-input-row ">
+							<input id="lessonyuNum" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="请输入" value="0">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px; ">退课信息(退课时会自动换算成现金)</p>
+			<div class="mui-input-group">
+				<h5>课时数</h5>
+				<div class="mui-input-row">
+					<input id="lesson_number" type="tel" class="mui-input-clear mui-input" maxlength="5" placeholder="请输入要退课时数" onkeypress="return event.keyCode>=48&&event.keyCode<=57">
+				</div>
+				<h5>退课原因 </h5>
+				<div class="mui-input-row">
+					<input id="description" type="text" class="mui-input-clear mui-input" maxlength="35" placeholder="请填写退课原因">
+				</div>
+			</div>
+			<div class="mui-content-padded ">
+				<p style="color:#E66B14 ;">*退课操作流程不可逆，请慎重.</p>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/single_end_enroll.js"></script>
+	
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../libs/cropperjs-master/dist/cropper.min.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: black;
+			}
+			
+			.animate {
+				position: absolute;
+				padding: 0px 15px;
+				left: 0;
+				bottom: 20px;
+				width: 100%;
+				color: #fff;
+				border-color: #fff;
+				display: -moz-box;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content" style="padding-top: 30px;">
+			<img id="image" style="width:100%;" />
+			<div class="animate">
+				<button id="cancel" class="mui-btn mui-btn-warning mui-btn-outlined   mui-pull-left" style="color: #fff;
+				border-color: #fff;">取消</button>
+				<button id="continue" class="mui-btn mui-btn-warning mui-btn-outlined  mui-pull-right" style="color: #fff;
+				border-color: #fff;">确定</button>
+
+			</div>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../libs/cropperjs-master/dist/cropper.min.js"></script>
+		<script>
+			mui.init();
+			var cropper = null;
+			var image = document.getElementById('image');
+			mui.plusReady(function() {
+				var image = document.getElementById('image');
+				if(mui.os.ios) {
+					plus.navigator.setFullscreen(true);
+				}
+				plus.navigator.closeSplashscreen();
+
+				var self = plus.webview.currentWebview();
+				var imgurl = self.imgurl;
+				if(imgurl != "") {
+					image.src = imgurl;
+					initCropper();
+				}
+
+			});
+
+			function initCropper() {
+				cropper = new Cropper(image, {
+					aspectRatio: 1 / 1,
+					dragMode: 'move',
+					rotatable: true,
+					minCropBoxWidth: 200,
+					minCropBoxHeight: 200,
+					minCanvasWidth: 200,
+					minCanvasHeight: 200,
+					minContainerWidth: 200,
+					minContainerHeight: 200,
+					rotatable: true,
+					background: false,
+					movable: false,
+					resizable: false,
+					crop: function(data) {}
+				});
+			}
+			//立即体验按钮点击事件
+			document.getElementById("cancel").addEventListener('tap', function(event) {
+				plus.webview.currentWebview().close();
+			}, false);
+
+			document.getElementById("continue").addEventListener('tap', function(event) {
+				var resImg = cropper.getCroppedCanvas({
+					width: 200,
+					height: 200
+				}).toDataURL();
+				console.log(resImg);
+				var infocenterListwebview = plus.webview.getWebviewById('/account/infocenter.html');
+//				mui.fire(infocenterListwebview, 'cropperImg', {'resImg':resImg});
+				plus.webview.currentWebview().close();
+
+			}, false);
+		</script>
+	</body>
+
+</html>

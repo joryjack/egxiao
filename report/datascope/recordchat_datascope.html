@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #fff;
+			}
+			
+			.mui-table-view-cell h4 {
+				line-height: 21px;
+				font-size: 0.95em;
+				color: #393E42;
+				font-weight: 400;
+			}
+			
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0px;
+			}
+			
+			.label-text {
+				color: #9B9FA5;
+			}
+			
+			.mui-btn-blue.mui-active:enabled,
+			.mui-btn-blue:enabled:active {
+				color: #0062cc;
+				border: 0px solid #0062cc;
+				background-color: transparent;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"><div>数据范围</div></h1>
+			<button id="search" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">确定</button>
+			<button id="reset" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">重置</button>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view ">
+				<li class="mui-table-view-cell">
+					<a id="start" href="javascript:void(0)" class="mui-navigate-right">
+						<span class="label-text">开始时间</span> <span id="record_start" data-options='{"type":"date"}' class=" mui-pull-right " style="padding-right: 20px;"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="end" href="javascript:void(0)" class="mui-navigate-right">
+						<span class="label-text">结束时间</span> <span id="record_end" data-options='{"type":"date"}' class=" mui-pull-right" style="padding-right: 20px;"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/immersed.js"></script>
+		<script type="text/javascript" src="../../js/mui.picker.min.js"></script>
+		<script>
+			(function($, $window, doc) {
+				$.init();
+				$.plusReady(function() {
+
+					var self = plus.webview.currentWebview();
+
+					var start = doc.getElementById("start");
+					var end = doc.getElementById("end");
+
+					var record_start = doc.getElementById("record_start");
+					var record_end = doc.getElementById("record_end");
+
+					var reset = doc.getElementById("reset");
+					var search = doc.getElementById("search");
+
+					//为页面添加事件监听hide
+					self.addEventListener('hide', function() {
+						var searchpar = {
+							record_start: record_start.innerText,
+							record_end: record_end.innerText
+						};
+						console.log(JSON.stringify(searchpar));
+						var recordchatListwebview = plus.webview.getWebviewById('/report/recordchat.html');
+						$.fire(recordchatListwebview, 'search', searchpar);
+					}, false);
+					//开始
+					start.addEventListener('tap', function() {
+						var optionsJson = record_start.getAttribute('data-options') || '{"type":"date"}';
+						var options = JSON.parse(optionsJson);
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							record_start.innerText = rs.text;
+							picker.dispose();
+						});
+					});
+					//结束
+					end.addEventListener('tap', function() {
+						var optionsJson = record_end.getAttribute('data-options') || '{"type":"date"}';
+						var options = JSON.parse(optionsJson);
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							record_end.innerText = rs.text;
+							picker.dispose();
+						});
+					});
+
+					reset.addEventListener('tap', function() {
+						record_start.innerText = "";
+						record_end.innerText = "";
+					});
+
+					search.addEventListener("tap", function() {
+
+						
+						$.back();
+
+					}, false)
+				})
+			})(mui, window, document)
+		</script>
+	</body>
+</html>

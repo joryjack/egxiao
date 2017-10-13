@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>学生单个课程详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+			
+			#rightBarEnd {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav ">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">课程详情</h1>
+			<a id="rightBarEnd" class="mui-icon  mui-icon  mui-pull-right">退课</a>
+
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-header-warning">
+					<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+					<span>课程信息</span>
+
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p><label>课程:</label><span></span></p>
+						<div class="mui-row">
+							<div class=" mui-col-xs-6">
+								<p><label>类型:</label><span id="lessontypename"></span></p>
+							</div>
+							<div class=" mui-col-xs-6">
+								<p><label>总计:</label><span id="lessontotalNum"><em class="fontcolor-primary"  style=" font-style:initial;  ">0</em> </span></p>
+							</div>
+						</div>
+						<div class="mui-row">
+							<div class=" mui-col-xs-6">
+								<p><label>消耗:</label><span id="lessonuseNum"><em class="fontcolor-success"  style=" font-style:initial;  ">0</em> </span></p>
+							</div>
+							<div class=" mui-col-xs-6">
+								<p><label>剩余:</label><span id="lessonyuNum"><em class="fontcolor-danger"  style="   font-style:initial; ">0</em></span></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-header-primary"><i class="mui-icon iconfont icon-huakuai card-header-icon"></i><span>报名记录<i class="card-header-num">0条</i></span><span id="rightBar" class=" mui-icon  iconfont icon-jia" style="font-size: 1.2em;"></span></div>
+				<div class="mui-card-content  enroll">
+					<div class="mui-card-content-inner" style="padding-left: 0px;">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<p></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-header-danger"><i class="mui-icon iconfont icon-huakuai card-header-icon"></i><span>退课记录<i class="card-header-num">0条</i></span></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner" style="padding-left: 0px;">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<p></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js"></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/singlestu_lesson.js"></script>
+	</body>
+
+</html>

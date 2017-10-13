@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>数据看板</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #fff;
+			}
+			
+			.mui-table-view-cell h4 {
+				line-height: 21px;
+				font-size: 0.95em;
+				color: #393E42;
+				font-weight: 400;
+			}
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0px;
+			}
+			
+			.mui-h6 {
+				color: #919AA5;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"><div>数据看板</div></h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				<li class="mui-table-view-cell">
+					<a href="/report/studentchat.html"  class="mui-navigate-right">
+						<h4 class="mui-ellipsis">各校区学员分析</h4>
+						<p class="mui-h6 mui-ellipsis">展示每个校区各状态学员分布情况</p>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="/report/recordchat.html"  class="mui-navigate-right">
+						<h4 class="mui-ellipsis">各校区跟进分析</h4>
+						<p class="mui-h6 mui-ellipsis">展示每个校区对学员跟进情况</p>
+					</a>
+
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="/report/enrollchat.html" class="mui-navigate-right">
+						<h4 class="mui-ellipsis">各校区报名分析</h4>
+						<p class="mui-h6 mui-ellipsis">展示每个校区报名情况</p>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="/report/noteLessonchat.html" class="mui-navigate-right">
+						<h4 class="mui-ellipsis">各校区记上课分析</h4>
+						<p class="mui-h6 mui-ellipsis">展示每个校区记上课情况</p>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js"></script>
+		<script>
+			(function($, $window, doc) {
+				$.init();
+				$.plusReady(function() {
+
+					var self = plus.webview.currentWebview();
+					
+					$('.mui-table-view').on('tap', 'a', function() {
+						var a = this;
+						var href = this.getAttribute('href');
+						if(href != "javascript:;") {
+							$.openWindow({
+								url: href,
+								id: href,
+								preload: true,
+								show: {
+									aniShow: 'pop-in'
+								},
+								styles: {
+									popGesture: 'hide'
+								},
+								waiting: {
+									autoShow: false
+								}
+							});
+
+						} else {
+							$.toast('敬请期待...');
+						}
+					});
+				})
+			})(mui, window, document)
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<style type="text/css">
+		.mui-card-content-inner {
+				padding: 0px 15px;
+			}
+			
+			.mui-card-content-lastp {
+				margin-bottom: 0px;
+			}
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				padding: 0px 15px;
+			}
+			
+			.oa-contact-avatar {
+				width: 65px;
+			}
+			
+			.oa-contact-avatar img {
+				width: 50px;
+				border-radius: 50%;
+			}
+			
+			.oa-contact-content {
+				width: 100%;
+			}
+			
+			.oa-contact-name {
+				margin-right: 10px;
+			}
+			
+			.oa-contact-name,
+			oa-contact-position {
+				float: left;
+			}
+			
+			.mui-card-footer:before,
+			.mui-card-header:after {
+				background-color: #fff;
+			}
+			
+			.mui-card-header {
+				color: #18BBF4;
+			}
+			
+			.card-header-num {
+				font-style: normal;
+				margin-left: 10px;
+				padding-left: 10px;
+				color: #8f8f94;
+				border-left: 1px solid #F5F5F5;
+			}
+			
+			.card-header-nav {
+				color: #8f8f94;
+				font-size: 0.8em;
+			}
+			
+			.card-header-icon {
+				position: absolute;
+				left: -9px;
+				top:8px;
+				vertical-align: middle;
+			}
+		</style>
+
+	</head>
+
+	<body>
+			<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">学员</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">编辑</a>
+		</header>
+		<div class="mui-content">
+			<div class="oa-contact-cell mui-table ">
+				<div class="oa-contact-avatar mui-table-cell">
+					<img src="../images/50x50.png" />
+				</div>
+				<div class="oa-contact-content mui-table-cell">
+					<div class="mui-clearfix">
+						<h4 class="oa-contact-name">陈刚</h4>
+
+					</div>
+					<p class="oa-contact-email mui-h6">
+						<span>跟进：2016-09-25 17:25</span>
+
+					</p>
+				</div>
+				<div class="oa-contact-avatar mui-table-cell">
+					<span class="mui-icon  mui-icon-phone mui-pull-right " style="color:#55BD9A; font-size:2em;"></span>
+				</div>
+
+			</div>
+			<div class="oa-contact-cell mui-table ">
+				<p> <span class="oa-contact-position mui-h6 " style="color:#7CCA4E ">已报名</span></p>
+				<p><span style="padding-right: 10px;">咨询师</span><span>肖雅</span></p>
+				<p><span style="padding-right: 10px;">学管师</span><span>田乐</span></p>
+				<p><span style="padding-right: 10px;">备注</span><span>无</span></p>
+
+			</div>
+
+			<div class="mui-card">
+				<div class="mui-card-header "><i class="mui-icon iconfont icon-huakuai card-header-icon"></i><span>跟进记录  <i class="card-header-num">0个</i> </span><span class=" mui-icon mui-icon-forward card-header-nav"></span></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						
+						<p><span class="span-left">田乐</span><span style="padding-left: 10px;">2016年09月26日 16:20</span></p>
+						<P>妈妈反应学习兴趣提高了，之前经常玩电动，现在喜欢读书了</P>
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header "><i class="mui-icon iconfont icon-huakuai card-header-icon"></i><span>上课记录  <i class="card-header-num">10次</i> </span><span class=" mui-icon mui-icon-forward card-header-nav"></span></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p> <span style=" padding-right: 10px; ">课程</span><span>初二物理</span></p>
+						<p> <span style=" padding-right: 10px; ">教师</span><span>小王老师</span></p>
+						<p> <span style=" padding-right: 10px; ">时间</span><span>2016-09-26 16:00</span></p>
+					
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header "><i class="mui-icon iconfont icon-huakuai card-header-icon"></i><span>报名  <i class="card-header-num">3次</i> </span><span class=" mui-icon mui-icon-forward card-header-nav"></span></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner" style="padding-left: 0px;">
+						<ul class="mui-table-view">
+<li class="mui-table-view-cell"><p  class="mui-navigate-right">' + lesson[i].name + '</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+			mui.plusReady(function() {	
+			});
+	</body>
+</html>

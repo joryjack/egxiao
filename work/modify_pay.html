@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+			
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group {
+				padding-top: 10px;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:after {
+				background-color: #fff;
+			}
+			
+			.mui-input-group .mui-input-row {
+				margin-right: 15px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			h5 {
+				margin: 10px 15px 0px 15px;
+				color: #000000;
+				/*color: #007aff;*/
+			}
+			
+			input {
+				color: #8f8f94;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">缴费</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">提交</a>
+		</header>
+		<div class="mui-content">
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px;">基本信息</p>
+			<div class="mui-input-group">
+				<h5>学员名称</h5>
+				<div class="mui-input-row">
+					<p id="selectStudent" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+			</div>
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px; ">课程信息</p>
+			<div class="mui-input-group">
+				<h5>课程</h5>
+				<div class="mui-input-row">
+					<p id="selectlesson" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+				<div class="mui-row">
+					<div class="mui-col-xs-4">
+						<h5>单价</h5>
+						<div class="mui-input-row">
+							<input id="lesson_price" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="请输入" value="0">
+						</div>
+					</div>
+					<div class="mui-col-xs-4">
+						<h5>课程类型</h5>
+						<div class="mui-input-row ">
+							<input id="lesson_type" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="">
+						</div>
+					</div>
+					<div class="mui-col-xs-4 mui-hidden" id="lesson_num_div">
+						<h5>课时总数</h5>
+						<div class="mui-input-row ">
+							<input id="lesson_num" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px; ">报名信息</p>
+			<div class="mui-input-group">
+				<h5>数量</h5>
+				<div class="mui-input-row">
+					<input id="lesson_number" type="number" class="mui-input-clear mui-input" maxlength="5" placeholder="请输入" onkeypress="return event.keyCode>=48&&event.keyCode<=57">
+				</div>
+
+				<h5>应缴(元)</h5>
+				<div class="mui-input-row">
+					<input id="subtotal" type="text" class="mui-input " onfocus="this.blur();" maxlength="15" placeholder="请输入" value="0">
+				</div>
+				<h5>优惠金额(元)</h5>
+				<div class="mui-input-row">
+					<input id="discount" type="number" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入" onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+				</div>
+				<h5>实缴(元)</h5>
+				<div class="mui-input-row">
+					<input id="payment" type="number" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入" onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+				</div>
+				<h5>报名时间</h5>
+				<div class="mui-input-row">
+					<input id="payDate" data-options='{}' type="text" placeholder="选择日期时间">
+				</div>
+				<h5>备注 </h5>
+				<div class="mui-input-row">
+					<input id="description" type="text" class="mui-input-clear mui-input" maxlength="35" placeholder="如:优惠原因等">
+				</div>
+			</div>
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px; ">其他信息</p>
+			<div class="mui-input-group">
+				<h5>教务老师 </h5>
+				<div class="mui-input-row">
+					<p id="selectdean" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js"></script>
+			<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/modify_pay.js"></script>
+	</body>
+
+</html>

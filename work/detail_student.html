@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				padding: 0px 15px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			.font-badge {
+				font-size: 10px;
+				line-height: 1.4;
+				position: absolute;
+				top: -2px;
+			}
+			
+			.sourcename {
+				padding-left: 25px;
+			}
+			
+			#popover ,#showPhonePopover{
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				#popover,#showPhonePopover {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">学员档案卡</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">编辑</a>
+		</header>
+		<div class="mui-content" style=" ">
+			<div class="oa-contact-cell mui-table " style="padding-top: 15px;">
+				<div class="oa-contact-avatar mui-table-cell">
+					<img src="../images/50x50s.png" />
+				</div>
+				<div class="oa-contact-content mui-table-cell">
+					<div class="mui-clearfix">
+						<h4 class="oa-contact-name"></h4>
+
+					</div>
+					<p class="oa-contact-email mui-h6">
+						<span>跟进：暂无</span>
+
+					</p>
+				</div>
+				<div id="studentphoneBtn" class="oa-contact-avatar mui-table-cell ">
+					<span class="mui-icon  mui-icon-phone mui-pull-right student-phone "></span>
+				</div>
+
+			</div>
+			<div class="oa-contact-cell mui-table">
+				<div class=" detailStuElement">
+					<div>
+						<div class="mui-row">
+							<div id="studentsate" class="mui-col-xs-4">
+								<p>加载中...</p>
+							</div>
+							<div id="studentsource" class="mui-col-xs-4">
+
+							</div>
+							<div id="studentsex" class="mui-col-xs-4">
+
+							</div>
+						</div>
+					</div>
+					<!--<p><span style="padding-right: 10px;">咨询师</span> </p>
+					<p><span style="padding-right: 10px;">学管师</span> </p>-->
+					<div class="mui-row">
+						<div class="mui-col-xs-3">
+							<p><span>咨询师</span></p>
+						</div>
+						<div id="sales" class="mui-col-xs-3"></div>
+						<div id="sales_union" class="mui-col-xs-6">
+
+						</div>
+					</div>
+					<div class="mui-row">
+						<div class="mui-col-xs-3">
+							<p><span>教务老师</span></p>
+						</div>
+						<div id="dean" class="mui-col-xs-3"></div>
+						<div id="dean_union" class="mui-col-xs-6 "></div>
+					</div>
+
+				</div>
+				<!--<div class="mui-col-xs-6">
+							 <div style="text-align:right; padding-top: 28px;"><i class="mui-icon  iconfont  icon-qianbao" style=" color: #ef6678; font-size: 2em;"></i></div>
+					</div>-->
+
+				<p><span id="description" style="padding-right: 10px;">备注:无</span></p>
+			</div>
+			<div class="mui-scroll-wrapper" style="top:290px; background-color: #f8f8f8;">
+				<div class="mui-scroll">
+					<div class="mui-card">
+						<div class="mui-card-header mui-card-header-primary">
+							<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+							<span>跟进记录  <i class="card-header-num">0个</i></span>
+							<span id="showRecordDetail" class="mui-icon mui-icon-forward  " style="font-size: 1.2em;"></span>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-card-content-inner">
+								<p>暂无</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="mui-card">
+						<div class="mui-card-header  mui-card-header-warning">
+							<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+							<span>报名课程   <i class="card-header-num">0次</i> </span>
+							<span id="addNewLesson" class=" mui-icon iconfont icon-jia" style="font-size: 1.2em;"></span>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-card-content-inner" style="padding-left: 0px;">
+								<ul class="mui-table-view  enrollLesson">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header  mui-card-header-silver">
+							<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+							<span>所在班级   </span>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-card-content-inner" style="padding-left: 0px;">
+								<ul class="mui-table-view  simpleMclass">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header  mui-card-header-success">
+							<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+							<span>上课记录  <i class="card-header-num">0次</i> </span>
+							<span id="showNoteLessonDetail" class=" mui-icon mui-icon-forward " style="font-size: 1.2em;"></span>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-card-content-inner">
+								<p>暂无</p>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header  mui-card-header-default">
+							<i class="mui-icon iconfont icon-huakuai card-header-icon"></i>
+							<span>财务信息</span>
+							<span id="showStudentCashFlowDetail" class=" mui-icon mui-icon-forward" style="font-size: 1.2em;"></span>
+						</div>
+						<div class="mui-card-content">
+							<div class="mui-card-content-inner" style="padding-left: 0px;">
+								<ul class="mui-table-view ">
+									<li class="mui-table-view-cell">
+										<p> <i class="mui-icon iconfont icon-dian" style="color: #86D560; position: absolute;"></i><span class="sourcename">缴费</span> <span class="mui-pull-right" id="payment">0￥</span></p>
+									</li>
+
+									<li class="mui-table-view-cell">
+										<p>
+											<i class="mui-icon iconfont icon-dian" style="color:#FFCC67; position: absolute;"></i><span class="sourcename">余额</span> <span class="mui-pull-right" id="balance">0￥</span></p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p>
+											<i class="mui-icon iconfont icon-dian" style="color:#FCA254 ; position: absolute;"></i><span class="sourcename">优惠</span> <span class="mui-pull-right" id="cash_coupon_total">0￥</span> </p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p>
+											<i class="mui-icon iconfont icon-dian" style="color:#53D1C5 ; position: absolute;"></i><span class="sourcename">剩余优惠</span> <span class="mui-pull-right" id="cash_coupon">0￥</span> </p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p>
+											<i class="mui-icon iconfont icon-dian" style="color:#FF999A; position: absolute;"></i><span class="sourcename">欠费</span> <span class="mui-pull-right" id="arrears">0￥</span> </p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p>
+											<i class="mui-icon iconfont icon-dian" style="color:#AF89D6; position: absolute; "></i><span class="sourcename">退费</span> <span class="mui-pull-right" id="refund">0￥</span> </p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="popover" class="mui-popover">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a>已报名</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a>已结课</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a>已流失</a>
+					</li>
+
+				</ul>
+			</div>
+			<div id="showPhonePopover" class="mui-popover popover-auto ">
+				<ul class="mui-table-view">
+				</ul>
+			</div>
+			<script src="../js/mui.min.js"></script>
+			<script type="text/javascript" src="../js/immersed.js"></script>
+			<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+			<script type="text/javascript" src="../js/app.js"></script>
+			<script type="text/javascript" src="../js/work/detail_student.js"></script>
+	</body>
+
+</html>

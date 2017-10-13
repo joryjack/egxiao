@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+    <style type="text/css">
+    html,
+			body,
+			.mui-content {
+				background-color: #efeff4;
+			}
+    	
+    </style>
+</head>
+<body>
+	<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新消息提醒</h1>
+		</header>
+	<div class="mui-content">
+		<ul id="allmsg" class="mui-table-view">
+			<li class="mui-table-view-cell">
+				接收新消息
+				<div id="get-message" class="mui-switch mui-active ">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				接收通知
+				<div id="get-push" class="mui-switch mui-active">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+		</ul>
+		<ul id="messagetype" class="mui-table-view">
+			<li class="mui-table-view-cell">
+				声音
+				<div id="get-voice" class="mui-switch mui-active">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell">
+				震动
+				<div id="get-shark" class="mui-switch mui-active">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+		</ul>
+		
+		
+	</div>
+	
+	<script src="../js/mui.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script type="text/javascript" charset="UTF-8">
+		mui.init({
+			swipeBack:true
+		});
+		mui.plusReady(function(){
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,3299 @@
+{
+  "personnel/enterpriseRegisterpro.html": {
+    "href": "personnel/enterpriseRegisterpro.html",
+    "resources": [
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/own.css",
+      "js/mui.min.js",
+      "js/own.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "guide/guide.html": {
+    "href": "guide/guide.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "images/guide_student.png",
+      "images/guide_enroll.png",
+      "images/guide_notelesson.png",
+      "images/guide_tiyan.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "template-main-second.html": {
+    "href": "template-main-second.html",
+    "resources": [
+      "css/iconfont.css",
+      "css/own.css",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "template-main-first.html": {
+    "href": "template-main-first.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/own.css",
+      "css/iconfont.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "template-main-third.html": {
+    "href": "template-main-third.html",
+    "resources": [
+      "css/iconfont.css",
+      "css/own.css",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "template.html": {
+    "href": "template.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/own.css",
+      "css/iconfont.css",
+      "js/mui.min.js",
+      "js/own.js"
+    ],
+    "refer": [
+      "template-main-second.html",
+      "template-main-first.html",
+      "template-main-third.html",
+      "work/rizhi-needtem.html",
+      "work/createtask-needtem.html",
+      "work/qiandao-new-needtem.html",
+      "work/qingjia-needtem.html",
+      "work/baifang-needtem.html",
+      "work/kehu-needtem.html",
+      "work/creategonggao-needtem.html",
+      "personnel/department.html",
+      "event/chart-needtem.html",
+      "event/search-needtem.html",
+      "work/kehu-detail-needtem.html",
+      "event/orders-needtem.html",
+      "personnel/department-needtem.html",
+      "event/shenpi-needtem.html",
+      "event/knitmesh-needtem.html",
+      "event/gongzuoquan-needtem.html",
+      "event/gongzuotixing-needtem.html",
+      "work/clander-new-needtem.html",
+      "event/xitongtixing-needtem.html",
+      "event/gonggao-needtem.html",
+      "event/gongzuotixing-detail-needtem.html",
+      "personnel/departmentDetail-needtem.html",
+      "personnel/createpeople-needtem.html",
+      "work/notice-create-needtem.html",
+      "mine/messsage-setting-needtem.html",
+      "mine/setting-needtem.html",
+      "mine/about-knitmesh-needtem.html",
+      "mine/setting.html",
+      "mine/infocenter.html",
+      "mine/infocenter-needtem.html",
+      "mine/contact-needtem.html",
+      "mine/about-egxiao-needtem.html",
+      "account/setting-needtem.html",
+      "account/about-egxiao-needtem.html",
+      "account/contact-needtem.html",
+      "account/infocenter-needtem.html",
+      "account/messsage-setting-needtem.html",
+      "work/student-needtem.html",
+      "work/modify-student-needtem.html",
+      "work/detail-student-needtem.html",
+      "work/record-needtem.html",
+      "work/modify-record-needtem.html",
+      "work/select-student-needtem.html",
+      "work/enroll-needtem.html",
+      "work/class-needtem.html",
+      "work/pay-needtem.html",
+      "work/notelesson-needtem.html",
+      "manage/people-needtem.html",
+      "manage/personnel-needtem.html",
+      "work/create-notice-needtem.html",
+      "manage/lesson-needtem.html",
+      "manage/create-notice-needtem.html",
+      "manage/modify-personnel-needtem.html",
+      "manage/subject_needtem.html",
+      "manage/modify-subject-needtem.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/own.css",
+      "css/iconfont.css",
+      "js/mui.min.js",
+      "fonts/iconfont.ttf",
+      "barItem/barEvent.html",
+      "fonts/mui-icons-extra.ttf",
+      "fonts/mui.ttf",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "personnel/enterpriseRegisterpro.html",
+      "guide/guide.html",
+      "template.html",
+      "barItem/barMine.html",
+      "barItem/barEvent.html",
+      "barItem/barContact.html",
+      "barItem/barCustomer.html",
+      "barItem/barProj.html",
+      "login/login-F.html"
+    ],
+    "priority": 0
+  },
+  "barItem/barEvent.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "images/50x50.png",
+      "images/ceo.png"
+    ],
+    "refer": []
+  },
+  "barItem/barMine.html": {
+    "resources": [
+      "js/ajax.js",
+      "js/localStorage.js",
+      "img/3.jpg",
+      "js/md5.js",
+      "fonts/mui.ttf",
+      "js/own.js",
+      "fonts/iconfont.ttf",
+      "css/own.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "img/zx.png",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "/mine/setting.html",
+      "/mine/infocenter.html",
+      "images/zx.png"
+    ],
+    "refer": [
+      "/mine/setting.html",
+      "/mine/infocenter.html"
+    ]
+  },
+  "work/createtask-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/qiandao-new-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "work/qiandaomap.html"
+    ]
+  },
+  "barItem/barContact.html": {
+    "resources": [
+      "js/mui.indexedlist.js",
+      "js/own.js",
+      "css/mui.indexedlist.css",
+      "css/own.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "barItem/barCustomer.html": {
+    "resources": [
+      "css/mui.indexedlist.css",
+      "fonts/mui.ttf",
+      "js/own.js"
+    ],
+    "refer": []
+  },
+  "barItem/barProj.html": {
+    "resources": [
+      "img/workBannerBack.png",
+      "js/own.js",
+      "fonts/mui.ttf",
+      "css/own.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "images/workBannerBack.png"
+    ],
+    "refer": []
+  },
+  "work/qingjia-needtem.html": {
+    "resources": [
+      "js/wl_Calendar.js",
+      "js/mui.poppicker.js",
+      "js/mui.listpicker.js",
+      "css/mui.listpicker.css",
+      "css/mui.poppicker.css",
+      "fonts/mui.ttf",
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/kehu-needtem.html": {
+    "resources": [
+      "img/iconfont-dingwei.png",
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/50x50.png",
+      "fonts/iconfont.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css"
+    ],
+    "refer": []
+  },
+  "event/chart-needtem.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "libs/echarts-all.js"
+    ],
+    "refer": []
+  },
+  "event/search-needtem.html": {
+    "resources": [
+      "js/own.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "work/creategonggao-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "event/orders-needtem.html": {
+    "resources": [
+      "js/own.js",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "personnel/department-needtem.html": {
+    "resources": [
+      "fonts/iconfont.ttf",
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "event/shenpi-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "img/weitongguo.png",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "img/yitongguo.png",
+      "img/weishenpi.png",
+      "images/weishenpi.png",
+      "images/weitongguo.png",
+      "images/yitongguo.png"
+    ],
+    "refer": [
+      "event/webview_Alert.html"
+    ]
+  },
+  "event/knitmesh-needtem.html": {
+    "resources": [
+      "img/NF~QPSIU7KAU@(TA75]MAQE.jpg",
+      "img/3.jpg"
+    ],
+    "refer": []
+  },
+  "event/gongzuoquan-needtem.html": {
+    "resources": [
+      "img/bg.jpeg",
+      "fonts/iconfont.ttf",
+      "img/logo.png",
+      "img/jump.gif",
+      "img/3.jpg"
+    ],
+    "refer": []
+  },
+  "work/baifang-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/rizhi-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "personnel/departmentDetail-needtem.html": {
+    "resources": [
+      "img/3.jpg"
+    ],
+    "refer": []
+  },
+  "event/webview_Alert.html": {
+    "resources": [
+      "js/common.js",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/notice-create-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "mine/messsage-setting-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "css/iconfont.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "mine/setting-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "mine/infocenter.html": {
+    "resources": [
+      "img/zx.png",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "mine/infocenter-needtem.html": {
+    "resources": [
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "img/zx.png",
+      "css/mui.min.css",
+      "images/zx.png"
+    ],
+    "refer": []
+  },
+  "mine/contact-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "css/mui.indexedlist.css",
+      "js/mui.indexedlist.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "img/50x50.png",
+      "css/mui.min.css",
+      "images/50x50.png"
+    ],
+    "refer": []
+  },
+  "mine/about-egxiao-needtem.html": {
+    "refer": [
+      "guide/guide.html",
+      "mine/feedback.html"
+    ],
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "mine/feedback.html"
+    ]
+  },
+  "mine/feedback.html": {
+    "resources": [
+      "css/feedback.css",
+      "js/feedback.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "login/login-F.html": {
+    "resources": [
+      "login/login.html"
+    ],
+    "refer": [
+      "login/login.html"
+    ]
+  },
+  "login/login.html": {
+    "resources": [
+      "js/ajax.js",
+      "js/localStorage.js",
+      "js/md5.js",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "main.html": {
+    "resources": [
+      "fonts/mui-icons-extra.ttf",
+      "css/own.css",
+      "barItem/barEvent.html",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/icons-extra.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "barItem/barProj.html",
+      "barItem/barSchLetter.html",
+      "fonts/iconfont.ttf",
+      "css/app.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "barItem/barMine.html",
+      "barItem/barEvent.html",
+      "barItem/barContact.html",
+      "barItem/barCustomer.html",
+      "barItem/barProj.html",
+      "template.html",
+      "barItem/barAccount.html",
+      "barItem/barSchLetter.html",
+      "barItem/barWork.html",
+      "guide/guide.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/mui.enterfocus.js",
+      "fonts/mui.ttf",
+      "css/feedback.css",
+      "css/mui.css",
+      "js/mui.jsonp.js",
+      "js/tool/base64.js",
+      "js/common.js",
+      "js/immersed.js",
+      "css/common.css"
+    ],
+    "refer": [
+      "main.html",
+      "login/reg.html",
+      "login/register.html",
+      "login/select-organization.html",
+      "login/forget_password.html",
+      "template.html",
+      "login/activate_account.html",
+      "guide/guide.html",
+      "barItem/barAccount.html",
+      "barItem/barWork.html"
+    ]
+  },
+  "barItem/barAccount.html": {
+    "resources": [
+      "js/own.js",
+      "fonts/iconfont.ttf",
+      "images/zx.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/app.js",
+      "js/config.js",
+      "js/mui.jsonp.js",
+      "js/tool/base64.js",
+      "css/app.css",
+      "js/barItem/barAccount.js",
+      "images/50x50t.png"
+    ],
+    "refer": [
+      "account/setting-needtem.html",
+      "account/contact-needtem.html",
+      "account/infocenter-needtem.html",
+      "account/contact.html",
+      "account/modify_password.html",
+      "account/infocenter.html"
+    ]
+  },
+  "account/setting-needtem.html": {
+    "resources": [
+      "js/app.js",
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/app.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "login.html",
+      "account/messsage-setting-needtem.html",
+      "account/about-egxiao-needtem.html"
+    ]
+  },
+  "account/about-egxiao-needtem.html": {
+    "resources": [
+      "js/app.js",
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/app.css",
+      "account/feedback.html",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "account/feedback.html",
+      "guide/guide.html"
+    ]
+  },
+  "account/contact-needtem.html": {
+    "resources": [
+      "images/50x50.png",
+      "fonts/mui.ttf",
+      "css/mui.indexedlist.css",
+      "js/mui.indexedlist.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "account/feedback.html": {
+    "resources": [
+      "css/feedback.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/feedback.js",
+      "account/about-egxiao-needtem.html",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "account/about-egxiao-needtem.html"
+    ]
+  },
+  "account/messsage-setting-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "account/infocenter-needtem.html": {
+    "resources": [
+      "images/zx.png",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/app.js",
+      "css/app.css",
+      "js/mui.jsonp.js",
+      "css/common.css",
+      "js/immersed.js",
+      "images/50x50t.png"
+    ],
+    "refer": [
+      "account/setsex.html"
+    ]
+  },
+  "work/student-needtem.html": {
+    "resources": [
+      "images/50x50.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/mui.indexedlist.css",
+      "js/mui.indexedlist.js",
+      "js/own.js",
+      "js/app.js",
+      "fonts/iconfont.ttf",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "work/modify-student-needtem.html": {
+    "resources": [
+      "js/mui.poppicker.js",
+      "css/mui.poppicker.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.listpicker.js",
+      "css/mui.listpicker.css",
+      "work/modify-record-needtem.html"
+    ],
+    "refer": [
+      "work/modify-record-needtem.html"
+    ]
+  },
+  "work/detail-student-needtem.html": {
+    "resources": [
+      "images/50x50.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "work/modify-student-needtem.html",
+      "work/modify-record-needtem.html"
+    ],
+    "refer": [
+      "work/modify-student-needtem.html",
+      "work/modify-record-needtem.html"
+    ]
+  },
+  "work/record-needtem.html": {
+    "resources": [
+      "images/50x50.png",
+      "fonts/mui-icons-extra.ttf",
+      "js/own.js",
+      "css/icons-extra.css",
+      "css/own.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "work/modify-record-needtem.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/mui.poppicker.js",
+      "js/mui.listpicker.js",
+      "css/mui.listpicker.css",
+      "css/mui.poppicker.css",
+      "js/own.js",
+      "fonts/mui.ttf",
+      "work/modify-student-needtem.html",
+      "js/app.js"
+    ],
+    "refer": [
+      "work/modify-student-needtem.html"
+    ]
+  },
+  "work/clander-new-needtem.html": {
+    "resources": [
+      "work/modify-student-needtem.html"
+    ],
+    "refer": [
+      "work/modify-student-needtem.html"
+    ]
+  },
+  "work/select-student-needtem.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/own.js",
+      "images/50x50.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "work/modify-record-needtem.html",
+      "css/mui.indexedlist.css"
+    ],
+    "refer": [
+      "work/modify-record-needtem.html"
+    ]
+  },
+  "work/enroll-needtem.html": {
+    "resources": [
+      "images/50x50.png",
+      "fonts/mui-icons-extra.ttf",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/icons-extra.css"
+    ],
+    "refer": []
+  },
+  "work/class-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "work/pay-needtem.html": {
+    "resources": [
+      "fonts/mui-icons-extra.ttf",
+      "js/own.js",
+      "images/50x50.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/icons-extra.css",
+      "js/app.js",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "work/notelesson-needtem.html": {
+    "resources": [
+      "fonts/mui-icons-extra.ttf",
+      "css/own.css",
+      "js/own.js",
+      "images/50x50.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/icons-extra.css",
+      "js/app.js",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "manage/people-needtem.html": {
+    "resources": [
+      "images/50x50.png"
+    ],
+    "refer": []
+  },
+  "manage/personnel-needtem.html": {
+    "resources": [
+      "images/50x50.png",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/mui.indexedlist.css",
+      "js/app.js",
+      "css/app.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "work/create-notice-needtem.html": {
+    "resources": [
+      "css/own.css",
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "manage/lesson-needtem.html": {
+    "resources": [
+      "js/own.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "manage/modify-personnel-needtem.html": {
+    "resources": [
+      "js/mui.poppicker.js",
+      "js/mui.listpicker.js",
+      "css/mui.listpicker.css",
+      "css/mui.poppicker.css",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "manage/create-notice-needtem.html": {
+    "resources": [
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "barItem/barSchLetter.html": {
+    "resources": [
+      "js/own.js",
+      "images/50x50.png",
+      "images/ceo.png",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "js/config.js",
+      "css/own.css",
+      "js/mui.jsonp.js",
+      "js/tool/base64.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/app.css",
+      "/report/recordtodo.html"
+    ],
+    "refer": [
+      "im/kefu_main.html",
+      "/report/enrolmentBrief.html",
+      "/im/kefu_main.html",
+      "report/enrolmentBrief.html",
+      "report/lessonBrief.html",
+      "report/recordtodo.html",
+      "/report/recordtodo.html"
+    ]
+  },
+  "barItem/barWork.html": {
+    "resources": [
+      "js/own.js",
+      "images/workBannerBack.png",
+      "css/own.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/app.js",
+      "js/mui.min.js",
+      "fonts/iconfont.ttf",
+      "js/tool/base64.js",
+      "js/config.js",
+      "js/mui.jsonp.js",
+      "js/barItem/barWork.js",
+      "/work/student-needtem.html",
+      "work/student-needtem.html",
+      "css/app.css",
+      "images/workbannerBack.png"
+    ],
+    "refer": [
+      "work/student-needtem.html",
+      "work/record-needtem.html",
+      "work/pay-needtem.html",
+      "work/class-needtem.html",
+      "manage/lesson-needtem.html",
+      "manage/personnel-needtem.html",
+      "work/notelesson-needtem.html",
+      "manage/subject_needtem.html",
+      "manage/subject-needtem.html",
+      "manage/subject_list.html",
+      "manage/campus_list.html",
+      "manage/pullrefresh_main.html",
+      "manage/campus_main.html",
+      "manage/lesson_main.html",
+      "manage/personnel_main.html",
+      "work/student_main.html",
+      "work/record_main.html",
+      "work/pay_main.html",
+      "work/class_main.html",
+      "work/notelesson_main.html",
+      "report/source.html",
+      "report/state.html",
+      "report/consume.html",
+      "report/finance.html",
+      "login.html",
+      "work/weizs/weizs.html",
+      "work/student_with_tab.html",
+      "report/datakanban.html"
+    ]
+  },
+  "login/reg.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/app.js",
+      "login/reg.html",
+      "js/login/register.js"
+    ],
+    "refer": [
+      "login/reg.html"
+    ]
+  },
+  "login/register.html": {
+    "resources": [
+      "js/login/register.js",
+      "js/app.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.jsonp.js",
+      "css/app.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "login/createOrg.html"
+    ]
+  },
+  "login/createOrg.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/login/createorg.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/tool/base64.js",
+      "css/app.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "login.html",
+      "login/createOrg.html",
+      "login/register.html"
+    ]
+  },
+  "login/select-organization.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/app.js",
+      "css/app.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "main.html",
+      "login/forget_password.html"
+    ]
+  },
+  "login/forget_password.html": {
+    "resources": [
+      "js/forget_password.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/login/forget_password.js",
+      "css/app.css"
+    ],
+    "refer": [
+      "login/select-user-organization.html",
+      "login/reset_password.html"
+    ]
+  },
+  "login/select-user-organization.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/login/select-user-organization.js",
+      "css/app.css"
+    ],
+    "refer": [
+      "login/reset_password.html"
+    ]
+  },
+  "login/reset_password.html": {
+    "resources": [
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/login/reset_password.js",
+      "css/app.css"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "login/activate_account.html": {
+    "resources": [
+      "js/login/activate_account.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/app.css"
+    ],
+    "refer": [
+      "login/set_password.html",
+      "login/select-activate-organization.html"
+    ]
+  },
+  "manage/subject_needtem.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/app.css",
+      "js/manage/subject.js"
+    ],
+    "refer": [
+      "manage/modify-subject.html"
+    ]
+  },
+  "manage/modify-subject-needtem.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "manage/modify-subject-needtem.html"
+    ],
+    "refer": [
+      "manage/subject_needtem.html",
+      "manage/modify-subject-needtem.html"
+    ]
+  },
+  "manage/modify-subject.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "js/manage/modify-subject.js",
+      "js/manage/modify_lessson.js",
+      "js/manage/modify_subject.js"
+    ],
+    "refer": [
+      "manage/subject_list.html"
+    ]
+  },
+  "manage/subject-needtem.html": {
+    "resources": [
+      "js/manage/subject.js"
+    ],
+    "refer": []
+  },
+  "manage/subject_list.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "js/manage/subject.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/modify-subject.html"
+    ]
+  },
+  "manage/campus_list.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/manage/campus_list.js",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "manage/modify_campus.html"
+    ]
+  },
+  "manage/pullrefresh_main.html": {
+    "resources": [
+      "manage/campus_list.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/app.css"
+    ],
+    "refer": [
+      "manage/campus_list.html"
+    ]
+  },
+  "manage/campus_main.html": {
+    "resources": [
+      "manage/campus_list.html",
+      "fonts/iconfont.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/campus_list.html",
+      "manage/modify_campus.html"
+    ]
+  },
+  "manage/modify_campus.html": {
+    "resources": [
+      "js/manage/modify-campus.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/campus_list.html"
+    ]
+  },
+  "manage/lesson_main.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "manage/lesson_list.html",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js",
+      "js/filter/common.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "manage/lesson_list.html",
+      "manage/modify_lesson.html",
+      "filter/lesson_filter.html"
+    ]
+  },
+  "manage/lesson_list.html": {
+    "resources": [
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/manage/campus_list.js",
+      "js/mui.min.js",
+      "js/manage/lesson_list.js"
+    ],
+    "refer": [
+      "manage/modify_lesson.html"
+    ]
+  },
+  "manage/modify_lesson.html": {
+    "resources": [
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/manage/modify_lessson.js",
+      "js/mui.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/intput.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/lesson_list.html"
+    ]
+  },
+  "manage/personnel_main.html": {
+    "resources": [
+      "manage/personnel_list.html",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "css/dropdowndiv.css",
+      "js/filter/common.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/personnel_list.html",
+      "manage/modify_personnel.html",
+      "filter/student_filter.html",
+      "filter/personnel_filter.html"
+    ]
+  },
+  "manage/personnel_list.html": {
+    "resources": [
+      "js/manage/personnel_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "images/50x50.png",
+      "images/50x50t.png"
+    ],
+    "refer": [
+      "manage/modify_personnel.html"
+    ]
+  },
+  "manage/modify_personnel.html": {
+    "resources": [
+      "js/mui.poppicker.js",
+      "js/mui.listpicker.js",
+      "css/mui.listpicker.css",
+      "css/mui.poppicker.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/intput.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/manage/modify_personnel.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/select_personnel_main.html",
+      "manage/select_campus_main.html",
+      "manage/select_campus_list.html",
+      "manage/personnel_list.html",
+      "manage/select_personnel_list.html"
+    ]
+  },
+  "manage/select_personnel_list.html": {
+    "resources": [
+      "js/manage/select_personnel_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/50x50.png",
+      "images/50x50t.png"
+    ],
+    "refer": [
+      "manage/modify_personnel.html"
+    ]
+  },
+  "manage/select_personnel_main.html": {
+    "resources": [
+      "manage/select_personnel_list.html",
+      "css/iconfont.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/common.css",
+      "css/icons-extra.css",
+      "js/filter/common.js",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/select_personnel_list.html",
+      "filter/select_personnel_filter.html"
+    ]
+  },
+  "manage/select_campus_list.html": {
+    "resources": [
+      "js/manage/select_campus_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "manage/modify_personnel.html"
+    ]
+  },
+  "manage/select_campus_main.html": {
+    "resources": [
+      "manage/select_campus_list.html",
+      "css/iconfont.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "manage/select_campus_list.html"
+    ]
+  },
+  "work/student_main.html": {
+    "resources": [
+      "work/student_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/filter/common.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/student_list.html",
+      "work/modify_student.html",
+      "filter/student_filter.html"
+    ]
+  },
+  "work/student_list.html": {
+    "resources": [
+      "js/work/student_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/50x50.png",
+      "fonts/mui.ttf",
+      "images/50x50s.png",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "work/detail_student.html"
+    ]
+  },
+  "work/modify_student.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/app.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/work/modify_student.js",
+      "css/common.css",
+      "js/immersed.js",
+      "css/mui.picker.min.css",
+      "js/mui.picker.min.js"
+    ],
+    "refer": [
+      "work/student_list.html"
+    ]
+  },
+  "work/detail_student.html": {
+    "resources": [
+      "images/50x50.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/mui.jsonp.js",
+      "js/app.js",
+      "js/work/detail_student.js",
+      "images/50x50s.png",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/edit_student.html",
+      "work/record_main.html",
+      "work/notelesson_main.html",
+      "work/pay_main.html",
+      "work/singlestu_record_main.html",
+      "work/singlestu_notelesson_main.html",
+      "work/singlestu_lesson.html",
+      "work/byrole_personnel_main.html",
+      "work/student_cashflow_main.html",
+      "work/single_add_pay.html"
+    ]
+  },
+  "work/edit_student.html": {
+    "resources": [
+      "js/work/edit_student.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/detail_student.html"
+    ]
+  },
+  "work/record_list.html": {
+    "resources": [
+      "js/work/record_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/50x50.png",
+      "images/50x50t.png",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "work/modify_record.html",
+      "work/detail_student.html"
+    ]
+  },
+  "work/record_main.html": {
+    "resources": [
+      "work/record_list.html",
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/filter/common.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/record_list.html",
+      "work/modify_record.html",
+      "filter/student_filter.html",
+      "filter/record_filter.html"
+    ]
+  },
+  "work/modify_record.html": {
+    "resources": [
+      "css/mui.listpicker.css",
+      "css/mui.poppicker.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/mui.jsonp.js",
+      "js/app.js",
+      "js/work/modify_record.js",
+      "css/mui.picker.min.css",
+      "js/mui.picker.min.js",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/select_student_main.html",
+      "work/record_list.html",
+      "work/select_student_list.html"
+    ]
+  },
+  "work/select_student_list.html": {
+    "resources": [
+      "js/work/select_student_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "images/50x50.png",
+      "images/50x50s.png"
+    ],
+    "refer": [
+      "work/modify_record.html",
+      "work/select_student_main.html",
+      "work/modify_pay.html"
+    ]
+  },
+  "work/select_student_main.html": {
+    "resources": [
+      "work/select_student_list.html",
+      "css/mui.min.css",
+      "css/app.css",
+      "css/iconfont.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/filter/common.js"
+    ],
+    "refer": [
+      "work/select_student_list.html",
+      "work/modify_student_select.html",
+      "filter/student_filter.html",
+      "filter/select_student_filter.html"
+    ]
+  },
+  "account/contact.html": {
+    "resources": [
+      "js/tool/pinyin_dict_firstletter.js",
+      "js/tool/pinyinUtil.js",
+      "js/tool/pinyin_dict_notone.js",
+      "js/account/contact.js",
+      "css/mui.indexedlist.css",
+      "js/mui.indexedlist.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "images/50x50.png",
+      "fonts/mui.ttf",
+      "css/app.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/50x50t.png"
+    ],
+    "refer": []
+  },
+  "account/modify_password.html": {
+    "resources": [
+      "js/account/modify_password.js",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "login/set_password.html": {
+    "resources": [
+      "js/tool/base64.js",
+      "js/login/set_password.js",
+      "css/mui.min.css",
+      "css/app.css",
+      "js/mui.min.js",
+      "js/mui.jsonp.js",
+      "js/app.js"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "login/select-activate-organization.html": {
+    "href": "login/select-activate-organization.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/app.css",
+      "js/mui.min.js",
+      "js/app.js",
+      "js/login/select-activate-organization.js"
+    ],
+    "refer": [
+      "login/set_password.html"
+    ],
+    "priority": 0
+  },
+  "work/pay_list.html": {
+    "resources": [
+      "js/work/pay_list.js",
+      "images/50x50t.png",
+      "css/icons-extra.css",
+      "js/app.js",
+      "fonts/mui-icons-extra.ttf",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "work/detail_enroll.html",
+      "work/detail_student.html"
+    ]
+  },
+  "work/pay_main.html": {
+    "resources": [
+      "work/pay_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/filter/common.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/pay_list.html",
+      "work/modify_pay.html",
+      "filter/record_filter.html",
+      "filter/enroll_filter.html"
+    ]
+  },
+  "work/modify_pay.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/app.css",
+      "js/mui.jsonp.js",
+      "js/work/modify_pay.js",
+      "js/app.js",
+      "css/common.css",
+      "js/immersed.js",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css"
+    ],
+    "refer": [
+      "work/select_student_main.html",
+      "work/select_lesson_main.html",
+      "work/byrole_personnel_main.html"
+    ]
+  },
+  "work/select_lesson_main.html": {
+    "resources": [
+      "js/mui.min.js",
+      "work/select_lesson_list.html",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/filter/common.js"
+    ],
+    "refer": [
+      "work/select_lesson_list.html",
+      "filter/select_student_filter.html",
+      "filter/select_lesson_filter.html"
+    ]
+  },
+  "work/select_lesson_list.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/mui.min.css",
+      "js/work/select_lesson_list.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/app.css",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "work/byrole_personnel_main.html": {
+    "resources": [
+      "work/byrole_personnel_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/filter/common.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/byrole_personnel_list.html",
+      "filter/byrole_personnel_filter.html"
+    ]
+  },
+  "work/byrole_personnel_list.html": {
+    "resources": [
+      "js/manage/select_personnel_list.js",
+      "images/50x50t.png",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "js/work/byrole_personnel_lis.js",
+      "js/work/byrole_personnel_list.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "work/modify_student_notelesson.html"
+    ]
+  },
+  "work/detail_enroll.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/work/detail_student.js",
+      "js/work/detail_enroll.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/add_pay.html"
+    ]
+  },
+  "work/add_pay.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "js/work/detail_enroll.js",
+      "css/mui.min.css",
+      "js/work/add_pay.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "work/class_main.html": {
+    "resources": [
+      "work/class_list.html",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/filter/common.js",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/class_list.html",
+      "work/modify_class.html",
+      "filter/enroll_filter.html",
+      "filter/class_filter.html"
+    ]
+  },
+  "work/class_list.html": {
+    "resources": [
+      "js/work/class_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/icons-extra.css",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "work/detail_class.html"
+    ]
+  },
+  "work/modify_class.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/work/add_pay.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "js/work/modify_class.js"
+    ],
+    "refer": [
+      "work/select_lesson_main.html"
+    ]
+  },
+  "work/detail_class.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/detail_class.js",
+      "images/50x50.png",
+      "images/50x50s.png",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/add_pay.html",
+      "work/edit_class.html",
+      "work/add_classStudent.html",
+      "work/detail_student.html"
+    ]
+  },
+  "work/edit_class.html": {
+    "resources": [
+      "js/work/edit_class.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "work/add_classStudent.html": {
+    "resources": [
+      "images/50x50.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "images/50x50s.png",
+      "css/mui.min.css",
+      "js/work/add_classStudent.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/manage/lesson_list.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "work/notelesson_list.html": {
+    "resources": [
+      "js/work/notelesson_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/icons-extra.css",
+      "images/50x50s.png",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf",
+      "js/mui.picker.min.js"
+    ],
+    "refer": [
+      "work/modify_class_notelesson.html",
+      "work/modify_student_notelesson.html",
+      "work/again_notelesson.html"
+    ]
+  },
+  "work/notelesson_main.html": {
+    "resources": [
+      "work/notelesson_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/filter/common.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/notelesson_list.html",
+      "filter/notelesson_filter.html"
+    ]
+  },
+  "work/modify_class_notelesson.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.picker.min.js",
+      "js/work/modify_student_notelesson.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/work/modify_class_notelesson.js",
+      "css/mui.picker.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/byrole_personnel_main.html",
+      "work/select_class_main.html"
+    ]
+  },
+  "work/modify_student_notelesson.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.picker.min.js",
+      "js/work/modify_student_notelesson.js",
+      "css/mui.picker.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/select_student_main.html",
+      "work/byrole_personnel_main.html",
+      "work/select_lesson_main.html"
+    ]
+  },
+  "work/select_class_list.html": {
+    "resources": [
+      "js/work/select_class_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/dropdowndiv.css",
+      "css/mui.min.css",
+      "css/mui.picker.min.css",
+      "js/mui.picker.min.js"
+    ],
+    "refer": []
+  },
+  "work/select_class_main.html": {
+    "resources": [
+      "work/select_class_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "css/icons-extra.css",
+      "js/filter/common.js"
+    ],
+    "refer": [
+      "work/select_class_list.html",
+      "filter/class_filter.html",
+      "filter/select_class_filter.html"
+    ]
+  },
+  "im/kefu_main.html": {
+    "resources": [
+      "im/kefu_list.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/app.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "im/kefu_list.html"
+    ]
+  },
+  "work/singlestu_record_list.html": {
+    "resources": [
+      "js/work/singlestu_record_list.js",
+      "images/50x50t.png",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/singlestu_record_main.html": {
+    "resources": [
+      "work/singlestu_record_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/singlestu_record_list.html",
+      "work/modify_record.html",
+      "work/single_modify_record.html"
+    ]
+  },
+  "work/single_modify_record.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/work/single_modify_record.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/select_student_main.html"
+    ]
+  },
+  "work/singlestu_notelesson_main.html": {
+    "resources": [
+      "work/notelesson_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "work/singlestu_notelesson_list.html",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/filter/common.js",
+      "fonts/mui-icons-extra.ttf"
+    ],
+    "refer": [
+      "work/notelesson_list.html",
+      "work/singlestu_notelesson_list.html",
+      "work/single_modify_notelesson.html",
+      "filter/singlestu_notelesson_filter.html"
+    ]
+  },
+  "work/singlestu_notelesson_list.html": {
+    "resources": [
+      "js/work/singlestu_notelesson_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/icons-extra.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/50x50s.png",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf",
+      "js/mui.picker.min.js"
+    ],
+    "refer": [
+      "work/singlestu_again_notelesson.html"
+    ]
+  },
+  "work/single_modify_notelesson.html": {
+    "resources": [
+      "js/work/single_modify_notelesson.js",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "work/byrole_personnel_main.html",
+      "work/select_lesson_main.html"
+    ]
+  },
+  "work/singlestu_lesson.html": {
+    "resources": [
+      "js/work/singlestu_lesson.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/add_classStudent.html",
+      "work/single_modify_pay.html",
+      "work/single_end_enroll.html",
+      "work/single_end_enrollsemester.html"
+    ]
+  },
+  "work/single_modify_pay.html": {
+    "resources": [
+      "js/work/single_modify_pay.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/common.js",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/byrole_personnel_main.html"
+    ]
+  },
+  "filter/student_filter.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/app.css",
+      "js/filter/student_filter.js",
+      "css/filter.css",
+      "js/app.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "filter/select_campus_main.html"
+    ]
+  },
+  "filter/record_filter.html": {
+    "resources": [
+      "css/filter.css",
+      "js/filter/student_filter.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/mui.enterfocus.js",
+      "js/filter/record_filter.js",
+      "fonts/mui.ttf",
+      "js/app.js"
+    ],
+    "refer": [
+      "filter/select_campus_main.html"
+    ]
+  },
+  "filter/enroll_filter.html": {
+    "resources": [
+      "js/filter/record_filter.js",
+      "css/filter.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "js/filter/enroll_filter.js"
+    ],
+    "refer": [
+      "filter/select_campus_main.html"
+    ]
+  },
+  "filter/class_filter.html": {
+    "resources": [
+      "css/filter.css",
+      "js/filter/class_filter.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "filter/select_campus_main.html"
+    ]
+  },
+  "filter/notelesson_filter.html": {
+    "resources": [
+      "js/filter/record_filter.js",
+      "css/filter.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "js/filter/notelesson_filter.js",
+      "js/app.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "filter/select_campus_main.html"
+    ]
+  },
+  "report/source.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "libs/echarts.min.js",
+      "libs/echarts.min3.3.2.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf",
+      "js/report/source.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "css/mui.picker.min.css",
+      "js/mui.picker.min.js",
+      "css/dropdowndiv.css",
+      "js/immersed.js",
+      "css/common.css"
+    ],
+    "refer": []
+  },
+  "report/state.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "libs/echarts.min3.3.2.js",
+      "fonts/mui.ttf",
+      "js/report/state.js",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/app.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "report/consume.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "libs/echarts.min3.3.2.js",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "js/report/consume.js",
+      "fonts/mui.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/app.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "report/enrolmentBrief.html": {
+    "resources": [
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/app.js",
+      "js/mui.min.js",
+      "js/mui.jsonp.js",
+      "js/report/enrolmentBrief.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "js/mui.picker.min.js"
+    ],
+    "refer": []
+  },
+  "report/lessonBrief.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.picker.min.js",
+      "css/dropdowndiv.css",
+      "js/report/enrolmentBrief.js",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "css/app.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/mui.picker.min.css",
+      "js/report/lessonBrief.js",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "report/finance.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "js/report/finance.js",
+      "libs/echarts.min3.3.2.js",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/icons-extra.css",
+      "fonts/mui.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "fonts/iconfont.ttf",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "report/recordtodo.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/dropdowndiv.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/mui.picker.min.css",
+      "js/report/recordtodo.js",
+      "css/icons-extra.css",
+      "js/immersed.js",
+      "css/common.css"
+    ],
+    "refer": [
+      "report/recordtodo_list.html"
+    ]
+  },
+  "report/recordtodo_list.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/icons-extra.css",
+      "images/50x50t.png",
+      "js/report/recordtodo_list.js",
+      "js/mui.jsonp.js",
+      "images/50x50s.png",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/immersed.js",
+      "css/common.css"
+    ],
+    "refer": [
+      "report/modify_recordplan.html"
+    ]
+  },
+  "report/modify_recordplan.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/mui.picker.min.css",
+      "js/report/modify_recordplan.js",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "work/again_notelesson.html": {
+    "resources": [
+      "js/work/again_notelesson.js",
+      "fonts/mui.ttf",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "css/mui.picker.min.css"
+    ],
+    "refer": [
+      "work/select_lesson_main.html",
+      "work/byrole_personnel_main.html",
+      "work/select_student_main.html"
+    ]
+  },
+  "work/student_cashflow_main.html": {
+    "resources": [
+      "work/student_cashflow_list.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/student_cashflow_list.html"
+    ]
+  },
+  "work/student_cashflow_list.html": {
+    "resources": [
+      "js/work/student_cashflow_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/icons-extra.css"
+    ],
+    "refer": []
+  },
+  "work/modify_student_select.html": {
+    "resources": [
+      "js/work/modify_student_select.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "work/single_end_enroll.html": {
+    "resources": [
+      "css/intput.css",
+      "js/manage/modify_lessson.js",
+      "js/mui.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/single_modify_pay.js",
+      "js/work/single_end_enroll.js"
+    ],
+    "refer": []
+  },
+  "work/single_end_enrollsemester.html": {
+    "resources": [
+      "js/work/single_end_enrollsemester.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/single_add_pay.html": {
+    "resources": [
+      "js/work/single_add_pay.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css"
+    ],
+    "refer": [
+      "work/select_lesson_main.html",
+      "work/byrole_personnel_main.html"
+    ]
+  },
+  "filter/select_student_filter.html": {
+    "resources": [
+      "js/filter/select_student_filter.js",
+      "css/filter.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "account/setsex.html": {
+    "resources": [
+      "js/immersed.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "filter/personnel_filter.html": {
+    "resources": [
+      "js/filter/personnel_filter.js",
+      "css/filter.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "filter/select_personnel_filter.html": {
+    "resources": [
+      "js/filter/select_personnel_filter.js"
+    ],
+    "refer": []
+  },
+  "filter/byrole_personnel_filter.html": {
+    "resources": [
+      "css/filter.css",
+      "js/filter/byrole_personnel_filter.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "work/singlestu_again_notelesson.html": {
+    "resources": [
+      "js/work/singlestu_again_notelesson.js",
+      "css/mui.picker.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "work/byrole_personnel_main.html"
+    ]
+  },
+  "work/weizs/weizs.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/immersed.js",
+      "js/work/weizsimmersed.js",
+      "css/weizscommon.css",
+      "images/50x50t.png",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizs/weizs.js",
+      "js/app.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "work/weizs/zslesson.html",
+      "work/weizs/system_msg.html",
+      "work/weizs/system_notice.html",
+      "work/weizs/vip_organizationinfo.html",
+      "work/weizs/organizationinfo.html",
+      "work/weizs/footprint_main.html",
+      "work/weizs/singleinfluence.html"
+    ]
+  },
+  "work/weizs/zslesson.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "fonts/iconfont.ttf",
+      "work/weizs/detail_zslesson.html",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/work/weizs/zslesson.js"
+    ],
+    "refer": [
+      "work/weizs/detail_zslesson.html",
+      "work/weizs/add_zslesson.html"
+    ]
+  },
+  "work/weizs/detail_zslesson.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizsimmersed.js",
+      "work/weizs/zslesson.html",
+      "css/app.css",
+      "js/work/weizs/detail_zslesson.js",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "work/weizs/footprint_main.html"
+    ],
+    "refer": [
+      "work/weizs/zslesson.html",
+      "work/weizs/modify_zslesson.html"
+    ]
+  },
+  "work/weizs/modify_zslesson.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "/account/infocenter-needtem.html",
+      "js/work/weizs/modify_zslesson.js",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "/account/infocenter-needtem.html",
+      "work/weizs/set_zslessonabstracts.html",
+      "work/weizs/selectlessonaddress.html",
+      "work/weizs/set_lightspot.html",
+      "work/weizs/set_applystudent.html"
+    ]
+  },
+  "work/weizs/add_zslesson.html": {
+    "resources": [
+      "/account/infocenter-needtem.html",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "js/work/weizs/add_zslesson.js",
+      "js/app.js",
+      "fonts/iconfont.ttf",
+      "work/weizs/set_zslessonabstracts.html",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "/account/infocenter-needtem.html",
+      "work/weizs/zsselect_lesson_main.html",
+      "work/weizs/set_lightspot.html",
+      "work/weizs/set_applystudent.html",
+      "work/weizs/set_zslessonabstracts.html",
+      "work/weizs/selectlessonaddress.html",
+      "work/weizs/agreement.html"
+    ]
+  },
+  "work/weizs/system_msg.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "work/weizs/vip_organizationinfo.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizsimmersed.js",
+      "css/app.css",
+      "js/app.js"
+    ],
+    "refer": []
+  },
+  "work/weizs/organizationinfo.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizsimmersed.js",
+      "/account/infocenter-needtem.html",
+      "js/app.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "/account/infocenter-needtem.html",
+      "work/weizs/modify_orgbaseinfo.html",
+      "work/weizs/modify_orgabstract.html"
+    ]
+  },
+  "work/weizs/modify_orgbaseinfo.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "fonts/mui.ttf",
+      "js/work/weizs/modify_orgbaseinfo.js",
+      "js/app.js",
+      "js/mui.jsonp.js"
+    ],
+    "refer": []
+  },
+  "work/weizs/modify_orgabstract.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "js/tool/base64.js",
+      "js/work/weizs/modify_orgabstract.js",
+      "js/tool/unicodeAnsi.js"
+    ],
+    "refer": []
+  },
+  "work/weizs/zsselect_lesson_main.html": {
+    "resources": [
+      "work/weizs/zsselect_lesson_list.html",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "work/weizs/zsselect_lesson_list.html"
+    ]
+  },
+  "work/weizs/zsselect_lesson_list.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "js/work/weizs/zsselect_lesson_list.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/app.css"
+    ],
+    "refer": []
+  },
+  "work/weizs/set_lightspot.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": []
+  },
+  "work/weizs/set_zslessonabstracts.html": {
+    "resources": [
+      "js/work/weizs/set_zslessonabstracts.js",
+      "work/weizs/add_zslesson.html",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "work/weizs/add_zslesson.html"
+    ]
+  },
+  "work/weizs/selectlessonaddress.html": {
+    "resources": [
+      "js/app.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "/account/infocenter-needtem.html",
+      "js/mui.picker.min.js",
+      "js/mui.poppicker.js",
+      "js/work/weizs/selectlessonaddress.js",
+      "js/tool/city.data-3.js",
+      "css/mui.picker.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.listpicker.css",
+      "js/mui.picker.js",
+      "css/mui.picker.css",
+      "fonts/iconfont.ttf",
+      "js/mui.jsonp.js"
+    ],
+    "refer": [
+      "/account/infocenter-needtem.html",
+      "work/weizs/lesson_address_map.html"
+    ]
+  },
+  "work/weizs/footprint_main.html": {
+    "resources": [
+      "work/weizs/footprint_list.html",
+      "work/weizs/detail_zslesson.html",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "work/weizs/footprint_list.html"
+    ]
+  },
+  "work/weizs/footprint_list.html": {
+    "resources": [
+      "js/work/weizs/footprint_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "images/50x50s.png"
+    ],
+    "refer": []
+  },
+  "work/weizs/agreement.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": []
+  },
+  "work/weizs/singleinfluence.html": {
+    "resources": [
+      "js/work/weizs/singleinfluence.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": []
+  },
+  "work/weizs/lesson_address_map.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": []
+  },
+  "filter/select_class_filter.html": {
+    "resources": [
+      "js/filter/select_class_filter.js"
+    ],
+    "refer": []
+  },
+  "filter/select_lesson_filter.html": {
+    "resources": [
+      "js/filter/select_lesson_filter.js",
+      "css/filter.css"
+    ],
+    "refer": []
+  },
+  "filter/lesson_filter.html": {
+    "resources": [
+      "css/filter.css",
+      "js/filter/lesson_filter.js"
+    ],
+    "refer": []
+  },
+  "work/student_with_tab.html": {
+    "resources": [
+      "js/mui.pullToRefresh.js",
+      "js/mui.pullToRefresh.material.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/common.css",
+      "js/immersed.js",
+      "css/iconfont.css",
+      "css/icons-extra.css",
+      "fonts/mui-icons-extra.ttf",
+      "fonts/iconfont.ttf",
+      "js/work/student_with_tab.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "images/50x50s.png",
+      "css/app.css",
+      "css/mui.picker.min.css",
+      "js/mui.picker.min.js"
+    ],
+    "refer": [
+      "work/detail_student.html",
+      "work/modify_student.html",
+      "work/student_main.html"
+    ]
+  },
+  "report/datakanban.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "report/enrolmentBrief.html",
+      "report/studentchat.html",
+      "report/recordchat.html",
+      "report/enrollchat.html",
+      "report/noteLessonchat.html"
+    ]
+  },
+  "report/studentchat.html": {
+    "resources": [
+      "libs/echarts.min3.3.2.js",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.picker.min.js",
+      "css/icons-extra.css",
+      "js/immersed.js",
+      "css/common.css",
+      "css/app.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "js/report/state.js",
+      "css/mui.min.css",
+      "fonts/mui-icons-extra.ttf",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf",
+      "js/report/studentchat.js",
+      "css/dropdowndivextend.css"
+    ],
+    "refer": [
+      "report/datascope/studentchat_datascope.html"
+    ]
+  },
+  "report/recordchat.html": {
+    "resources": [
+      "libs/echarts.min3.3.2.js",
+      "js/report/recordchat.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/immersed.js",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf",
+      "css/icons-extra.css",
+      "css/dropdowndivextend.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css"
+    ],
+    "refer": [
+      "report/datascope/recordchat_datascope.html"
+    ]
+  },
+  "report/enrollchat.html": {
+    "resources": [
+      "libs/echarts.min3.3.2.js",
+      "js/report/enrollchat.js",
+      "css/dropdowndiv.css",
+      "css/mui.picker.min.css",
+      "css/common.css",
+      "css/icons-extra.css",
+      "js/immersed.js",
+      "js/mui.picker.min.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "fonts/mui.ttf",
+      "css/app.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "report/datascope/enrollchat_datascope.html"
+    ]
+  },
+  "report/noteLessonchat.html": {
+    "resources": [
+      "libs/echarts.min3.3.2.js",
+      "js/report/noteLessonchat.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/icons-extra.css",
+      "js/immersed.js",
+      "css/dropdowndivextend.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css"
+    ],
+    "refer": [
+      "report/datascope/notelessonchat_datascope.html"
+    ]
+  },
+  "report/datascope/studentchat_datascope.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/immersed.js",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css"
+    ],
+    "refer": []
+  },
+  "report/datascope/enrollchat_datascope.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/mui.picker.min.css",
+      "js/immersed.js"
+    ],
+    "refer": []
+  },
+  "filter/singlestu_notelesson_filter.html": {
+    "resources": [
+      "js/filter/singlestu_notelesson_filter.js",
+      "css/filter.css"
+    ],
+    "refer": []
+  },
+  "filter/select_campus_list.html": {
+    "resources": [
+      "js/manage/select_campus_list.js",
+      "js/filter/select_campus_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "filter/record_filter.html"
+    ]
+  },
+  "filter/select_campus_main.html": {
+    "resources": [
+      "filter/select_campus_list.html",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "filter/select_campus_list.html"
+    ]
+  },
+  "cropper/cut_images.html": {
+    "resources": [
+      "images/guide_tiyan.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "libs/cropperjs-master/dist/cropper.min.js",
+      "libs/cropperjs-master/dist/cropper.min.css"
+    ]
+  },
+  "account/infocenter.html": {
+    "refer": [
+      "cropper/cut_images.html"
+    ],
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "images/50x50t.png",
+      "css/mui.min.css",
+      "js/immersed.js"
+    ]
+  },
+  "work/weizs/set_applystudent.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ]
+  }
+}

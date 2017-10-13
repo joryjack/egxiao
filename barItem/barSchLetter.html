@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>校信</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style type="text/css">
+			/*九宫格设置*/
+			
+			.mui-grid-view.mui-grid-9 .mui-media .mui-icon {
+				font-size: 1em;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border-radius: 10em;
+				color: white;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell,
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active {
+				border-left: 1px solid #DCDCDC;
+				border-top: 1px solid #DCDCDC;
+				border-bottom: 0px;
+				border-right: 0px;
+				background-color: white;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell.noborderleft {
+				border-left: none;
+			}
+			/*.mui-grid-view.mui-grid-9 .mui-table-view-cell:after {
+    			height: 1px;
+    			background-color: #7E7E7E;
+    			left: 0px;
+    		}*/
+			
+			.mui-table-view.mui-grid-view.mui-grid-9 {
+				border-top: none;
+				background-color: #DCDCDC;
+			}
+			/*.mui-table-view:after {
+    			height: 1px;
+    			background-color: red;
+    		}*/
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+				font-size: 12px;
+			}
+			/*banner栏设置*/
+			
+			.mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item) {
+				line-height: 1.5em;
+				background-color: red;
+			}
+			
+			.mui-slider .mui-slider-group .mui-slider-item .oneText {
+				font-size: 15px;
+				color: #2f2f2f;
+			}
+			
+			.mui-slider .mui-slider-group .mui-slider-item .twoText {
+				font-size: 8px;
+				color: #9e9c9d;
+			}
+			
+			.mui-slider .mui-slider-group .mui-slider-item .threeText {
+				font-size: 12px;
+				color: #373737;
+				line-height: 1.3em;
+				width: 80%;
+			}
+			
+			.mui-table-view-cell,
+			.mui-table-view-cell.mui-active {
+				background-color: white;
+			}
+			
+			.mui-slider {
+				border-top: 1px solid #EDEDED;
+				border-bottom: 1px solid #EDEDED;
+				background: white;
+			}
+			
+			.mui-slider-item .mui-table-view {
+				height: 6.5em;
+			}
+			
+			.mui-slider-indicator .mui-indicator {
+				margin: 1px;
+				background: #bababc;
+				box-shadow: 0 0 0px 0px;
+				height: 5px;
+				width: 5px;
+			}
+			
+			.mui-media-body button {
+				float: right;
+				border-radius: 6px;
+				color: grey;
+				font-size: 0.6em;
+				padding: 0.5em 1.4em 0.4em;
+			}
+			
+			.mui-slider-indicator .mui-active.mui-indicator {
+				background: #8f8f91;
+			}
+			
+			input[type=button] {
+				padding: 1px 8px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<!--<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<div class=" mui-pull-left " style="background-color: #cccccc; max-width: 42px; height: 42px; color: #fff; text-align:center; border-radius: 3px;  margin-right: 10px; padding: 3px; ">
+							<img class=" mui-pull-left " src="../images/50x50.png" style="width: 18px;  border-radius: 2px;" />
+							<img class=" mui-pull-left " src="../images/50x50.png" style="width: 18px;  border-radius: 2px;" />
+							<img class=" mui-pull-left " src="../images/50x50.png" style="width: 18px;  border-radius: 2px;" />
+							
+							<img class=" mui-pull-left " src="../images/50x50.png" style="width: 18px;border-radius: 2px; " />
+						
+
+						</div>
+						<div class="mui-media-body">
+							<div><span>校区内部沟通群</span></div>
+							<p class='mui-ellipsis'>金校长:[图片]</p>
+						</div>
+					</a>
+				</li>-->
+				<!--<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+
+						<img class="mui-media-object mui-pull-left " src="../images/50x50.png" style="background-color: #3BB2EC; color: #fff; vertical-align: middle; border-radius: 3px;" />
+						<div class="mui-media-body">
+							<div><span>王老师</span></div>
+							<p class='mui-ellipsis'>金校长:下午张老师请假你帮她代节课 </p>
+						</div>
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell mui-media">
+					<a href="/report/enrolmentBrief.html">
+						<span class="mui-media-object mui-pull-left " style="background-color: #F76160; color: #fff; vertical-align: middle; border-radius: 3px;  padding:5px 10px 0px 10px; ">	<i class=" mui-icon iconfont icon-salesjianbao" ></i></span>
+						<div class="mui-media-body">
+							<div><span>招生简报</span></div>
+							<p class='mui-ellipsis'>点击查看招生简报</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="/report/lessonBrief.html">
+						<span class="mui-media-object mui-pull-left " style="background-color: #4AD125; color: #fff; vertical-align: middle; border-radius: 3px;  padding:5px 10px 0px 8px; ">	<i class=" mui-icon iconfont icon-lessonjianbao"  style="font-size: 1.65em " ></i></span>
+						<div class="mui-media-body">
+							<div><span>上课简报</span></div>
+							<p class='mui-ellipsis'>点击查看上课简报</p>
+						</div>
+					</a>
+				</li>
+
+				<li class="mui-table-view-cell mui-media">
+					<a href="/report/recordtodo.html">
+						<span class="mui-media-object mui-pull-left " style="background-color: #FEC002; color: #fff; vertical-align: middle; border-radius: 3px;  padding:5px 10px 0px 8px; ">	<i class=" mui-icon iconfont icon-time"   ></i></span>
+						<div class="mui-media-body">
+							<div><span>待跟进计划</span></div>
+							<p class='mui-ellipsis'>点击查看待跟进计划</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="/im/kefu_main.html">
+						<span class="mui-media-object mui-pull-left " style="background-color: #3BB2EC; color: #fff; vertical-align: middle; border-radius: 3px;  padding:2px 12px 0px 12px;">	<i class=" mui-icon iconfont icon-kefu "   style="font-size: 1.2em "></i></span>
+						<div class="mui-media-body">
+							<div><span>易管校客服</span></div>
+							<p class='mui-ellipsis'>帮助您更好的使用易管校</p>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<script src="../js/mui.min.js" charset="UTF-8"></script>
+		<script src="../js/app.js" charset="UTF-8"></script>
+
+		<script>
+			(function($, $window, doc) {
+				$.init();
+				$.plusReady(function() {
+
+					var self = plus.webview.currentWebview();
+					//接收rightbar事件
+					$window.addEventListener('navRightPress', function() {
+						showModifyStudent();
+					}, false);
+					$window.addEventListener('show', function() {
+
+					}, false);
+					$('.mui-table-view').on('tap', 'a', function() {
+						var a = this;
+						var href = this.getAttribute('href');
+						if(href != "javascript:;") {
+							$.openWindow({
+								url: href,
+								id: href,
+								preload: true,
+								show: {
+									aniShow: 'pop-in'
+								},
+								styles: {
+									popGesture: 'hide'
+								},
+								waiting: {
+									autoShow: false
+								}
+							});
+
+						} else {
+							$.toast('敬请期待...');
+						}
+					});
+
+					self.evalJS(" (function(m, ei, q, i, a, j, s) { m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments)}; j = ei.createElement(q),  s = ei.getElementsByTagName(q)[0];j.async = true; j.charset = 'UTF-8';  j.src = '//static.meiqia.com/dist/meiqia.js'; s.parentNode.insertBefore(j, s);})(window, document, 'script', '_MEIQIA');  _MEIQIA('entId', 10329);");
+				})
+
+				function showModifyStudent() {}
+			})(mui, window, document)
+		</script>
+
+	</body>
+
+</html>

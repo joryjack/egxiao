@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>来源统计</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+			<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/dropdowndiv.css" />
+		<style>
+		
+			.chart {
+				height: 300px;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.sourcename {
+				padding-left: 25px;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+				/*#333*/
+			}
+			
+			.mui-input-row {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+			
+			.mui-input-row input {
+				padding-left: 0px;
+			}
+			
+			#reset {
+				color: #929292;
+				background-color: #efeff4;
+			}
+			
+			#search {
+				color: #fff;
+				background-color: #f76160;
+			}
+			
+			.mui-tab-item {
+				display: table-cell;
+				overflow: hidden;
+				width: 1%;
+				height: 50px;
+				text-align: center;
+				vertical-align: middle;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				color: #929292;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav" style="background-color: #fff;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">招生</h1>
+			<a id="rightBar" class="mui-icon  iconfont icon-refresh mui-pull-right" style=" font-size: 1.1em; padding-top: 14px;"></a>
+			<a id="rightFilter" class=" mui-icon mui-icon-extra mui-icon-extra-filter mui-pull-right" style="margin-right: 5px;"></a>
+		</header>
+		<div class="mui-content" style="background-color: #fff;">
+
+			<div class="mui-content-padded">
+				<div class="chart" id="stateChart"></div>
+			</div>
+
+			<ul id="list" class="mui-table-view ">
+				<li class="mui-table-view-cell">
+					<p> <i class="mui-icon iconfont icon-dian" style="color: #53D1C5; position: absolute;"></i><span class="sourcename">线索</span> <span class="mui-pull-right">0</span> </p>
+
+				</li>
+				<li class="mui-table-view-cell">
+					<p> <i class="mui-icon iconfont icon-dian" style="color: #FFCC67; position: absolute;"></i><span class="sourcename">跟进</span> <span class="mui-pull-right">0</span> </p>
+				</li>
+				<li class="mui-table-view-cell">
+					<p> <i class="mui-icon iconfont icon-dian" style="color: #FF999A; position: absolute;"></i><span class="sourcename">报名</span> <span class="mui-pull-right">0</span> </p>
+
+				</li>
+				<li class="mui-table-view-cell">
+					<p> <i class="mui-icon iconfont icon-dian" style="color: #AF89D6; position: absolute;"></i><span class="sourcename">续报</span> <span class="mui-pull-right">0</span> </p>
+
+				</li>
+				
+			</ul>
+		</div>
+		<div id="menu-wrapper" class="menu-wrapper hidden">
+			<div id="menu" class="menu">
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id="start" data-options='{"type":"date"}' onfocus="this.blur();" type="text" placeholder="开始时间" />
+					</div>
+
+				</div>
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id="end" data-options='{"type":"date"}' onfocus="this.blur();" type="text" placeholder="结束时间" />
+					</div>
+
+				</div>
+				<div class="mui-clearfix ">
+					<a id="reset" class="mui-tab-item " href="#">
+						重置
+					</a>
+					<a id="search" class="mui-tab-item" href="#">
+						确定
+					</a>
+				</div>
+			</div>
+
+		</div>
+		<div id="menu-backdrop" class="menu-backdrop"></div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script src="../libs/echarts.min3.3.2.js"></script>
+		<script src="../js/report/state.js"></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		
+	</body>
+</html>

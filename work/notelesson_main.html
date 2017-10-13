@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>记上课Main</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<style>
+			.mui-title {
+				line-height: 18px;
+				padding-bottom: 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"><div>记上课</div><div style=" font-size:0.6em; color: #8f8f94;"><span id="msgInfo">&nbsp;</span></div></h1>
+			<a id="rightBar" class="mui-icon  mui-icon  iconfont icon-jia mui-pull-right"></a>
+			<a id="rightFilter" class="mui-icon mui-icon-extra mui-icon-extra-filter mui-pull-right" style="margin-right: 5px;"></a>
+		</header>
+		<div class="mui-content">
+
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/filter/common.js"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				//启用双击监听
+				$.init({
+					gestureConfig: {
+						doubletap: true
+					},
+					subpages: [{
+						url: 'notelesson_list.html',
+						id: 'notelesson_list.html',
+						styles: {
+							top: '65px',
+							bottom: '0px'
+						}
+					}]
+				});
+				var rightBar = doc.getElementById("rightBar");
+				var msgInfo = doc.getElementById("msgInfo");
+				var contentWebview = null;
+
+				document.querySelector('header').addEventListener('doubletap', function() {
+					if(contentWebview == null) {
+						contentWebview = plus.webview.currentWebview().children()[0];
+					}
+					contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+				});
+
+				/**
+				 * set resetMsgInfo
+				 */
+				window.addEventListener("resetMsgInfo", function(e) {
+					console.log(e.detail.totalItemCount);
+					msgInfo.innerText = e.detail.totalItemCount + "次/" + e.detail.itemGroupCount + "学员/" +e.detail.lessonNumber+ "课时";
+				});
+				
+				$.plusReady(function() {
+					var self = plus.webview.currentWebview();
+					self.addEventListener('hide', function() {
+						if(contentWebview == null) {
+							contentWebview = plus.webview.currentWebview().children()[0];
+						}
+						contentWebview.evalJS('mui("#topPopover").popover("hide")');
+						self.close();
+					}, false);
+					main = self;
+					main.addEventListener('maskClick', closeMenu);
+					//setTimeout的目的是等待窗体动画结束后，再执行create webview操作，避免资源竞争，导致窗口动画不流畅；
+					setTimeout(function() {
+						menu = mui.preload({
+							id: '../filter/notelesson_filter.html',
+							url: '../filter/notelesson_filter.html',
+							styles: {
+								left: "30%",
+								width: '70%',
+								zindex: 9997
+							}
+						});
+					}, 300);
+				});
+
+				rightBar.addEventListener('tap', function(event) {
+					if(contentWebview == null) {
+						contentWebview = plus.webview.currentWebview().children()[0];
+					}
+					contentWebview.evalJS('mui("#topPopover").popover("toggle")');
+
+				});
+			})(mui, document)
+		</script>
+
+	</body>
+
+</html>

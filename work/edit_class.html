@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+			
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group {
+				padding-top: 10px;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:after {
+				background-color: #fff;
+			}
+			
+			.mui-input-group .mui-input-row {
+				margin-right: 15px;
+			}
+			
+			h5 {
+				margin: 10px 15px 0px 15px;
+				color: #000000;
+				/*color: #007aff;*/
+			}
+			
+			input {
+				color: #8f8f94;
+			}
+				#popover {
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				#popover {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">修改班级信息</h1>
+			<a id="rightBar" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">保存</a>
+		</header>
+		<div class="mui-content">
+			<p style="padding-top: 10px; margin: 0px 0px 5px 15px;">基本信息</p>
+			<div class="mui-input-group">
+				<h5>班级名称</h5>
+				<div class="mui-input-row">
+					<input id="class_name" type="text" class="mui-input" maxlength="15" placeholder="请填写">
+				</div>
+				<h5>课程名称</h5>
+				<div class="mui-input-row">
+					<input id="selectlesson" type="text" class="mui-input" onfocus="this.blur();" maxlength="25" placeholder="请选择">
+				</div>
+				<h5>课程类型</h5>
+				<div class="mui-input-row">
+					<input id="lesson_type" type="text" class="mui-input" onfocus="this.blur();" maxlength="25" placeholder="">
+				</div>
+				<h5>班级状态</h5>
+				<div class="mui-input-row">
+					<input id="classState" type="text" class="mui-input" onfocus="this.blur();" maxlength="25" placeholder="请选择" value="">
+				</div>
+				<h5>备注</h5>
+				<div class="mui-input-row">
+					<input id="description" type="text" class="mui-input" maxlength="25" placeholder="请输入">
+				</div>
+			</div>
+			<div class="mui-content-padded ">
+				<p style="color:#E66B14 ;">*班级状态是已开课的才可以记上课</p>
+			</div>
+			<div id="popover" class="mui-popover">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a>已开课</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a>已结课</a>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/edit_class.js" ></script>
+		
+	</body>
+
+</html>

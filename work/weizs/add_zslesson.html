@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+		<style>
+			
+			#rightBar {
+				color: #fff;
+			}
+			
+			.roundcheckfill {
+				color: #ddd;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">发布课程</h1>
+			<a id="rightBar" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">发布</a>
+		</header>
+		<div class="mui-content" style="padding-top: 65px;">
+			<ul class="mui-table-view mui-table-view-chevron" id="infocenter">
+				<li class="mui-table-view-cell" style="padding-right: 45px;">
+					<a class="mui-navigate" >
+						<span class="mui-pull-left">机构信息</span><span id="shortname" class="mui-pull-right"></span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 10px;" id="appliction">
+				<li class="mui-table-view-cell">
+					<a id="selectlesson" class="mui-navigate-right">
+						<span class="mui-pull-left">课程名称</span><span id="zslesson_name" class="mui-pull-right fontcolor-default">请选择</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="mui-pull-left">课程类型</span><span id="zslesson_type" class="mui-pull-right fontcolor-default"></span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="mui-pull-left">课程价格</span><span id="zslesson_price" class="mui-pull-right fontcolor-default"></span>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="setlightspot" class="mui-navigate-right">
+						<span class="mui-pull-left">课程亮点</span><span class="mui-pull-right fontcolor-default">请填写</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 10px;" id="setting">
+				<li class="mui-table-view-cell">
+					<a id="setapplystudent" class="mui-navigate-right">
+						<span class="mui-pull-left">适合学员</span><span class="mui-pull-right fontcolor-default">请填写</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 10px;" id="setting">
+				<li class="mui-table-view-cell">
+					<a id="setlessonaddress" class="mui-navigate-right" >
+						<span class="mui-pull-left">上课地址</span><span id="lesson_address" style="width: 65%;" class="mui-pull-right mui-ellipsis  mui-text-right fontcolor-default">请选择</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="setabstracts" class="mui-navigate-right">
+						<span class="mui-pull-left">课程简介</span><span class="mui-pull-right fontcolor-default">请填写</span>
+					</a>
+				</li>
+			</ul>
+			<div class="mui-content-padded">
+				<p style="font-size: 0.78em;">发布课程即表示你已同意遵守《<span id="readAgreement" class="fontcolor-default">微直招课程信息发布规则</span>》</p>
+				<p style="font-size: 0.78em;">所有课程均加入绿网审核，禁止发布虚假信息。</p>
+			</div>
+			<div class="mui-content-padded ">
+				<button id='saveZslesson' class="mui-btn mui-btn-block mui-btn-ronschool ">发布</button>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script type="text/javascript" src="../../js/mui.jsonp.js" ></script>
+		<script type="text/javascript" src="../../js/tool/base64.js" ></script>
+		
+		<script type="text/javascript" src="../../js/app.js"></script>
+		<script type="text/javascript" src="../../js/work/weizs/add_zslesson.js"></script>
+		
+	</body>
+
+</html>

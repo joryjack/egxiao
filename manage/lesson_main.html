@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">课程</h1>
+				<a id="rightBar" class="mui-icon  mui-icon  iconfont icon-jia mui-pull-right"></a>
+			<a id="rightFilter" class="mui-icon mui-icon-extra mui-icon-extra-filter mui-pull-right" style="margin-right: 5px;"></a>
+		</header>
+		<div class="mui-content"></div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript" src="../js/immersed.js"></script>
+	<script type="text/javascript" src="../js/filter/common.js"></script>
+	<script type="text/javascript">
+		(function($, doc) {
+
+			//启用双击监听
+			$.init({
+				gestureConfig: {
+					doubletap: true
+				},
+				subpages: [{
+					url: 'lesson_list.html',
+					id: 'lesson_list.html',
+					styles: {
+						top: '65px',
+						bottom: '0px',
+					}
+				}]
+			});
+
+			var rightBar = doc.getElementById("rightBar");
+			var contentWebview = null;
+
+			document.querySelector('header').addEventListener('doubletap', function() {
+				if(contentWebview == null) {
+					contentWebview = plus.webview.currentWebview().children()[0];
+				}
+				contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+			});
+			rightBar.addEventListener('tap', function(event) {
+				var modifyLessontPage = $.preload({
+					"id": 'modify_lesson.html',
+					"url": 'modify_lesson.html'
+				});
+				localStorage.removeItem('$modifyLesson');
+				modifyLessontPage.show("pop-in");
+			});
+		})(mui, document)
+	</script>
+	<script type="text/javascript" src="../js/filter/common.js"></script>
+	<script>
+		mui.plusReady(function() {
+			main = plus.webview.currentWebview();
+			main.addEventListener('maskClick', closeMenu);
+			//setTimeout的目的是等待窗体动画结束后，再执行create webview操作，避免资源竞争，导致窗口动画不流畅；
+			setTimeout(function() {
+				menu = mui.preload({
+					id: '../filter/lesson_filter.html',
+					url: '../filter/lesson_filter.html',
+					styles: {
+						left: "30%",
+						width: '70%',
+						zindex: 9997
+					}
+				});
+			}, 300);
+		});
+	</script>
+
+</html>

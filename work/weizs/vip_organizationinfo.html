@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+
+		<style type="text/css">
+			body,
+			.mui-content {
+				background-color: #fff;
+			}
+			/*九宫格设置*/
+			
+			.mui-grid-view.mui-grid-9 .mui-media .mui-icon {
+				font-size: 1em;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border-radius: 10em;
+				color: white;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell,
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active {
+				border-left: 1px solid #fff;
+				border-top: 1px solid #fff;
+				padding: 0px 15px;
+				border-bottom: 0px;
+				border-right: 0px;
+				background-color: white;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell.noborderleft {
+				border-left: none;
+			}
+			
+			.mui-table-view.mui-grid-view.mui-grid-9 {
+				border-top: none;
+				background-color: #fff;
+			}
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+				font-size: 12px;
+			}
+			
+			.mui-table-view-cell,
+			.mui-table-view-cell.mui-active {
+				background-color: white;
+			}
+			
+			.grid-9-bg {
+				background-color: #3bc4d0;
+				box-shadow: 1px 2px 5px #c4eff3;
+			}
+			
+			.color {
+				color: #605e5f !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">认证信息</h1>
+		</header>
+		<div id="muicontent" class="mui-content" style=" padding-top: 65px;">
+			<!--<div class="mui-content-padded mui-text-center" style=" padding-top: 20px;">
+				<h4><span style=" font-size: 1.2em; padding-right: 5px;" class=" iconfont icon-org-line"></span>重庆鑫诚教育培训学校</h4>
+				<p class="mui-text-center" style="padding-top: 20px;">认证有效期至2019-10-08</p>
+				<p class="mui-text-center" style="padding-top: 20px;">未认证</p>
+				<p class="mui-text-center" style="padding-top: 10px; font-size: 0.8em;">尊敬的易管校会员，您享受以下专属权益</p>
+			</div>
+			<div class="mui-content-padded  mui-text-center">
+				<p><span class="mui-icon iconfont icon-choiceness" style=" font-size: 1.2em; padding-right: 5px;"></span>认证电话:023-81814646</p>
+				<p>工作时间:09:00-18:30</p>
+			</div>
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a>
+						<span class="mui-icon iconfont icon-kefu grid-9-bg"></span>
+						<div class="mui-media-body color">专属客服</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a>
+						<span class="mui-icon iconfont icon-phone grid-9-bg"></span>
+						<div class="mui-media-body color">专属顾问</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a>
+						<span class="mui-icon iconfont icon-shiyanshi grid-9-bg"></span>
+						<div class="mui-media-body color">新品优先</div>
+					</a>
+				</li>
+			</ul>-->
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script type="text/javascript" src="../../js/app.js" ></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init({
+					swipeBack: false
+				});
+
+				$.plusReady(function() {
+					var account = app.getAccount();
+					var muicontent  =doc.getElementById("muicontent");
+					pushData();
+
+					function pushData() {
+						var weiZSInfodata = app.getWeiZSInfodata();
+						if(weiZSInfodata != null) {
+							var vip_organizationHTML = "";
+
+							//userinfo
+							if(weiZSInfodata.weiZSPerResponse.organization.type != "1") {
+								vip_organizationHTML += '<div class="mui-content-padded mui-text-center" style=" padding-top: 20px;">';
+								vip_organizationHTML += '<h4><span style=" font-size: 1.2em; padding-right: 5px;" class=" iconfont icon-org-line"></span>'+weiZSInfodata.weiZSPerResponse.organization.name+'</h4>';
+								vip_organizationHTML += '<p class="mui-text-center" style="padding-top: 20px;">认证有效期至'+app.ConvertJsonTime(weiZSInfodata.weiZSPerResponse.organization.end_time)+'</p>';
+								vip_organizationHTML += '<p class="mui-text-center" style="padding-top: 10px; font-size: 0.8em;">尊敬的易管校会员，您享受以下专属权益</p>';
+								vip_organizationHTML += '</div>';
+
+								vip_organizationHTML += '<ul class="mui-table-view mui-grid-view mui-grid-9">';
+								vip_organizationHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a><span class="mui-icon iconfont icon-kefu grid-9-bg"></span><div class="mui-media-body color">专属客服</div></a></li>';
+								vip_organizationHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a><span class="mui-icon iconfont icon-phone grid-9-bg"></span><div class="mui-media-body color">专属顾问</div></a></li>';
+								vip_organizationHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a><span class="mui-icon iconfont icon-shiyanshi grid-9-bg"></span><div class="mui-media-body color">新品优先</div></a></li>';
+								vip_organizationHTML += '</ul>';
+
+							} else {
+								vip_organizationHTML += '<div class="mui-content-padded mui-text-center" style=" padding-top: 20px;">';
+								vip_organizationHTML += '<h4><span style=" font-size: 1.2em; padding-right: 5px;" class=" iconfont icon-org-line"></span>'+weiZSInfodata.weiZSPerResponse.organization.name+'</h4>';
+								vip_organizationHTML += '<p class="mui-text-center" style="padding-top: 20px;">未认证</p>';
+								vip_organizationHTML += '</div>';
+
+								vip_organizationHTML += '<div class="mui-content-padded  mui-text-center">';
+								vip_organizationHTML += '<p><span class="mui-icon iconfont icon-choiceness" style=" font-size: 1.2em; padding-right: 5px;"></span>认证电话:023-81814646</p>';
+								vip_organizationHTML += '<p>工作时间:09:00-18:30</p>';
+								vip_organizationHTML += '</div>';
+							}
+
+							muicontent.innerHTML = vip_organizationHTML;
+						} else {
+							$.toast("数据丢失")
+						}
+					}
+
+				})
+			})(mui, document)
+		</script>
+
+	</body>
+
+</html>

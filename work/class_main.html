@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>班级Main</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<style>
+			body,.mui-content{
+				background-color: white;
+			}
+			.mui-title {
+				line-height: 18px;
+				padding-bottom: 15px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"><div>班级</div><div style=" font-size:0.6em; color: #8f8f94;"><span id="msgInfo">&nbsp;</span></div></h1>
+			<a id="rightBar" class="mui-icon  mui-icon  iconfont icon-jia mui-pull-right"></a>
+			<a id="rightFilter" class="mui-icon mui-icon-extra mui-icon-extra-filter mui-pull-right" style="margin-right: 5px;"></a>
+		</header>
+		<div class="mui-content">
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/filter/common.js"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				//启用双击监听
+				$.init({
+					gestureConfig: {
+						doubletap: true
+					},
+					subpages: [{
+						url: 'class_list.html',
+						id: 'class_list.html',
+						styles: {
+							top: '65px',
+							bottom: '0px'
+						}
+					}]
+				});
+
+				var rightBar = doc.getElementById("rightBar");
+				var msgInfo = doc.getElementById("msgInfo");
+
+				var contentWebview = null;
+
+				document.querySelector('header').addEventListener('doubletap', function() {
+					if(contentWebview == null) {
+						contentWebview = plus.webview.currentWebview().children()[0];
+					}
+					contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+				});
+
+				/**
+				 * set resetMsgInfo
+				 */
+				window.addEventListener("resetMsgInfo", function(e) {
+					console.log(e.detail.totalItemCount);
+					msgInfo.innerText = e.detail.totalItemCount + "个班";
+				});
+
+				$.plusReady(function() {
+					main = plus.webview.currentWebview();
+					main.addEventListener('maskClick', closeMenu);
+					//setTimeout的目的是等待窗体动画结束后，再执行create webview操作，避免资源竞争，导致窗口动画不流畅；
+					setTimeout(function() {
+						menu = mui.preload({
+							id: '../filter/class_filter.html',
+							url: '../filter/class_filter.html',
+							styles: {
+								left: "30%",
+								width: '70%',
+								zindex: 9997
+							}
+						});
+					}, 300);
+
+					main.addEventListener('hide', function() {
+						main.close();
+					}, false);
+				});
+				rightBar.addEventListener('tap', function(event) {
+					var modifyClassPage = $.preload({
+						"id": 'modify_class.html',
+						"url": 'modify_class.html'
+					});
+					modifyClassPage.addEventListener('loaded', function() {
+						$.fire(modifyClassPage, 'getParameter', {});
+					});
+					modifyClassPage.show("pop-in");
+				});
+			})(mui, document)
+		</script>
+	</body>
+
+</html>

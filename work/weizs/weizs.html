@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>微招生APP</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+
+		<style>
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 8px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				width: 100%;
+				padding: 0px 15px 0px 15px;
+			}
+			
+			.oa-contact-avatar {
+				text-align: left;
+				width: 75px;
+			}
+			
+			.oa-contact-avatar img {
+				width: 50px;
+				border-radius: 50%;
+			}
+			
+			.oa-contact-name {
+				margin-right: 10px;
+				float: left;
+				color: #fff;
+			}
+			
+			.mui-table-view.mui-grid-9 {
+				background: #ffffff;
+				border-top: 0px;
+			}
+			
+			.mui-grid-9:after {
+				height: 0px;
+				width: 100%;
+				background: #c4c4c4;
+			}
+			
+			.mui-table-view.mui-grid-9 {
+				background: #ffffff;
+				border-top: 0px;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell,
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active {
+				background: white;
+				padding: 0px;
+				border-right: 0px solid #eee;
+				border-bottom: 0px solid #eee;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-media .mui-icon {
+				font-size: 160%;
+				height: 1.5em;
+				width: 2em;
+				line-height: 1.5em;
+				border-radius: 1em;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-media .mui-icon-small {
+				font-size: 120%;
+				height: 1em;
+				width: 2em;
+				line-height: 1em;
+			}
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+				font-size: 0.7em;
+			}
+			
+			.ronschool-nav {
+				font-size: 120%;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border-radius: 1em;
+				color: white;
+				margin-right: 5px;
+			}
+			
+			.header-large {
+				background: -webkit-linear-gradient(top, rgba(0, 178, 194, 1), rgba(0, 178, 194, 0.8));
+				color: #fff;
+				text-align: center;
+				font-size: 14px;
+			}
+			
+			.mui-bar-nav {
+				top: 0;
+				-webkit-box-shadow: 0 1px 6px #00b2c2;
+				box-shadow: 0 0px 6px #00b2c2;
+			}
+			
+			.mui-table-view {
+				margin-top: 10px;
+			}
+			
+			.mui-table-view-cell {
+				position: relative;
+				overflow: hidden;
+				padding: 13px 15px;
+				-webkit-touch-callout: none;
+			}
+			
+			.mui-table-cell.actived::before {
+				content: "\e6c3";
+				font-family: iconfont;
+				font-size: 18px;
+				color: #fff;
+				position: absolute;
+				right: 15px;
+				bottom: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">微直招</h1>
+		</header>
+		<div class="mui-content" style=" padding-top: 65px;">
+			<div id="userinfo" class="oa-contact-cell mui-table header-large">
+				<div class="oa-contact-avatar mui-table-cell actived">
+					<img src="../../images/50x50t.png" />
+				</div>
+				<div class="oa-contact-content mui-table-cell">
+					<div class="mui-clearfix">
+						<h4 class="oa-contact-name">识别中...</h4>
+					</div>
+					<p class="oa-contact-email mui-h6">
+						<span class="oa-contact-name">识别中...</span>
+					</p>
+				</div>
+			</div>
+			<ul id="weizsInfoNum" class="mui-table-view mui-grid-view mui-grid-9" style="padding:15px 0px;">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6 " style="border-right: 1px dashed #eee;">
+					<a href="loading" style="padding:0;">
+						<span class="mui-icon-small">0</span>
+						<div class="mui-media-body">课程管理</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="loading" style="padding:0;">
+						<span class="mui-icon-small">0</span>
+						<div class="mui-media-body">脚印</div>
+					</a>
+				</li>
+			</ul>
+			<ul id="weiZSApps1" class="mui-table-view mui-grid-view mui-grid-9" style="margin-top: 10px;">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+					<!--<a href="loading system_msg.html">-->
+					<a href="loading">
+						<span class="mui-icon  iconfont icon-mark"></span>
+						<div class="mui-media-body">消息</div>
+					</a>
+				</li>
+
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+					<a href="loading">
+						<span class="mui-icon iconfont icon-choiceness"></span>
+						<div class="mui-media-body">认证机构</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="loading">
+						<span class="mui-icon iconfont  icon-org-line"></span>
+						<div class="mui-media-body">机构信息</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 ">
+					<a href="loading">
+						<span class="mui-icon iconfont icon-result"></span>
+						<div class="mui-media-body">效果看板</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="singleinfluence.html"><span class="mui-icon iconfont icon-medal_light" style></span>影响力<span id="sex" class="mui-pull-right"></span></a>
+				</li>
+
+				<li class="mui-table-view-cell">
+					<a href="system_notice.html"><span class="mui-icon iconfont icon-gonggao"></span> 通知<span id="lead_name" class="mui-pull-right"></span></a>
+				</li>
+
+			</ul>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+
+		<script type="text/javascript" src="../../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../../js/app.js"></script>
+		<script type="text/javascript" src="../../js/work/weizs/weizs.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>跟进记录</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #f8f8f8;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">跟进记录</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  iconfont icon-jia mui-pull-right"></a>
+			<a id="rightBarSearch" class="mui-icon   mui-icon  mui-icon-search mui-pull-right"></a>
+		</header>
+		<div class="mui-content">
+
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<h6 class="mui-h6 mui-pull-right">打电话</h6>
+					<div class="mui-media-body">
+						<span>田乐</span>
+						<p> 2016-09-27 15:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p><span class="label label-success">已报名</span><span>下次跟进：016-09-27 15:30</span></p>
+						<div>妈妈反应学习兴趣提高了，之前经常玩电动，现在喜欢读书了</div>
+
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">跟进学员:</span><span>陈刚</span></p>
+						<p class="mui-card-correlation"><i class="mui-icon  iconfont icon-time"></i><span style="padding-right:10px;">下次跟进：</span><span>016-09-27 15:30</span</p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><i class=" mui-icon mui-icon mui-icon-extra mui-icon-extra-like" style=" font-size: 1.2em;"></i> 赞</a>
+					<a class=" mui-h6"><i class=" mui-icon mui-icon-trash" style=" font-size: 1.5em;"></i>删除</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<h6 class="mui-h6 mui-pull-right">面谈</h6>
+					<div class="mui-media-body">
+						<span>欣欣</span>
+						<p> 2016-09-25 14:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p><span class="label label-warning">跟进中</span></p>
+						<div>对我们学校很认可，是同学介绍过来。回去和爸妈商量，下周给回复。</div>
+
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">跟进学员:</span><span>金生国</span></p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><i class=" mui-icon mui-icon mui-icon-extra mui-icon-extra-like" style=" font-size: 1.2em;"></i> 赞</a>
+					<a class=" mui-h6"><i class=" mui-icon mui-icon-trash" style=" font-size: 1.5em;"></i>删除</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header  mui-card-media"> <img src="../images/50x50.png" style="border-radius: 50%; " />
+					<h6 class="mui-h6 mui-pull-right">发短信</h6>
+					<div class="mui-media-body">
+						<span>阳阳</span>
+						<p> 2016-09-25 14:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p><span class="label label-danger">无意向</span></p>
+						<div>现在课余时间都在培训文化课，没有时间学习</div>
+						<p class="mui-card-correlation"><i class=" mui-icon iconfont icon-guanlian"></i><span style=" padding-right: 10px;">跟进学员:</span><span>马炜</span></p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-h6"><i class=" mui-icon mui-icon mui-icon-extra mui-icon-extra-like" style=" font-size: 1.2em;"></i> 赞</a>
+					<a class=" mui-h6"><i class=" mui-icon mui-icon-trash" style=" font-size: 1.5em;"></i>删除</a>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js" charset="UTF-8"></script>
+		<script src="../js/app.js" charset="UTF-8"></script>
+		<script type="text/javascript" charset="UTF-8">
+			(function($, $window, doc) {
+				$.init({
+					swipeBack: true
+				});
+
+				//接收rightbar事件
+				$window.addEventListener('navRightPress', function() {
+					showModifyStudent();
+				}, false);
+
+				mui.plusReady(function() {
+
+				});
+
+				function showModifyStudent() {
+					app.pushWebView({
+						webType: 'newWebview_Second',
+						id: 'work/modify-record-needtem',
+						href: 'work/modify-record-needtem.html',
+						aniShow: app.getaniShow(),
+						title: "写跟进记录",
+						isBars: false,
+						barsIcon: '',
+						extendOptions: {
+							barText: '发送'
+						}
+					})
+				}
+			})(mui, window, document)
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">关于易管校</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-plus-visible">
+					<a id="welcome" class="mui-navigate-right">新版本介绍</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="tel" class="mui-navigate-right">客服电话</a>
+				</li>
+				<li id="feedback-btn" class="mui-table-view-cell">
+					<a href="feedback.html" class="mui-navigate-right">问题反馈</a>
+				</li>
+				<!--<li id="check_update" class="mui-table-view-cell mui-plus-visible">
+					<a id="update" class="mui-navigate-right">检查新版本</a>
+				</li>-->
+			</ul>
+		</div>
+
+		<script src="../js/mui.min.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script src="../js/app.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			mui.init({
+				swipeBack: true
+			});
+
+			mui.plusReady(function() {
+			});
+
+			document.getElementById("feedback-btn").addEventListener('tap', function(e) {
+				//显示启动导航
+				mui.openWindow({
+					id: 'feedback',
+					url: 'feedback.html',
+					show: {
+						aniShow: 'fade-in',
+						duration: 300
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			document.getElementById("welcome").addEventListener('tap', function(e) {
+				//显示启动导航
+				mui.openWindow({
+					id: 'guide',
+					url: '/guide/guide.html',
+					show: {
+						aniShow: 'fade-in',
+						duration: 300
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			
+			//客服电话
+			document.getElementById("tel").addEventListener('tap', function() {
+				if(mui.os.plus) {
+					plus.device.dial("02381214646");
+				} else {
+					location.href = 'tel:02381214646';
+				}
+
+			});
+		</script>
+	</body>
+
+</html>

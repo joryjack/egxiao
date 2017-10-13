@@ -1,0 +1,376 @@
+/*
+ * app.css
+ */
+
+
+/*
+ * common style
+ */
+
+.blur {
+	filter: url(blur.svg#blur);
+	/* FireFox, Chrome, Opera */
+	-webkit-filter: blur(2px);
+	/* Chrome, Opera */
+	-moz-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+	filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=false);
+	/* IE6~IE9 */
+}
+
+.coding {
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	z-index: 1000;
+	font-weight: 700;
+	text-align: center;
+}
+
+.coding .coding-title {
+	font-size: 1.8em;
+}
+
+.coding .coding-content {
+	padding: 10px 15px;
+	text-align: left;
+	text-indent: 2em;
+}
+
+body,
+.mui-content {
+	background-color: #fff;
+}
+
+
+/*对header的设置 适合每个页面*/
+
+.mui-bar.mui-bar-nav {
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+}
+
+.mui-bar-tab {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+header a {
+	/*color: gray; */
+}
+
+#rightBarSearch {
+	font-size: 1.3em;
+	margin-right: 2px;
+}
+
+
+/* #FEBB3A 黄  #58BDEB 蓝   #EF8E92 红  #30C78C 绿   9ED0A1*/
+
+.mui-card-header-warning {
+	color: #F9BE5A;
+}
+
+.mui-card-header-primary {
+	color: #99D9EA;
+}
+
+.mui-card-header-danger {
+	color: #ef6678;
+}
+
+.mui-card-header-success {
+	color: #9ED0A1;
+}
+
+.mui-card-header-default {
+	color: #8694ED;
+}
+.mui-card-header-silver{
+	color: #C3C6CD;
+}
+
+/* label color :  #FEC002 黄  #3BB2EC 蓝  #F76160 红  #4AD125 绿 */
+
+.label {
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-size: 0.8em;
+	color: #fff;
+}
+
+.label-default {
+	background-color: #dddddd;
+}
+
+.label-warning {
+	background-color: #FEC002;
+}
+
+.label-primary {
+	background-color: #3BB2EC;
+}
+
+.label-danger {
+	background-color: #F76160;
+}
+
+.label-success {
+	background-color: #4AD125;
+}
+.label-danger1 {
+	background-color: #9487F9;
+}
+
+/*
+ * fontcolor
+ */
+
+.fontcolor-warning {
+	color: #FEC002;
+}
+
+.fontcolor-warning-light {
+	color: #FECF02;
+}
+
+.fontcolor-primary {
+	color: #3BB2EC;
+}
+
+.fontcolor-danger {
+	color: #F76160;
+}
+.fontcolor-danger1 {
+	color: #9487F9;
+}
+
+.fontcolor-danger-light {
+	color: #E59A9A;
+}
+
+.fontcolor-success {
+	color: #4AD125;
+}
+
+.fontcolor-success-light {
+	color: #9DD0A1;
+}
+
+.fontcolor-default {
+	color: #8f8f94;
+}
+
+
+/* #30C78C 绿  */
+
+.price-large {
+	font-size: 2em;
+}
+
+.price-success {
+	font-style: normal;
+	color: #47957D
+}
+
+.price-danger {
+	font-style: normal;
+	color: #FF8C5C;
+}
+
+.flagIcon {
+	padding-right: 10px;
+	border-right: solid #ddd 1px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+.flagIcon-success {
+	color: #C0E0C2;
+}
+
+.flagIcon-danger {
+	color: #FAB4B8;
+}
+
+.flagIcon-warning {
+	color: #EDDA89;
+}
+
+.number {
+	font-style: normal;
+}
+
+.number-large {
+	font-size: 2em;
+	font-style: normal;
+}
+
+.number-default {
+	color: #767C81
+}
+
+
+/*
+ * 学员
+ */
+
+.oa-contact-cell.mui-table .mui-table-cell {
+	padding: 8px 0;
+	vertical-align: middle;
+}
+
+.oa-contact-cell {
+	position: relative;
+	margin: -11px 0;
+}
+
+.oa-contact-avatar,
+.oa-contact-tel {
+	width: 65px;
+}
+
+.oa-contact-avatar img {
+	width: 50px !important;
+	border-radius: 50%;
+}
+
+.oa-contact-content {
+	width: 100%;
+}
+
+.oa-contact-name {
+	margin-right: 10px;
+}
+
+.oa-contact-name,
+oa-contact-position {
+	float: left;
+}
+
+.student-phone {
+	color: #55BD9A;
+	font-size: 2em;
+}
+
+
+/*
+ *card 跟进记录 / 缴费
+ */
+
+.mui-card-footer:before,
+.mui-card-header:after {
+	background-color: #fff;
+}
+
+.mui-card-content-inner {
+	padding: 0px 15px;
+}
+
+.mui-card-correlation {
+	background-color: #fafafa;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.mui-card-correlation i {
+	font-size: 1.2em;
+	padding-right: 10px;
+}
+
+
+/*
+ * 班级
+ */
+
+.mui-card-content-inner {
+	padding: 0px 15px;
+}
+
+.mui-card-content-lastp {
+	margin-bottom: 0px;
+}
+
+.card-header-num {
+	font-style: normal;
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #8f8f94;
+	border-left: 1px solid #F5F5F5;
+	font-size: 0.8em;
+}
+
+.card-header-nav {
+	color: #8f8f94;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	padding: 10px 10px 10px 20px;
+	font-size: 0.8em;
+}
+
+.card-header-icon {
+	position: absolute;
+	left: -9px;
+	top: 8px;
+	vertical-align: middle;
+}
+
+
+/*
+ * 课程
+ */
+
+.lesson-price {
+	font-size: 1.2em;
+	font-style: normal;
+	color: #FF8C5C;
+}
+
+.lesson-state {
+	font-size: 1.8em;
+	vertical-align: middle;
+}
+
+
+/*
+ * 科目
+ */
+
+.subject_icon {
+	font-size: 1em;
+	padding-right: 10px;
+	color: #A9A9A9;
+}
+
+.nodata {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+.nodata a {
+	width: 100px;
+	height: 100px;
+	display: block;
+	border: 1px solid #B9B9B9;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 50%;
+	font-size: 40px;
+	color: #B9B9B9;
+	position: absolute;
+	margin-top: 20%;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.subject-state {
+	font-size: 1.8em;
+	vertical-align: middle;
+}

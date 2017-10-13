@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+			<link rel="stylesheet" href="../../css/iconfont.css" />
+		<style>
+			/*textarea  placeholder 换行*/
+			
+			textarea::-webkit-input-placeholder:after {
+				  display:block;  
+				content: "例如：\A 1.课程特色\A 2.上课时间\A 3.上课老师";
+				/*  \A 表示换行  */
+				color: #A9A9A9;
+			}
+			
+			textarea::-moz-placeholder:after {
+				content: "例如：\A 1.课程特色\A 2.上课时间\A 3.上课老师";
+				/*  \A 表示换行  */
+				color: #A9A9A9;
+			}
+		
+			
+			.abstract {
+				height: 250px;
+				font-size: 14px;
+				margin-bottom: 0px !important;
+			}
+			
+		
+		</style>
+
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">编写课程简介</h1>
+		</header>
+		<div class="mui-content" style=" padding-top: 85px;">
+			<div class="mui-content-padded ">
+				<textarea id="abstractText" class="mui-input-clear abstract" placeholder="请填写详细的课程简介,吸睛的内容更容易带来脚印奥"></textarea>
+				<p class="mui-clearfix fontcolor-default"><span class="mui-pull-right"><i id="numberId">0</i>/500</span></p>
+			</div>
+			<div class="mui-content-padded ">
+				<p>*不能填写QQ、微信、电话等联系方式及敏感、广告词汇</p>
+			</div>
+			<div class="mui-content-padded">
+				<button id='saveAbstractText' class="mui-btn mui-btn-block mui-btn-ronschool">保存</button>
+			</div>
+
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script type="text/javascript" src="../../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../../js/tool/base64.js" ></script>
+		<script type="text/javascript" src="../../js/app.js"></script>
+		<script type="text/javascript" src="../../js/work/weizs/set_zslessonabstracts.js" ></script>
+
+	</body>
+
+</html>

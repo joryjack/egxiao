@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/app.css" />
+   <link rel="stylesheet" href="../css/common.css" />
+		<style>
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:after {
+				background-color: #fff;
+			}
+			
+			.mui-input-group .mui-input-row {
+				margin-right: 15px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			h5 {
+				margin: 10px 15px 5px 15px;
+				color: #007aff;
+			}
+			
+			input {
+				color: #8f8f94;
+			}
+			
+			#popover {
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				#popover {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">保存</a>
+		</header>
+		<div class="mui-content">
+			<form id='login-form' class="mui-input-group">
+				<h5 style="padding-top: 10px; ">姓名</h5>
+				<div class="mui-input-row">
+					<input id='name' type="text" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+				</div>
+				<h5>电话</h5>
+				<div class="mui-input-row">
+					<input id='phone' type="tel" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+				</div>
+				<h5>所属校区</h5>
+				<div class="mui-input-row">
+					<p id='selectCampusName' placeholder="请选择" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+				<h5>直属上级</h5>
+				<div class="mui-input-row">
+					<p id='selectLeaderName' placeholder="请选择" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+				<h5>职务</h5>
+				<div class="mui-input-row">
+					<p id='selectRole' placeholder="请选择" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+				<h5>备注</h5>
+				<div class="mui-input-row">
+					<input id="description" type="text" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+				</div>
+			</form>
+			<div id="popover" class="mui-popover">
+
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>咨询</label>
+					<input name="checkbox" value="439aca7899de48d1a459aa76007b501b" type="checkbox">
+				</div>
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>教务</label>
+					<input name="checkbox" value="bc0acdf3aa6346d4889ee402a7eb89f1" type="checkbox">
+				</div>
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>教师</label>
+					<input name="checkbox" value="09a3d67a7a914d199fa31ffa15f0ca8a" type="checkbox">
+				</div>
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>分校校长</label>
+					<input name="checkbox" value="bc123df3aa6346d4889ee402a7eb89f4" type="checkbox">
+				</div>
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label>管理员</label>
+					<input name="checkbox" value="07ec2b419dbe4f51a14c5c9b4e4e5b0d" type="checkbox">
+				</div>
+				<div class="mui-input-row">
+					<a id="rolecancel" class="mui-btn-link mui-pull-left" style="margin-left: 25px;">取消</a>
+					<a id="roleconfirm" class="mui-btn-link mui-pull-right" style="margin-left: 10px;">确定</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+
+		<script type="text/javascript" src="../js/manage/modify_personnel.js"></script>
+	</body>
+
+</html>

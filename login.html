@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/common.css" />
+		<style>
+			body,
+			.mui-content {
+				background-color: #fff;
+			}
+			
+			.mui-bar {
+				-webkit-box-shadow: 0 0 0.8px rgba(0, 0, 0, 0);
+			}
+			
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group {
+				margin-top: 10px;
+			}
+			
+			.mui-input-group:first-child {
+				margin-top: 40px;
+			}
+			
+			.mui-input-group label {
+				width: 23%;
+				padding: 16px 15px;
+			}
+			
+			.mui-input-group .mui-input-row {
+				height: 50px;
+			}
+			
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 77%;
+				height: 50px;
+				margin-bottom: 10px;
+			}
+			
+			.mui-input-row .mui-input-clear~.mui-icon-clear,
+			.mui-input-row .mui-input-password~.mui-icon-eye,
+			.mui-input-row .mui-input-speech~.mui-icon-speech {
+				top: 14px;
+			}
+			
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+			}
+			
+			.link-area {
+				display: block;
+				margin-top: 25px;
+				text-align: center;
+			}
+			
+			.spliter {
+				color: #bbb;
+				padding: 0px 8px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">登录</h1>
+		</header>
+
+		<div class="mui-content">
+			<form id='login-form' class="mui-input-group">
+				<div class="mui-input-row" style=" border-top-color: #fff;">
+					<label>+86 <i  style="color: #F5F5F5; vertical-align: middle; font-style: normal; padding-left:15px;">|</i> </label>
+					<input id='account' type="tel" maxlength="11" class="mui-input-clear mui-input" placeholder="请输入手机号">
+				</div>
+
+				<div class="mui-input-row mui-password">
+					<label>密码</label>
+					<input id='password' type="password" class="mui-input-password" placeholder="请输入密码" maxlength="16">
+				</div>
+			</form>
+			<form class="mui-input-group">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell">
+						记住密码
+						<div id="autoLogin" class="mui-switch mui-active">
+							<div class="mui-switch-handle "></div>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<div class="mui-content-padded">
+
+				<button id='login' class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+				<div class="link-area">
+					<a id='reg' href="#forward">注册账号</a> <span class="spliter">|</span>
+					<a id='forgetPassword'>忘记密码</a>
+				</div>
+			</div>
+			<div id="forward" class="mui-popover mui-popover-action mui-popover-bottom">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a id="createOrg" href="#">创建一个新机构，全新注册</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a id="joinOrg">机构管理员给我开通账号，我加入</a>
+					</li>
+
+				</ul>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#forward"><b>取消</b></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/immersed.js"></script>
+		<script src="js/mui.enterfocus.js"></script>
+		<script type="text/javascript" src="js/tool/base64.js"></script>
+		<script src="js/app.js"></script>
+
+		<script type="text/javascript" src="js/mui.jsonp.js"></script>
+		<script>
+			(function($, doc) {
+				$.init({
+					statusBarBackground: '#ffffff'
+				});
+				$.plusReady(function() {
+
+					//					var list = plus.webview.all();
+					//					mui.each(list,function(index,item){
+					//						console.log(item.id);
+					//					});
+					//检测是否需要显示导航页面
+					showlanchView();
+					// 禁止竖屏
+					plus.screen.lockOrientation("portrait-primary");
+					var settings = app.getSettings();
+					var account = app.getAccount();
+					var toMain = function() {
+						var mainPage = $.preload({
+							"id": 'main.html',
+							"url": 'main.html'
+						});
+
+						var barAccountPage = plus.webview.getWebviewById('barItem/barAccount.html');
+						if(barAccountPage) {
+							$.fire(barAccountPage, 'show', null);
+						}
+						var barWorkPage = plus.webview.getWebviewById('barItem/barWork.html');
+						if(barWorkPage) {
+							$.fire(barWorkPage, 'show', null);
+						}
+						$.fire(mainPage, 'show', null);
+						mainPage.show("pop-in");
+						//							}
+						//						}, 20);
+					};
+					// if(){ plus.webview.getWebviewById("login_main").reload() }
+					//检查 "登录状态/锁屏状态" 开始
+					//console.log(JSON.stringify(account));
+					if(settings.autoLogin && (account != null && JSON.stringify(account) != '{}')) {
+						doc.getElementById('account').value = account.phone;
+						doc.getElementById('password').value = account.password;
+						toMain();
+					}
+
+					// close splash
+					setTimeout(function() {
+						//关闭 splash
+						plus.navigator.closeSplashscreen();
+					}, 600);
+					//检查 "登录状态/锁屏状态" 结束
+					var loginButton = doc.getElementById('login');
+					var accountBox = doc.getElementById('account');
+					var passwordBox = doc.getElementById('password');
+					var autoLoginButton = doc.getElementById("autoLogin");
+					var forgetButton = doc.getElementById('forgetPassword');
+
+					loginButton.addEventListener('tap', function(event) {
+						if(plus.networkinfo.getCurrentType() == plus.networkinfo.CONNECTION_NONE) {
+							plus.nativeUI.toast('网络不给力，请检查网络设置');
+							return;
+						}
+						var loginInfo = {
+							account: accountBox.value,
+							password: passwordBox.value
+						};
+						var waiting = plus.nativeUI.showWaiting();
+						app.login(loginInfo, function(data) {
+							waiting.close();
+							if(typeof data == 'string') {
+								plus.nativeUI.toast(data);
+								return;
+							} else {
+								console.log(JSON.stringify(data));
+								localStorage.setItem('$orgInfos', JSON.stringify(data));
+								if(data.length == 1) {
+									if(data[0].success) {
+
+										localStorage.setItem('$account', JSON.stringify(data[0]));
+										plus.nativeUI.toast(data[0].msg);
+										toMain();
+									} else {
+										plus.nativeUI.toast(data[0].msg);
+									}
+								} else {
+
+									$.openWindow({
+										url: '/login/select-organization.html',
+										id: '/login/select-organization.html',
+										preload: true,
+										show: {
+											aniShow: 'pop-in'
+										},
+										styles: {
+											popGesture: 'hide'
+										},
+										waiting: {
+											autoShow: false
+										}
+									});
+								}
+							}
+							//toMain();
+						});
+					});
+					$.enterfocus('#login-form input', function() {
+						$.trigger(loginButton, 'tap');
+					});
+					autoLoginButton.classList[settings.autoLogin ? 'add' : 'remove']('mui-active')
+					autoLoginButton.addEventListener('toggle', function(event) {
+						setTimeout(function() {
+							var isActive = event.detail.isActive;
+							settings.autoLogin = isActive;
+							app.setSettings(settings);
+						}, 50);
+					}, false);
+
+					forgetButton.addEventListener('tap',
+						function(event) {
+							var forget_passwordPage = $.preload({
+								"id": '/login/forget_password.html',
+								"url": '/login/forget_password.html'
+							});
+							$.fire(forget_passwordPage, 'getParameter', {
+								phone: accountBox.value
+							});
+							forget_passwordPage.show("pop-in");
+
+						}, false);
+
+					var backButtonPress = 0;
+					$.back = function(event) {
+						backButtonPress++;
+						if(backButtonPress > 1) {
+							plus.runtime.quit();
+						} else {
+							plus.nativeUI.toast('再按一次退出应用');
+						}
+						setTimeout(function() {
+							backButtonPress = 0;
+						}, 1000);
+						return false;
+					};
+				});
+				
+				//关闭启动页面
+				function closeStartScreent() {
+					//创建父子模版完成后关闭启动页面
+					plus.navigator.closeSplashscreen();
+				}
+				//是否显示lanch页面
+				function showlanchView() {
+					var showGuide = plus.storage.getItem("lauchFlag");
+					setTimeout(function() {
+						if(showGuide) {
+							//检测是否登录过在登录过显示登录前置页面
+							closeStartScreent();
+						} else {
+							plus.navigator.setFullscreen(true);
+							mui.openWindow({
+								id: 'guide',
+								url: 'guide/guide.html',
+								show: {
+									aniShow: 'none'
+								},
+								waiting: {
+									autoShow: false
+								}
+							});
+							setTimeout(function() {
+								closeStartScreent();
+							}, 300);
+						}
+					}, 300);
+				}
+
+				$('body').on('tap', '.mui-popover-action li>a', function() {
+					var a = this,
+						parent;
+					//根据点击按钮，反推当前是哪个actionsheet
+					for(parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+						if(parent.classList.contains('mui-popover-action')) {
+							break;
+						}
+					}
+					//关闭actionsheet
+					$('#' + parent.id).popover('toggle');
+					switch(a.id) {
+						case "createOrg":
+							$.openWindow({
+								url: '/login/register.html',
+								id: '/login/register.html',
+								preload: true,
+								show: {
+									aniShow: 'pop-in'
+								},
+								waiting: {
+									autoShow: false
+								}
+							});
+							break;
+						case "joinOrg":
+							var activate_accountPage = $.preload({
+								"id": '/login/activate_account.html',
+								"url": '/login/activate_account.html'
+							});
+							$.fire(activate_accountPage, 'getParameter', {
+								phone: doc.getElementById('account').value
+							});
+							activate_accountPage.show("pop-in");
+							break;
+						default:
+							break;
+					}
+				})
+			})(mui, document);
+		</script>
+	</body>
+
+</html>

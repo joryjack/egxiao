@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>student_filter</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/filter.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+	</head>
+
+	<body>
+		<div class="mui-content" style=" padding-top: 20px;">
+			<form>
+				<div class="mui-row">
+					<div class="mui-col-xs-6">
+						<div class="title">学员</div>
+						<div class="mui-clearfix ">
+							<div class=" mui-input-group  mui-input-row">
+								<input id='name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+							</div>
+						</div>
+					</div>
+					<div class="mui-col-xs-6">
+						<div class="title">报名人</div>
+						<div class="mui-clearfix ">
+							<div class=" mui-input-group  mui-input-row">
+								<input id='create_name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="title">课程</div>
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id='lesson_name' type="text" class="mui-input-clear mui-input" maxlength="8" placeholder="请输入">
+					</div>
+				</div>
+				<div class="title">状态</div>
+				<div class="mui-clearfix state" style="padding-left: 15px; ">
+					<span data-code="arrears" class="label label-default  mui-pull-left" style=" margin-right: 10px; margin-top: 10px">欠费</span>
+					<span data-code="discount" class="label label-default mui-pull-left" style=" margin-right: 10px; margin-top: 10px">优惠</span>
+				</div>
+				<div class="title">时间</div>
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id="start" data-options='{"type":"date"}' type="text" placeholder="开始" />
+					</div>
+
+				</div>
+				<div class="mui-clearfix ">
+					<div class=" mui-input-group  mui-input-row">
+						<input id="end" data-options='{"type":"date"}' type="text" placeholder="结束" />
+					</div>
+
+				</div>
+				<div id="dataRange" class="mui-hidden">
+					<div class="title">数据范围</div>
+					<div class="mui-clearfix">
+						<div class=" mui-input-group  mui-input-row">
+							<input id='campus_name' type="text" class="mui-input" onfocus="this.blur();" maxlength="8" placeholder="请输入" value="全部校区">
+						</div>
+					</div>
+				</div>
+				</from>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="reset" class="mui-tab-item " href="#">
+				重置
+			</a>
+			<a id="search" class="mui-tab-item" href="#">
+				确定
+			</a>
+		</nav>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/filter/enroll_filter.js"></script>
+	</body>
+
+</html>

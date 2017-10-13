@@ -1,0 +1,172 @@
+{
+  "login/createOrg.html": {
+    "href": "login/createOrg.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  },
+  "login/set_password.html": {
+    "href": "login/set_password.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "login/select-activate-organization.html": {
+    "href": "login/select-activate-organization.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "login/activate_account.html": {
+    "href": "login/activate_account.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "login/reset_password.html": {
+    "href": "login/reset_password.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "login/select-user-organization.html": {
+    "href": "login/select-user-organization.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "login/forget_password.html": {
+    "href": "login/forget_password.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "account/contact.html": {
+    "href": "account/contact.html",
+    "resources": [],
+    "priority": 5
+  },
+  "account/messsage-setting-needtem.html": {
+    "href": "account/messsage-setting-needtem.html",
+    "resources": [],
+    "priority": 8
+  },
+  "account/about-egxiao-needtem.html": {
+    "href": "account/about-egxiao-needtem.html",
+    "resources": [],
+    "refer": [],
+    "priority": 9
+  },
+  "barItem/barSchLetter.html": {
+    "href": "barItem/barSchLetter.html",
+    "resources": [],
+    "priority": 5
+  },
+  "manage/modify_lesson.html": {
+    "href": "manage/modify_lesson.html",
+    "resources": [],
+    "refer": [],
+    "priority": 8
+  },
+  "manage/lesson_list.html": {
+    "href": "manage/lesson_list.html",
+    "resources": [],
+    "refer": [],
+    "priority": 8
+  },
+  "manage/modify_campus.html": {
+    "href": "manage/modify_campus.html",
+    "resources": [],
+    "refer": [],
+    "priority": 9
+  },
+  "work/record_list.html": {
+    "href": "work/record_list.html",
+    "resources": [],
+    "priority": 10
+  },
+  "work/select_student_list.html": {
+    "href": "work/select_student_list.html",
+    "resources": [],
+    "refer": [],
+    "priority": 11
+  },
+  "work/select_student_main.html": {
+    "href": "work/select_student_main.html",
+    "resources": [],
+    "refer": [],
+    "priority": 11
+  },
+  "work/modify_record.html": {
+    "href": "work/modify_record.html",
+    "resources": [],
+    "refer": [],
+    "priority": 11
+  },
+  "work/edit_student.html": {
+    "href": "work/edit_student.html",
+    "resources": [],
+    "refer": [],
+    "priority": 13
+  },
+  "work/student_list.html": {
+    "href": "work/student_list.html",
+    "resources": [],
+    "refer": [],
+    "priority": 13
+  },
+  "work/modify_student.html": {
+    "href": "work/modify_student.html",
+    "resources": [],
+    "refer": [],
+    "priority": 14
+  },
+  "manage/modify-subject.html": {
+    "href": "manage/modify-subject.html",
+    "resources": [],
+    "refer": [],
+    "priority": 14
+  },
+  "manage/select_campus_list.html": {
+    "href": "manage/select_campus_list.html",
+    "resources": [],
+    "refer": [],
+    "priority": 15
+  },
+  "manage/select_personnel_list.html": {
+    "href": "manage/select_personnel_list.html",
+    "resources": [],
+    "refer": [],
+    "priority": 16
+  },
+  "manage/select_personnel_main.html": {
+    "href": "manage/select_personnel_main.html",
+    "resources": [],
+    "refer": [],
+    "priority": 16
+  },
+  "manage/select_campus_main.html": {
+    "href": "manage/select_campus_main.html",
+    "resources": [],
+    "refer": [],
+    "priority": 17
+  },
+  "manage/modify_personnel.html": {
+    "href": "manage/modify_personnel.html",
+    "resources": [],
+    "refer": [],
+    "priority": 15
+  },
+  "barItem/barWork.html": {
+    "href": "barItem/barWork.html",
+    "resources": [],
+    "refer": [],
+    "priority": 7
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  }
+}

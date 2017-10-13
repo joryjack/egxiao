@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<style>
+			.mui-table-view:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:before {
+				background-color: #fff;
+			}
+			
+			.mui-input-group:after {
+				background-color: #fff;
+			}
+			
+			.mui-input-group .mui-input-row {
+				margin-right: 15px;
+			}
+			
+			#rightBar {
+				font-size: 1em;
+				padding-top: 15px;
+				font-weight: 500;
+			}
+			
+			h5 {
+				margin: 10px 15px 5px 15px;
+				color: #007aff;
+			}
+			
+			input {
+				color: #8f8f94;
+			}
+			
+			#popover {
+				padding: 15px 15px 15px 0px;
+				max-height: 300px;
+				top: 50% !important;
+				margin-top: -150px;
+				left: 50% !important;
+				margin-left: -141px;
+			}
+			
+			@media (min-width: 400px) {
+				#popover {
+					width: 80%;
+					margin-left: -40%;
+				}
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加学员</h1>
+			<a id="rightBar" class="mui-icon  mui-icon  mui-pull-right">保存</a>
+		</header>
+		<div class="mui-content">
+			<form id='login-form' class="mui-input-group">
+				<h5 style="padding-top: 10px; ">姓名</h5>
+				<div class="mui-input-row">
+					<input id='name' type="text" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+				</div>
+				<h5>家长电话</h5>
+				<div class="mui-input-row">
+					<input id='phone' type="tel" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+				</div>
+				<div class="morefield mui-hidden">
+					<h5>家长电话</h5>
+					<div class="mui-input-row">
+						<input id='phone2' type="tel" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+					</div>
+					<h5>学员电话</h5>
+					<div class="mui-input-row">
+						<input id='student_phone' type="tel" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+					</div>
+					<h5>性别</h5>
+					<div class="mui-input-row">
+						<p id="selectSex" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+					</div>
+				</div>
+				<h5>来源</h5>
+				<div class="mui-input-row">
+					<p id="selectSource" style="padding-left: 15px; padding-top: 10px; font-size: 1em; color: #8f8f94;">请选择</p>
+				</div>
+				<h5>备注</h5>
+				<div class="mui-input-row">
+					<input id="description" type="text" class="mui-input-clear mui-input" maxlength="15" placeholder="请输入">
+				</div>
+			</form>
+			<nav class="mui-bar mui-bar-tab">
+				<a id="show_morefield" class="mui-tab-item mui-active" style="color: #929292;">
+					<span class="mui-tab-label">显示更多字段 </span>
+				</a>
+				<a id="hide_morefield" class="mui-tab-item mui-active mui-hidden" style="color: #929292;">
+					<span class="mui-tab-label">收起 </span>
+				</a>
+			</nav>
+
+		</div>
+		<div id="popover" class="mui-popover"  style="height: 300px;">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a>自然来电</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>转介绍</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>渠道合作</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>活动填单</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>自然来访</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>户外广告</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>网络媒体</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>老学员</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>其他</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js"></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="../js/work/modify_student_select.js"></script>
+
+	</body>
+
+</html>

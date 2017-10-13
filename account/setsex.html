@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		
+		<link rel="stylesheet" href="../css/iconfont.css" />
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">性别</h1>
+
+		</header>
+		<div class="mui-content" style="padding-top: 65px;">
+			<form class="mui-input-group">
+				<div class="mui-input-row mui-checkbox" data-sex="男"><label>男</label><input value="男" type="checkbox"></div>
+				<div class="mui-input-row mui-checkbox" data-sex="女"><label>女</label><input value="女" type="checkbox"></div>
+			</form>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/immersed.js" ></script>
+		<script type="text/javascript" src="../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<script>
+			(function($, doc) {
+
+				$.init();
+
+				window.addEventListener('getParameter', function(options) {
+					var _sex = options.detail.sex;
+					console.log(_sex);
+					if(_sex != null && _sex != "") {
+						var inputList = document.querySelectorAll('input');
+						$.each(inputList, function(index, item) {
+							if(item.value == _sex) {
+								item.checked = true;
+							} else {
+								item.checked = false;
+							}
+						});
+
+					}
+				})
+				$.plusReady(function() {
+					var authorization = app.getAccount();
+
+					var self = plus.webview.currentWebview();
+					self.addEventListener('hide', function() {
+						self.close();
+					}, false);
+
+					$(".mui-input-group").on('tap', '.mui-checkbox', function() {
+						var _sex = this.dataset.sex;
+
+						if(_sex == authorization.sex) {
+							self.close();
+							return;
+						}
+						var AccountModel = {
+							id: authorization.id,
+							sex: _sex,
+							phone: authorization.phone,
+							update_by: authorization.id
+						}
+						if(plus.networkinfo.getCurrentType() == plus.networkinfo.CONNECTION_NONE) {
+							plus.nativeUI.toast('网络不给力，请检查网络设置');
+							return;
+						}
+
+						var waiting = plus.nativeUI.showWaiting();
+						app.SaveUserBaseInfo(AccountModel, function(data) {
+							waiting.close();
+							if(data.success) {
+								authorization.sex =_sex;
+								localStorage.setItem('$account', JSON.stringify(authorization));
+								var mineinfoPage = plus.webview.getWebviewById('/account/infocenter-needtem.html');
+								if(mineinfoPage) {
+									$.fire(mineinfoPage, 'reload', null);
+								}
+								self.close();
+							} else {
+								plus.nativeUI.toast(data.msg);
+							}
+						});
+
+					});
+				});
+
+			})(mui, document)
+		</script>
+	</body>
+</html>
