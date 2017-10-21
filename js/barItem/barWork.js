@@ -155,7 +155,7 @@
 					'PermissionCode': '105'
 				},
 				{
-					'name': '微直招',
+					'name': '招生呗',
 					'bgColor': '#53D1C5',
 					'image': 'icon-master-zhizhao',
 					'href': '/work/weizs/weizs.html',
@@ -237,14 +237,27 @@
 			var dic = dicArray[i]
 			var htmlListStr = '';
 			for(var j = 0; j < dic.cells.length; j++) {
-				if(data.indexOf(dic.cells[j].PermissionCode) != -1)
-					htmlListStr += '' +
-					'<li class="mui-table-view-cell mui-media mui-col-xs-3">' +
-					'<a id=' + dic.cells[j].id + ' href=' + dic.cells[j].href + '>' +
-					'<span class="mui-icon iconfont ' + dic.cells[j].image + '" style="background-color: ' + dic.cells[j].bgColor + ';"></span>' +
-					'<div class="mui-media-body" style="color: #605e5f;">' + dic.cells[j].name + '</div>' +
-					'</a>' +
-					'</li>';
+				if(data.indexOf(dic.cells[j].PermissionCode) != -1) {
+					if(dic.cells[j].PermissionCode == "106") {
+						htmlListStr += '' +
+							'<li class="mui-table-view-cell mui-media mui-col-xs-3 app actived">' +
+							'<a id=' + dic.cells[j].id + ' href=' + dic.cells[j].href + '>' +
+							'<span class="mui-icon iconfont ' + dic.cells[j].image + '" style="background-color: ' + dic.cells[j].bgColor + ';"></span>' +
+							'<div class="mui-media-body" style="color: #605e5f;">' + dic.cells[j].name + '</div>' +
+							'</a>' +
+							'</li>';
+					} else {
+						htmlListStr += '' +
+							'<li class="mui-table-view-cell mui-media mui-col-xs-3">' +
+							'<a id=' + dic.cells[j].id + ' href=' + dic.cells[j].href + '>' +
+							'<span class="mui-icon iconfont ' + dic.cells[j].image + '" style="background-color: ' + dic.cells[j].bgColor + ';"></span>' +
+							'<div class="mui-media-body" style="color: #605e5f;">' + dic.cells[j].name + '</div>' +
+							'</a>' +
+							'</li>';
+					}
+
+				}
+
 			}
 			if(htmlListStr != "") {
 				htmlStr += '' +

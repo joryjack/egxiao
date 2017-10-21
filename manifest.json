@@ -7,8 +7,8 @@
 	"id": "H5603C963",/*应用的标识，创建应用时自动生成，勿手动修改*/
 	"name": "易管校",/*应用名称，程序桌面图标名称*/
 	"version": {
-		"name": "2.0.9",/*应用版本名称*/
-		"code": "142"
+		"name": "2.1.1",/*应用版本名称*/
+		"code": "145"
 	},
 	"description": "荣校机构端、高效便捷移动校务工具",/*应用描述信息*/
 	"icons": {
@@ -54,9 +54,7 @@
 		"Gallery": {
 			"description": "访问系统相册"
 		},
-		"Geolocation": {
-			"description": "访问位置信息"
-		},
+		"Geolocation": {},
 		"Invocation": {
 			"description": "使用Native.js能力"
 		},
@@ -148,7 +146,7 @@
 				"password": "",/*Android应用打包使用密钥库中证书的密码*/
 				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
 				"ImmersedStatusbar": true,
-				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
 			},
 			"orientation": [
 				"portrait-primary"
@@ -826,7 +824,8 @@
 					"fonts/iconfont.ttf"
 				],
 				"refer": [
-					"manage/modify_campus.html"
+					"manage/modify_campus.html",
+					"manage/detail_campus.html"
 				],
 				"priority": 0
 			},
@@ -2430,7 +2429,8 @@
 					"work/weizs/vip_organizationinfo.html",
 					"work/weizs/organizationinfo.html",
 					"work/weizs/footprint_main.html",
-					"work/weizs/singleinfluence.html"
+					"work/weizs/singleinfluence.html",
+					"work/weizs/orgnearedulist.html"
 				],
 				"priority": 0
 			},
@@ -2635,7 +2635,9 @@
 					"js/mui.min.js",
 					"fonts/mui.ttf",
 					"css/mui.min.css",
-					"js/work/weizsimmersed.js"
+					"js/work/weizsimmersed.js",
+					"js/app.js",
+					"js/mui.jsonp.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -3021,6 +3023,171 @@
 					"js/work/weizsimmersed.js"
 				],
 				"refer": [],
+				"priority": 0
+			},
+			"manage/detail_campus.html": {
+				"resources": [
+					"css/weizscommon.css",
+					"js/work/weizs/detail_zslesson.js",
+					"js/work/weizsimmersed.js",
+					"js/app.js",
+					"js/tool/base64.js",
+					"js/mui.jsonp.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"work/weizs/orgnearedulist.html": {
+				"resources": [
+					"js/work/weizs/orgnearedulist.js",
+					"js/app.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"fonts/iconfont.ttf",
+					"js/work/weizsimmersed.js"
+				],
+				"refer": [
+					"work/weizs/add_zslesson.html",
+					"work/weizs/add_necampus.html",
+					"work/weizs/detail_campus.html"
+				],
+				"priority": 0
+			},
+			"work/weizs/add_necampus.html": {
+				"resources": [
+					"js/work/weizs/add_necampus.js",
+					"js/app.js",
+					"js/tool/base64.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"js/work/weizsimmersed.js",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [
+					"work/weizs/ne_agreement.html",
+					"work/weizs/selectlessonaddress.html",
+					"work/weizs/neselect_campus_main.html",
+					"work/weizs/set_applystudent.html",
+					"work/weizs/set_lightspot.html",
+					"work/weizs/set_campustel.html",
+					"work/weizs/set_subjectWord.html"
+				],
+				"priority": 0
+			},
+			"work/weizs/ne_agreement.html": {
+				"resources": [
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"js/work/weizsimmersed.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"work/weizs/neselect_campus_list.html": {
+				"resources": [
+					"js/work/weizs/neselect_campus_list.js",
+					"js/app.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"css/app.css",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"work/weizs/neselect_campus_main.html": {
+				"resources": [
+					"work/weizs/neselect_campus_list.html",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/work/weizsimmersed.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"work/weizs/set_campustel.html": {
+				"resources": [
+					"js/app.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/work/weizsimmersed.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"work/weizs/set_subjectWord.html": {
+				"resources": [
+					"js/app.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/work/weizsimmersed.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"work/weizs/detail_campus.html": {
+				"resources": [
+					"js/app.js",
+					"js/tool/base64.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"js/work/weizsimmersed.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"fonts/iconfont.ttf",
+					"js/work/weizs/detail_campus.js"
+				],
+				"refer": [
+					"work/weizs/modify_necampus.html"
+				],
+				"priority": 0
+			},
+			"work/weizs/modify_necampus.html": {
+				"resources": [
+					"js/work/weizs/modify_necampus.js",
+					"js/app.js",
+					"js/tool/base64.js",
+					"js/mui.jsonp.js",
+					"css/weizscommon.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"js/work/weizsimmersed.js"
+				],
+				"refer": [
+					"work/weizs/set_subjectWord.html",
+					"work/weizs/set_campustel.html",
+					"work/weizs/selectlessonaddress.html"
+				],
 				"priority": 0
 			}
 		},

@@ -97,8 +97,10 @@
 				userinfoHTML += '</div>';
 				userinfo.innerHTML = userinfoHTML;
 				//num
-				weizsInfoNumHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-6 " style="border-right: 1px dashed #eee;"><a href="zslesson.html" style="padding:0;"><span class="mui-icon-small">' + weiZSInfodata.zmlesson_totalNum + '</span><div class="mui-media-body">课程管理</div></a></li>';
-				weizsInfoNumHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="footprint_main.html" style="padding:0;"><span class="mui-icon-small">' + weiZSInfodata.student_totalNum + '</span><div class="mui-media-body">脚印</div></a></li>';
+				weizsInfoNumHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-6 " style="border-right: 1px dashed #eee;"><a href="zslesson.html" style="padding:0;"><span class="mui-icon-small">' + weiZSInfodata.zmlesson_totalNum + '</span><div class="mui-media-body">微直招</div></a></li>';
+				weizsInfoNumHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="orgnearedulist.html" style="padding:0;"><span class="mui-icon-small">' + weiZSInfodata.campus_totalNum + '</span><div class="mui-media-body">附近教育</div></a></li>';
+				//weizsInfoNumHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-6 " style="border-right: 1px dashed #eee;"><a href="zslesson.html" style="padding:0;"><span class="mui-icon-small">' + weiZSInfodata.zmlesson_totalNum + '</span><div class="mui-media-body">课程管理</div></a></li>';
+				//weizsInfoNumHTML += '<li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="footprint_main.html" style="padding:0;"><span class="mui-icon-small">' + weiZSInfodata.student_totalNum + '</span><div class="mui-media-body">脚印</div></a></li>';
 				weizsInfoNum.innerHTML = weizsInfoNumHTML;
 
 				//apps

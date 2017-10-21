@@ -4,9 +4,10 @@
 	 * 通用Funcation
 	 */
 	var httpurl = "https://api.egxiao.com:8443/";
-	httpurl = "http://apitemp.egxiao.com/";
+	//httpurl = "http://apitemp.egxiao.com/";
 	var re = new RegExp("^(?![0-9@#$%^&*()+=|{}':;',\\[\\].<>/?~！!@#￥%……&*（）——+|{}【】‘；：”“’。，、？]+$)(?![a-zA-Z@#$%^&*()+=|{}':;',\\[\\].<>/?~！!@#￥%……&*（）——+|{}【】‘；：”“’。，、？]+$)[0-9A-Za-z@#$%^&*()+=|{}':;',\\[\\].<>/?~！!@#￥%……&*（）——+|{}【】‘；：”“’。，、？]{6,18}$");
 	var chrnum = /^1[3,4,5,7,8]\d{9}$/; //手机号
+	var telreg=/^((0\d{2,3}-\d{7,8})|(1[3,4,5,7,8]\d{9}))$/;
 	var decimalreg = /^\d+(\.\d{1,2})?$/;
 	var serviceCode = "joryjack";
 	//校验密码
@@ -16,6 +17,10 @@
 	//校验手机号
 	owner.validatePhone = function(phone) {
 		return chrnum.test(phone);
+	}
+	//校验手机号
+	owner.validateTel = function(phone) {
+		return telreg.test(phone);
 	}
 	//设置Code
 	owner.setCode = function(servicevalidateCode) {
@@ -160,18 +165,18 @@
 		}
 		return LessonTypeCode;
 	}
-	
+
 	owner.studentSexHTML = function(studentSexValue) {
 		var studentSexHTML = ""
 
 		switch(studentSexValue) {
 			case "男":
-				studentSexHTML = '<span class="mui-icon iconfont icon-male fontcolor-primary" style=" padding-left:5px; font-size:0.8em;"></span>'; 
+				studentSexHTML = '<span class="mui-icon iconfont icon-male fontcolor-primary" style=" padding-left:5px; font-size:0.8em;"></span>';
 				break;
 			case "女":
-				studentSexHTML = '<span class="mui-icon iconfont icon-female fontcolor-danger" style=" padding-left:5px;font-size:0.8em;"></span>'; 
+				studentSexHTML = '<span class="mui-icon iconfont icon-female fontcolor-danger" style=" padding-left:5px;font-size:0.8em;"></span>';
 				break;
-		
+
 			default:
 				break;
 		}
@@ -941,7 +946,7 @@
 			if(!chrnum.test(studentRequest.student_phone)) {
 				return callback('请输入正确的手机号码');
 			} else {
-				if(studentRequest.phone2 == studentRequest.student_phone ||studentRequest.phone== studentRequest.student_phone  ) {
+				if(studentRequest.phone2 == studentRequest.student_phone || studentRequest.phone == studentRequest.student_phone) {
 					return callback('学员电话不能与家长电话相同');
 				}
 
@@ -1002,7 +1007,7 @@
 	 * 通过角色获取人事
 	 */
 	owner.GetPersonnelByRoleList = function(personnelRequest, callback) {
-		 console.log(JSON.stringify(personnelRequest));
+		console.log(JSON.stringify(personnelRequest));
 		$.getJSONP(httpurl + 'api/account/GetPersonnelByRoleListExtension', {
 			"data": JSON.stringify(personnelRequest)
 		}, function(data) {
@@ -1100,16 +1105,16 @@
 		});
 	}
 
-//	/*
-//	 * 通过角色获取人事
-//	 */
-//	owner.GetPersonnelByRoleList = function(personnelRequest, callback) {
-//		$.getJSONP(httpurl + 'api/account/GetPersonnelByRoleList', {
-//			data: JSON.stringify(personnelRequest)
-//		}, function(data) {
-//			return callback(data);
-//		});
-//	}
+	//	/*
+	//	 * 通过角色获取人事
+	//	 */
+	//	owner.GetPersonnelByRoleList = function(personnelRequest, callback) {
+	//		$.getJSONP(httpurl + 'api/account/GetPersonnelByRoleList', {
+	//			data: JSON.stringify(personnelRequest)
+	//		}, function(data) {
+	//			return callback(data);
+	//		});
+	//	}
 	/*
 	 * 通过报名缴费记录
 	 */
@@ -1366,7 +1371,7 @@
 	 * @param {Object} callback
 	 */
 	owner.GetZslessonList = function(zslessonRequest, callback) {
-		console.log(JSON.stringify(zslessonRequest));
+
 		$.getJSONP(httpurl + 'api/WeiZS/GetZslessonList', {
 			"data": JSON.stringify(zslessonRequest)
 		}, function(data) {
@@ -1384,7 +1389,6 @@
 		zslessonRequest.lightspot = Base64.encode(zslessonRequest.lightspot);
 		zslessonRequest.abstracts = Base64.encode(zslessonRequest.abstracts);
 
-		console.log(JSON.stringify(zslessonRequest));
 		$.getJSONP(httpurl + 'api/WeiZS/SaveZslesson', {
 			"data": JSON.stringify(zslessonRequest)
 		}, function(data) {
@@ -1414,7 +1418,7 @@
 			return callback(data);
 		});
 	}
-	
+
 	/**
 	 * 各校区学员分析
 	 * @param {Object} studentChatRequest
@@ -1432,53 +1436,88 @@
 	 * @param {Object} recordsChatRequest
 	 * @param {Object} callback
 	 */
-	owner.GetRecordsChatData  = function(recordsChatRequest, callback) {
+	owner.GetRecordsChatData = function(recordsChatRequest, callback) {
 		$.getJSONP(httpurl + 'api/report/GetRecordsChatData', {
 			data: JSON.stringify(recordsChatRequest)
 		}, function(data) {
 			return callback(data);
 		});
 	}
-    /**
-     * 各个校区报名分析
-     * @param {Object} enrollChatRequest
-     * @param {Object} callback
-     */
-	owner.GetEnrollChatData  =  function(enrollChatRequest, callback) {
+	/**
+	 * 各个校区报名分析
+	 * @param {Object} enrollChatRequest
+	 * @param {Object} callback
+	 */
+	owner.GetEnrollChatData = function(enrollChatRequest, callback) {
 		$.getJSONP(httpurl + 'api/report/GetEnrollChatData', {
 			data: JSON.stringify(enrollChatRequest)
 		}, function(data) {
 			return callback(data);
 		});
 	}
-	 /**
-     * 各个校区记上课分析
-     * @param {Object} enrollChatRequest
-     * @param {Object} callback
-     */
-	owner.GetNoteLessonChatData  =  function(noteLessonChatRequest, callback) {
+	/**
+	 * 各个校区记上课分析
+	 * @param {Object} enrollChatRequest
+	 * @param {Object} callback
+	 */
+	owner.GetNoteLessonChatData = function(noteLessonChatRequest, callback) {
 		$.getJSONP(httpurl + 'api/report/GetNoteLessonChatData', {
 			data: JSON.stringify(noteLessonChatRequest)
 		}, function(data) {
 			return callback(data);
 		});
 	}
-	
-	
-	
+
 	/**
 	 * 个人影响力 
 	 * @param {Object} singleInfluenceRequest
 	 * @param {Object} callback
 	 */
 	owner.GetSingleInfluence = function(singleInfluenceRequest, callback) {
-
-		console.log(JSON.stringify(singleInfluenceRequest));
 		$.getJSONP(httpurl + 'api/WeiZS/GetSingleInfluence', singleInfluenceRequest, function(data) {
 			console.log(data);
 			return callback(data);
 		});
 	}
+
+	//附近教育
+	/*
+	 * 入驻附近教育的校区
+	 * @param {Object} campusRequest
+	 * @param {Object} callback
+	 */
+	owner.GetNearEduCampusList = function(campusRequest, callback) {
+		$.getJSONP(httpurl + 'api/WeiZS/GetNearEduCampusList', {
+			data: JSON.stringify(campusRequest)
+		}, function(data) {
+			return callback(data);
+		});
+	}
+	
+	/**
+	 * 入驻附近教育
+	 * @param {Object} neCampusRequest
+	 * @param {Object} callback
+	 */
+	owner.SaveNECampus = function(neCampusRequest, callback) {
+		neCampusRequest.subject_word = Base64.encode(neCampusRequest.subject_word);
+		
+		console.log(JSON.stringify(neCampusRequest));
+		$.getJSONP(httpurl + 'api/WeiZS/SaveNECampus', {
+			data: JSON.stringify(neCampusRequest)
+		}, function(data) {
+			return callback(data);
+		});
+	}
+	owner.ModifyNECampus = function(neCampusRequest, callback) {
+		console.log(JSON.stringify(neCampusRequest));
+		$.getJSONP(httpurl + 'api/WeiZS/SaveNECampus', {
+			"data": JSON.stringify(neCampusRequest)
+		}, function(data) {
+			return callback(data);
+		});
+	}
+	
 	/**
 	 * 设置应用本地配置
 	 **/
@@ -1599,7 +1638,7 @@
 		var $userRoledata = localStorage.getItem('$UserRole') || "{}";
 		return JSON.parse($userRoledata);
 	}
-	
+
 	//WeiZSInfo
 	owner.getWeiZSInfodata = function() {
 		var $notelessondata = localStorage.getItem('$WeiZSInfo') || "{}";
@@ -1636,21 +1675,43 @@
 		var $zslessonModel = localStorage.getItem('$zslessonModel') || "{}";
 		return JSON.parse($zslessonModel);
 	}
-	//$weizszslessonaction
-	owner.getWeizszslessonaction = function() {
-		var $weizszslessonaction = localStorage.getItem('$weizszslessonaction') || "{}";
-		return JSON.parse($weizszslessonaction);
+	//$zsbAction
+	owner.getZSBAction = function() {
+		var $zsbAction = localStorage.getItem('$zsbAction') || "{}";
+		return JSON.parse($zsbAction);
 	}
-
+     //$setcampustel
+     owner.getSetcampustel= function() {
+		var $setcampustel = localStorage.getItem('$setcampustel') || "{}";
+		return JSON.parse($setcampustel);
+	}
+     //$setsubjectWord
+	owner.getSetSubjectWord = function() {
+		var $setsubjectWord = localStorage.getItem('$setsubjectWord') || "{}";
+		return JSON.parse($setsubjectWord);
+	}
+	
+	//$necampusModel
+	owner.getNecampusModel = function() {
+		var $necampusModel = localStorage.getItem('$necampusModel') || "{}";
+		return JSON.parse($necampusModel);
+	}
+	
 	//$footprintpar
 	owner.getfootprintpar = function() {
 		var $footprintpar = localStorage.getItem('$footprintpar') || "{}";
 		return JSON.parse($footprintpar);
 	}
-     
-    //$filterselectCampusInfo
+
+	//$filterselectCampusInfo
 	owner.getFilterselectCampusInfo = function() {
 		var byrolePersonnelInfo = localStorage.getItem('$filterselectCampusInfo') || "{}";
 		return JSON.parse(byrolePersonnelInfo);
+	}
+
+	//$neSelectCampusInfo
+	owner.getNESelectCampusInfo = function() {
+		var neSelectCampusInfo = localStorage.getItem('$neSelectCampusInfo') || "{}";
+		return JSON.parse(neSelectCampusInfo);
 	}
 }(mui, window.app = {}));

@@ -56,12 +56,16 @@
 			}
 			table.innerHTML = "";
 			nodata.style.display = "none";
-			console.log(JSON.stringify(zslessonRequest));
+
 			app.GetZslessonList(zslessonRequest, function(data) {
-				console.log(JSON.stringify(data));
 				if(data.length == 0) {
+					var tableClassList = table.classList;
+					tableClassList.add("mui-hidden");
 					nodata.style.display = "block";
+
 				} else {
+					var tableClassList = table.classList;
+					tableClassList.remove("mui-hidden");
 					pushData(data);
 				}
 			});
@@ -70,7 +74,6 @@
 		function pushData(data) {
 			for(var i = 0; i < data.length; i++) {
 				var lihtml = "";
-				console.log(JSON.stringify(data[i]));
 				var liElement = document.createElement('li');
 				liElement.className = 'mui-table-view-cell';
 				liElement.setAttribute('data-model', '' + JSON.stringify(data[i]) + '');

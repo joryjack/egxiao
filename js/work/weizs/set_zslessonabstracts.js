@@ -21,8 +21,8 @@
 		//为页面添加事件监听hide
 		self.addEventListener('hide', function() {
 			var organizationinfowebview;
-			var $weizszslessonaction = app.getWeizszslessonaction();
-			switch($weizszslessonaction.action) {
+			var $zsbAction = app.getZSBAction();
+			switch($zsbAction.action) {
 				case "addlesson":
 					organizationinfowebview = plus.webview.getWebviewById('add_zslesson.html');
 					break;

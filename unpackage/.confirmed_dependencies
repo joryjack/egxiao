@@ -1205,7 +1205,8 @@
       "fonts/iconfont.ttf"
     ],
     "refer": [
-      "manage/modify_campus.html"
+      "manage/modify_campus.html",
+      "manage/detail_campus.html"
     ]
   },
   "manage/pullrefresh_main.html": {
@@ -2728,7 +2729,8 @@
       "work/weizs/vip_organizationinfo.html",
       "work/weizs/organizationinfo.html",
       "work/weizs/footprint_main.html",
-      "work/weizs/singleinfluence.html"
+      "work/weizs/singleinfluence.html",
+      "work/weizs/orgnearedulist.html"
     ]
   },
   "work/weizs/zslesson.html": {
@@ -2928,7 +2930,9 @@
       "js/mui.min.js",
       "fonts/mui.ttf",
       "css/mui.min.css",
-      "js/work/weizsimmersed.js"
+      "js/work/weizsimmersed.js",
+      "js/app.js",
+      "js/mui.jsonp.js"
     ],
     "refer": []
   },
@@ -3267,7 +3271,8 @@
       "css/mui.min.css",
       "libs/cropperjs-master/dist/cropper.min.js",
       "libs/cropperjs-master/dist/cropper.min.css"
-    ]
+    ],
+    "refer": []
   },
   "account/infocenter.html": {
     "refer": [
@@ -3294,6 +3299,160 @@
       "fonts/mui.ttf",
       "css/mui.min.css",
       "js/work/weizsimmersed.js"
+    ],
+    "refer": []
+  },
+  "manage/detail_campus.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/work/weizs/detail_zslesson.js",
+      "js/work/weizsimmersed.js",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "work/weizs/orgnearedulist.html": {
+    "resources": [
+      "js/work/weizs/orgnearedulist.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "work/weizs/add_zslesson.html",
+      "work/weizs/add_necampus.html",
+      "work/weizs/detail_campus.html"
+    ]
+  },
+  "work/weizs/add_necampus.html": {
+    "resources": [
+      "js/work/weizs/add_necampus.js",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "work/weizs/ne_agreement.html",
+      "work/weizs/selectlessonaddress.html",
+      "work/weizs/neselect_campus_main.html",
+      "work/weizs/set_applystudent.html",
+      "work/weizs/set_lightspot.html",
+      "work/weizs/set_campustel.html",
+      "work/weizs/set_subjectWord.html"
+    ]
+  },
+  "work/weizs/ne_agreement.html": {
+    "resources": [
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ]
+  },
+  "work/weizs/neselect_campus_list.html": {
+    "resources": [
+      "js/work/weizs/neselect_campus_list.js",
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf"
+    ]
+  },
+  "work/weizs/neselect_campus_main.html": {
+    "resources": [
+      "work/weizs/neselect_campus_list.html",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "work/weizs/neselect_campus_list.html"
+    ]
+  },
+  "work/weizs/set_campustel.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ]
+  },
+  "work/weizs/set_subjectWord.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ]
+  },
+  "work/weizs/detail_campus.html": {
+    "resources": [
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "js/work/weizsimmersed.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "js/work/weizs/detail_campus.js"
+    ],
+    "refer": [
+      "work/weizs/modify_necampus.html"
+    ]
+  },
+  "work/weizs/modify_necampus.html": {
+    "resources": [
+      "js/work/weizs/modify_necampus.js",
+      "js/app.js",
+      "js/tool/base64.js",
+      "js/mui.jsonp.js",
+      "css/weizscommon.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "js/work/weizsimmersed.js"
+    ],
+    "refer": [
+      "work/weizs/set_subjectWord.html",
+      "work/weizs/set_campustel.html",
+      "work/weizs/selectlessonaddress.html"
     ]
   }
 }

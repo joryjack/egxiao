@@ -51,25 +51,15 @@ body {
 }
 
 .nodata {
+	margin-top: 20%;
 	width: 100%;
 	height: 100%;
 	position: relative;
 	z-index: 100;
+	font-size: 40px;
+	text-align: center;
 }
 
-.nodata a {
-	width: 100%;
-	height: 2em;
-	display: block;
-	text-align: center;
-	line-height: 1em;
-	border-radius: 50%;
-	font-size: 40px;
-	color: #ddd;
-	position: absolute;
-	margin-top: 20%;
-	
-}
 .animated{
 	color: #ddd !important;
 }

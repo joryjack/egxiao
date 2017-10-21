@@ -39,7 +39,7 @@
 
 		//课程亮点
 		setlightspot.addEventListener('tap', function() {
-			localStorage.setItem('$weizszslessonaction', JSON.stringify({
+			localStorage.setItem('$zsbAction', JSON.stringify({
 				"action": "modifylesson"
 			}));
 			var set_lightspotPage = $.preload({
@@ -60,7 +60,7 @@
 		});
 		//适合学员
 		setapplystudent.addEventListener('tap', function() {
-			localStorage.setItem('$weizszslessonaction', JSON.stringify({
+			localStorage.setItem('$zsbAction', JSON.stringify({
 				"action": "modifylesson"
 			}));
 			var set_applystudentPage = $.preload({
@@ -82,7 +82,7 @@
 		//上课地址
 		setlessonaddress.addEventListener('tap', function() {
           
-			localStorage.setItem('$weizszslessonaction', JSON.stringify({
+			localStorage.setItem('$zsbAction', JSON.stringify({
 				"action": "modifylesson"
 			}));
 			var selectlessoninfoPage = $.preload({
@@ -104,7 +104,7 @@
 
 		//课程简介
 		setabstracts.addEventListener('tap', function() {
-			localStorage.setItem('$weizszslessonaction', JSON.stringify({
+			localStorage.setItem('$zsbAction', JSON.stringify({
 				"action": "modifylesson"
 			}));
 

@@ -54,16 +54,19 @@
 		//为页面添加事件监听hide
 		self.addEventListener('hide', function() {
 			var organizationinfowebview;
-			var $weizszslessonaction = app.getWeizszslessonaction();
-			switch($weizszslessonaction.action) {
+			var $zsbAction = app.getZSBAction();
+			switch($zsbAction.action) {
 				case "addlesson":
 					organizationinfowebview = plus.webview.getWebviewById('add_zslesson.html');
 					break;
 				case "modifylesson":
 					organizationinfowebview = plus.webview.getWebviewById('modify_zslesson.html');
 					break;
-				default:
-					organizationinfowebview = plus.webview.getWebviewById('add_zslesson.html');
+				case "addCampus":
+					organizationinfowebview = plus.webview.getWebviewById('add_necampus.html');
+					break;
+				case "modifyCampus":
+					organizationinfowebview = plus.webview.getWebviewById('modify_necampus.html');
 					break;
 			}
 			$.fire(organizationinfowebview, 'pushlessonAddressdata', {});
@@ -197,16 +200,17 @@
 
 			}
 			street.value = positionModel.name;
-			var $setlessonAddressPoint = app.getSetlessonAddressPoint();
-			$setlessonAddressPoint.longitude = positionModel.point.longitude;
-			$setlessonAddressPoint.latitude = positionModel.point.latitude;
 
+			var $setlessonAddressPoint = app.getSetlessonAddressPoint();
+			$setlessonAddressPoint.longitude = Math.floor(positionModel.point.longitude * 1000000) / 1000000;
+			$setlessonAddressPoint.latitude = Math.floor(positionModel.point.latitude * 1000000) / 1000000;
+			
 			localStorage.setItem("$setlessonAddressPoint", JSON.stringify($setlessonAddressPoint));
 
 			var select_msgClassList = select_msg.classList;
 			select_msgClassList.remove("mui-hidden");
 
-			select_street.innerHTML = positionModel.name  + houseNumber.value;;
+			select_street.innerHTML = positionModel.name + houseNumber.value;;
 
 			var select_streetClassList = select_street.classList;
 			select_streetClassList.remove("mui-hidden");
