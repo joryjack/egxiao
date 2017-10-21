@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+		<style>
+			
+			#rightBar {
+				color: #fff;
+			}
+			
+			.roundcheckfill {
+				color: #ddd;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">入驻附近教育</h1>
+			<a id="rightBar" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">入驻</a>
+		</header>
+		<div class="mui-content" style="padding-top: 65px;">
+			<ul class="mui-table-view mui-table-view-chevron" id="infocenter">
+				<li class="mui-table-view-cell" style="padding-right: 45px;">
+					<a class="mui-navigate" >
+						<span class="mui-pull-left">机构信息</span><span id="shortname" class="mui-pull-right"></span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 10px;" id="appliction">
+				<li class="mui-table-view-cell">
+					<a id="selectnecampus" class="mui-navigate-right">
+						<span class="mui-pull-left">入驻校区</span><span id="necampus_name" class="mui-pull-right fontcolor-default">请选择</span>
+					</a>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<a id="subjectWord" class="mui-navigate-right">
+						<span class="mui-pull-left">开设课程</span><span class="mui-pull-right fontcolor-default">请填写</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 10px;" id="setting">
+				<li class="mui-table-view-cell">
+					<a id="findStuPhone" class="mui-navigate-right">
+						<span class="mui-pull-left">招生电话</span><span class="mui-pull-right fontcolor-default">请填写</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 10px;" id="setting">
+				<li class="mui-table-view-cell">
+					<a id="setnecampusaddress" class="mui-navigate-right" >
+						<span class="mui-pull-left">校区地址</span><span id="necampus_address" style="width: 65%;" class="mui-pull-right mui-ellipsis  mui-text-right fontcolor-default">请选择</span>
+					</a>
+				</li>
+				
+			</ul>
+			<div class="mui-content-padded">
+				<p style="font-size: 0.78em;">入驻即表示你已同意遵守《<span id="readAgreement" class="fontcolor-default">附近教育入驻协议
+				</span>》</p>
+				<p style="font-size: 0.78em;">所有信息 均加入绿网审核，禁止发布虚假信息。</p>
+			</div>
+			<div class="mui-content-padded ">
+				<button id='saveNeCampus' class="mui-btn mui-btn-block mui-btn-ronschool ">入驻</button>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script type="text/javascript" src="../../js/mui.jsonp.js" ></script>
+		<script type="text/javascript" src="../../js/tool/base64.js" ></script>
+		
+		<script type="text/javascript" src="../../js/app.js"></script>
+		<script type="text/javascript" src="../../js/work/weizs/add_necampus.js"></script>
+		
+	</body>
+
+</html>

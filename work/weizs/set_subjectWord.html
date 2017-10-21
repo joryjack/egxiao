@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/weizscommon.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">填写开设课程</h1>
+			<a id="rightBar" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">保存</a>
+		</header>
+		<div class="mui-content" style="padding-top: 65px;">
+			<div class="mui-content-padded">
+				<div class="mui-input-row">
+					<input id="subjectWord" type="text" class="mui-input " maxlength="40" placeholder="请填写">
+					<p>多个课程用逗号分割，如：文化课辅导，小提琴辅导</p>
+				</div>
+			</div>
+
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/mui.jsonp.js"></script>
+		<script type="text/javascript" src="../../js/app.js"></script>
+		<script src="../../js/work/weizsimmersed.js"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init({
+					swipeBack: false
+				});
+
+				$.plusReady(function() {
+					var subjectWord = doc.getElementById("subjectWord");
+					puahData();
+					var rightBar = doc.getElementById("rightBar");
+					var self = plus.webview.currentWebview();
+
+					//为页面添加事件监听hide
+					self.addEventListener('hide', function() {
+						var organizationinfowebview;
+						var $zsbAction = app.getZSBAction();
+						switch($zsbAction.action) {
+							case "addCampus":
+								organizationinfowebview = plus.webview.getWebviewById('add_necampus.html');
+								break;
+							case "modifyCampus":
+								organizationinfowebview = plus.webview.getWebviewById('modify_necampus.html');
+								break;
+							default:
+								organizationinfowebview = plus.webview.getWebviewById('add_necampus.html');
+								break;
+						}
+
+						$.fire(organizationinfowebview, 'pushSubjectWorddata', {});
+						self.close();
+					}, false);
+
+					//提交
+					rightBar.addEventListener('tap', function() {
+						if(subjectWord.value.trim() == "") {
+							$.toast('请填写开设课程');
+							return;
+						}
+						var subjectWorddata = app.getSetSubjectWord();
+						subjectWorddata.subjectWord = subjectWord.value.trim();
+						localStorage.setItem("$setsubjectWord", JSON.stringify(subjectWorddata));
+						$.back();
+					}, false);
+
+					function puahData() {
+						var subjectWorddata = app.getSetSubjectWord();
+						if(subjectWorddata.subjectWord != null) {
+							subjectWord.value = subjectWorddata.subjectWord;
+						}
+					}
+				})
+			})(mui, document)
+		</script>
+	</body>
+
+</html>
