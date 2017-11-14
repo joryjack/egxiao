@@ -7,8 +7,8 @@
 	"id": "H5603C963",/*应用的标识，创建应用时自动生成，勿手动修改*/
 	"name": "易管校",/*应用名称，程序桌面图标名称*/
 	"version": {
-		"name": "2.1.1",/*应用版本名称*/
-		"code": "145"
+		"name": "2.1.2",/*应用版本名称*/
+		"code": "146"
 	},
 	"description": "荣校机构端、高效便捷移动校务工具",/*应用描述信息*/
 	"icons": {
@@ -213,9 +213,9 @@
 				"android": {
 					"mdpi": "F:/Program/workplace/file/egxiao/startpage/Android/240x320.png", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "F:/Program/workplace/file/egxiao/startpage/Android/320x480.png", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "F:/Program/workplace/file/egxiao/startpage/Android/480x800.png", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "F:/Program/workplace/file/egxiao/startpage/Android/720x1280.png", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": "F:/Program/workplace/file/egxiao/startpage/Android/1080x1920.png"
+					"hdpi": "F:/Program/workplace/file/egxiao/startpage/Android/480x762.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "F:/Program/workplace/file/egxiao/startpage/Android/720x1242.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "F:/Program/workplace/file/egxiao/startpage/Android/1080x1882.png"
 				}
 			}
 		}

@@ -284,14 +284,15 @@
 				"url": 'detail_student.html'
 			});
 			var student = JSON.parse(contentdata);
-			var studentModel = app.getStudent();
-			if(JSON.stringify(studentModel) != "{}") {
-				if(studentModel.id != student.id) {
-					localStorage.setItem('$student', JSON.stringify(student));
-				}
-			} else {
-				localStorage.setItem('$student', JSON.stringify(student));
-			}
+			localStorage.setItem('$student', JSON.stringify(student));
+//			var studentModel = app.getStudent();
+//			if(JSON.stringify(studentModel) != "{}") {
+//				if(studentModel.id != student.id) {
+//					localStorage.setItem('$student', JSON.stringify(student));
+//				}
+//			} else {
+//				localStorage.setItem('$student', JSON.stringify(student));
+//			}
 			modifyStudentPage.show("pop-in");
 		});
 

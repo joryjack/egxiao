@@ -6,6 +6,8 @@
 
 		var close_necampus = doc.getElementById("close_necampus");
 		var open_necampus = doc.getElementById("open_necampus");
+		var closeaudit_necampus = doc.getElementById("closeaudit_necampus");
+		var openaudit_necampus = doc.getElementById("openaudit_necampus");
 
 		mui('.mui-scroll-wrapper').scroll();
 		var detailneCampus = document.body.querySelector('.mui-scroll');
@@ -29,17 +31,40 @@
 			detailneCampus.innerHTML = "";
 			var weiZSInfodata = app.getWeiZSInfodata();
 			var necampusModel = app.getNecampusModel();
+			var close_necampusclassList = close_necampus.classList;
+			var open_necampusclassList = open_necampus.classList;
 
-			if(necampusModel.enable_flag == "2") {
-				var close_necampusclassList = close_necampus.classList;
-				var open_necampusclassList = open_necampus.classList;
-				close_necampusclassList.remove("mui-hidden");
+			var closeaudit_necampusclassList = closeaudit_necampus.classList;
+			var openaudit_necampusclassList = openaudit_necampus.classList;
+			console.log("enable_flag：" + necampusModel.enable_flag + "   state:" + necampusModel.state);
+			if(necampusModel.enable_flag == "2" && necampusModel.state == "1") {
+
 				open_necampusclassList.add("mui-hidden");
-			} else {
-				var close_necampusclassList = close_necampus.classList;
-				var open_necampusclassList = open_necampus.classList;
 				close_necampusclassList.add("mui-hidden");
+				closeaudit_necampusclassList.add("mui-hidden");
+				openaudit_necampusclassList.remove("mui-hidden");
+
+			} else if(necampusModel.enable_flag == "2" && necampusModel.state == "2") {
+
+				open_necampusclassList.add("mui-hidden");
+				close_necampusclassList.remove("mui-hidden");
+				closeaudit_necampusclassList.add("mui-hidden");
+				openaudit_necampusclassList.add("mui-hidden");
+			} else if(necampusModel.enable_flag == "3" && necampusModel.state == "1") {
+				open_necampusclassList.add("mui-hidden");
+				close_necampusclassList.add("mui-hidden");
+				closeaudit_necampusclassList.remove("mui-hidden");
+				openaudit_necampusclassList.add("mui-hidden");
+			} else if(necampusModel.enable_flag == "3" && necampusModel.state == "2") {
 				open_necampusclassList.remove("mui-hidden");
+				close_necampusclassList.add("mui-hidden");
+				closeaudit_necampusclassList.add("mui-hidden");
+				openaudit_necampusclassList.add("mui-hidden");
+			} else {
+				open_necampusclassList.remove("mui-hidden");
+				close_necampusclassList.add("mui-hidden");
+				closeaudit_necampusclassList.add("mui-hidden");
+				openaudit_necampusclassList.add("mui-hidden");
 			}
 
 			var baseinfocontent = "";
@@ -60,7 +85,7 @@
 			subjectWord += '<div class="mui-card-header"><div class="title"><i class=" mui-icon iconfont icon-subject" style="font-size: 16px;"></i> <span>开设课程</span></div></div>';
 			subjectWord += '<div class="mui-card-content" style="padding: 0 0 10px 15px;"><p>' + necampusModel.subject_word + '</p></div>';
 			subjectWord += '</div>';
-            console.log(baseinfocontent + necampusTel + subjectWord);
+		
 			detailneCampus.innerHTML = baseinfocontent + necampusTel + subjectWord;
 		}
 
@@ -110,9 +135,17 @@
 						if(data.success) {
 							var close_necampusclassList = close_necampus.classList;
 							var open_necampusclassList = open_necampus.classList;
+
+							var closeaudit_necampusclassList = closeaudit_necampus.classList;
+							var openaudit_necampusclassList = openaudit_necampus.classList;
+
+							open_necampusclassList.add("mui-hidden");
 							close_necampusclassList.add("mui-hidden");
-							open_necampusclassList.remove("mui-hidden");
+							openaudit_necampusclassList.add("mui-hidden");
+							closeaudit_necampusclassList.remove("mui-hidden");
+
 							necampusModel.enable_flag = "3";
+							necampusModel.state = "1";
 							localStorage.setItem("$necampusModel", JSON.stringify(necampusModel));
 							$.toast(data.msg);
 						} else {
@@ -152,9 +185,17 @@
 						if(data.success) {
 							var close_necampusclassList = close_necampus.classList;
 							var open_necampusclassList = open_necampus.classList;
-							close_necampusclassList.remove("mui-hidden");
+
+							var closeaudit_necampusclassList = closeaudit_necampus.classList;
+							var openaudit_necampusclassList = openaudit_necampus.classList;
+
 							open_necampusclassList.add("mui-hidden");
+							close_necampusclassList.add("mui-hidden");
+							closeaudit_necampusclassList.add("mui-hidden");
+							openaudit_necampusclassList.remove("mui-hidden");
+
 							necampusModel.enable_flag = "2";
+							necampusModel.state = "1";
 							localStorage.setItem("$necampusModel", JSON.stringify(necampusModel));
 							$.toast(data.msg);
 						} else {
@@ -172,6 +213,12 @@
 
 		});
 
+		closeaudit_necampus.addEventListener('tap', function() {
+			mui.alert('我们已受理你的申请,请耐心等待2-3个工作日。如有问题请致电：023-81214646', '温馨提示', function() {});
+		});
+		openaudit_necampus.addEventListener('tap', function() {
+			mui.alert('我们已受理你的申请,请耐心等待2-3个工作日。如有问题请致电：023-81214646', '温馨提示', function() {});
+		});
 		var userBusinessPermission = function(data) {
 			var b = false;
 			for(var i = 0; i < data.length; i++) {
